@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
+  <!-- Meta Data and SEO Optimizations -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>حنجرة - منصة البودكاست والإبداع الصوتي</title>
-
-  <meta name="description"
-    content="حنجرة: منصة فلسطينية تهدف لإثراء المحتوى الصوتي العربي، تقدم برامج بودكاست متنوعة وخدمات التعليق الصوتي وتأجير الاستوديو. انضم إلينا واكتشف صوتك." />
-
-  <meta name="keywords"
-    content="حنجرة, بودكاست, منصة صوتية, تعليقات صوتية, الإنتاج الصوتي, استوديو, فلسطين, المحتوى العربي, المعلقون الصوتيون, خدمات صوتية" />
-
-  <!-- Robots Meta -->
+  <meta name="description" content="حنجرة: منصة فلسطينية تهدف لإثراء المحتوى الصوتي العربي، تقدم برامج بودكاست متنوعة وخدمات التعليق الصوتي وتأجير الاستوديو. انضم إلينا واكتشف صوتك." />
+  <meta name="keywords" content="حنجرة, بودكاست, منصة صوتية, تعليقات صوتية, الإنتاج الصوتي, استوديو, فلسطين, المحتوى العربي, المعلقون الصوتيون, خدمات صوتية" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph Meta Tags -->
+  <!-- Open Graph / Social Meta Tags -->
   <meta property="og:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
-  <meta property="og:description"
-    content="منصة فلسطينية تُقدم برامج بودكاست متنوعة وتعليقات صوتية بمشاركة نخبة من المعلقين والمبدعين." />
+  <meta property="og:description" content="منصة فلسطينية تُقدم برامج بودكاست متنوعة وتعليقات صوتية بمشاركة نخبة من المعلقين والمبدعين." />
   <meta property="og:image" content="img/og-image.png" />
   <meta property="og:url" content="https://hanjara.ps" />
   <meta property="og:type" content="website" />
@@ -26,62 +19,46 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
-  <meta name="twitter:description"
-    content="شاركنا الاستماع والتجربة الصوتية الفريدة من خلال برامج بودكاست حنجرة وخدماتنا المتنوعة." />
+  <meta name="twitter:description" content="شاركنا الاستماع والتجربة الصوتية الفريدة من خلال برامج بودكاست حنجرة وخدماتنا المتنوعة." />
   <meta name="twitter:image" content="img/twitter-image.png" />
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-  <!-- Flatpickr CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-  <!-- Flatpickr Script -->
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <!-- Flatpickr Arabic Localization -->
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
-
-  <!-- Stylesheets -->
+  <!-- External CSS and Libraries -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
   <link rel="stylesheet" href="css/amplitude.css" />
   <link rel="stylesheet" href="css/style.css" />
-</head>
 
+  <!-- Flatpickr (Date Picker) CSS and JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+</head>
 <body>
-  <!-- Skip to content link for improved accessibility -->
-  <a class="skip-link" href="#main-content" style="
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #000;
-        color: #fff;
-        padding: 8px;
-        z-index: 9999;
-      ">
-    Skip to content
-  </a>
+  <!-- Skip-to-content link for accessibility -->
+  <a class="skip-link" href="#main-content" style="position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 9999;">Skip to content</a>
 
   <!-- Navbar Section -->
   <nav class="navbar navbar-expand-lg custom-navbar" role="navigation" aria-label="Main Navigation">
     <div class="container">
-      <!-- Logo with descriptive title and lazy loading for performance -->
+      <!-- Logo with descriptive title and lazy loading -->
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" title="الصفحة الرئيسية">
         <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" loading="lazy" />
       </a>
-
-      <!-- Navbar Toggler for Mobile View -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Navbar Toggler for mobile devices -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <!-- Navigation Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" title="الرئيسية">الرئيسية</a>
+            <a class="nav-link active" href="index.html" title="الرئيسية">الرئيسية</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html" title="عن حنجرة">عن حنجرة</a>
@@ -102,176 +79,156 @@
             <a class="nav-link" href="contact.html" title="تواصل معنا">تواصل معنا</a>
           </li>
         </ul>
-        <!-- Call-to-Action Button with a more descriptive link -->
+        <!-- Call-to-Action Button -->
         <a href="signup.html" class="btn btn-primary" title="انضم الآن">
-          <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
-          انضم الآن
+          <i class="fa-solid fa-user-plus" aria-hidden="true"></i> انضم الآن
         </a>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
-  <section class="header-home section">
-    <video class="background-video" autoplay muted loop>
-      <source src="./img/background/1.mp4" type="video/mp4" />
-      متصفحك لا يدعم تشغيل الفيديو.
-    </video>
-    <!-- Overlay -->
-    <div class="video-overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="sub-title">
-            <h5 class="header-subtitle">
-              اكتشف متعة الاستماع مع أفضل بودكاستاتنا الحصرية
-            </h5>
-          </div>
-          <h2 class="header-title">
-            نحن هنا لنروي قصصًا استثنائية وملهمة، ونبني جسورًا جديدة من
-            الإبداع والتواصل.
-          </h2>
-          <p>
-            سواء كنت مستمعًا شغوفًا، صانع محتوى طموحًا، أو باحثًا عن خدمة
-            صوتية مميزة،
-            <strong>حنجرة</strong> هي مكانك الملهم حيث تلتقي الأصوات بالمعنى.
-          </p>
-          <div class="buttons-group d-flex align-items-center gap-3">
-            <a href="/listen" class="btn btn-primary" aria-label="ابدأ استماعك الآن">
-              <i class="fas fa-play-circle"></i> ابدأ استماعك الآن
-            </a>
-            <a href="/services" class="btn btn-secondary" aria-label="اطلب خدماتنا">
-              <i class="fas fa-concierge-bell"></i> اطلب خدماتنا
-            </a>
+  <!-- Main Content Start -->
+  <main id="main-content">
+    <!-- Header Section with Background Video -->
+    <section class="header-home section">
+      <video class="background-video" autoplay muted loop>
+        <source src="./img/background/1.mp4" type="video/mp4" />
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+      <!-- Video Overlay -->
+      <div class="video-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Subtitle for header -->
+            <div class="sub-title">
+              <h5 class="header-subtitle">اكتشف متعة الاستماع مع أفضل بودكاستاتنا الحصرية</h5>
+            </div>
+            <!-- Main Header Title -->
+            <h2 class="header-title">نحن هنا لنروي قصصًا استثنائية وملهمة، ونبني جسورًا جديدة من الإبداع والتواصل.</h2>
+            <p>
+              سواء كنت مستمعًا شغوفًا، صانع محتوى طموحًا، أو باحثًا عن خدمة صوتية مميزة، <strong>حنجرة</strong> هي مكانك الملهم حيث تلتقي الأصوات بالمعنى.
+            </p>
+            <!-- Call-to-Action Buttons -->
+            <div class="buttons-group d-flex align-items-center gap-3">
+              <a href="/listen" class="btn btn-primary" aria-label="ابدأ استماعك الآن">
+                <i class="fas fa-play-circle"></i> ابدأ استماعك الآن
+              </a>
+              <a href="/services" class="btn btn-secondary" aria-label="اطلب خدماتنا">
+                <i class="fas fa-concierge-bell"></i> اطلب خدماتنا
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Fixed Player -->
-  <div class="main-player">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="audio-player">
-            <button type="button" class="audio-player-hide">
-              <i class="fa-solid fa-angle-down"></i>
-            </button>
-            <div class="player">
-              <div class="player-cover-img">
-                <img data-amplitude-song-info="cover_art_url" src="img/audio/01.jpg" alt="الغلاف" />
-              </div>
-              <div class="player-content">
-                <div class="song-meta-data">
-                  <div class="d-flex flex-column gap-2">
-                    <div class="d-flex align-items-center gap-2">
-                      <i class="fa-solid fa-music"></i>
-                      <p data-amplitude-song-info="name" class="song-name">
-                        حلقة يا حب البرغل
+    <!-- Fixed Audio Player Section -->
+    <div class="main-player">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="audio-player">
+              <button type="button" class="audio-player-hide">
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="player">
+                <div class="player-cover-img">
+                  <img data-amplitude-song-info="cover_art_url" src="img/audio/01.jpg" alt="غلاف الحلقة" />
+                </div>
+                <div class="player-content">
+                  <div class="song-meta-data">
+                    <div class="d-flex flex-column gap-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-music"></i>
+                        <p data-amplitude-song-info="name" class="song-name">حلقة يا حب البرغل</p>
+                      </div>
+                      <p>
+                        <span data-amplitude-song-info="album" class="album-name">بودكاست اللويح</span> -
+                        <span data-amplitude-song-info="artist" class="song-artist">عمار أبو حسين</span>
                       </p>
                     </div>
-                    <p>
-                      <span data-amplitude-song-info="album" class="album-name">
-                        بودكاست اللويح</span>
-                      -
-                      <span data-amplitude-song-info="artist" class="song-artist">
-                        عمار أبو حسين</span>
-                    </p>
                   </div>
-                </div>
-                <div class="player-time-progress">
-                  <div id="progress-container">
-                    <input type="range" class="amplitude-song-slider" />
-                    <progress id="song-played-progress" class="amplitude-song-played-progress" value="0"></progress>
-                    <progress id="song-buffered-progress" class="amplitude-buffered-progress"
-                      value="0.608827378266668"></progress>
-                  </div>
-                  <div class="time-container">
-                    <span class="current-time">
-                      <span class="amplitude-current-minutes">00</span>:<span
-                        class="amplitude-current-seconds">00</span>
-                    </span>
-                    <div id="player-volume" class="player-volume" style="--volume-before-width: 50%">
-                      <span id="amplitude-mute" class="amplitude-mute amplitude-not-muted">
-                        <i class="fa-solid fa-volume-high"></i>
-                      </span>
-                      <input type="range" id="volume-slider" max="100" class="amplitude-volume-slider" />
+                  <div class="player-time-progress">
+                    <div id="progress-container">
+                      <input type="range" class="amplitude-song-slider" />
+                      <progress id="song-played-progress" class="amplitude-song-played-progress" value="0"></progress>
+                      <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0.608827378266668"></progress>
                     </div>
-                    <span class="duration">
-                      <span class="amplitude-duration-minutes">02</span>:<span
-                        class="amplitude-duration-seconds">41</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="player-controls">
-                <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle">
-                  <i class="fa-solid fa-shuffle"></i>
-                </div>
-                <div class="amplitude-prev" id="previous">
-                  <i class="fa-solid fa-backward-step"></i>
-                </div>
-                <div class="amplitude-play-pause amplitude-paused" id="play-pause">
-                  <i class="fa-solid fa-play"></i>
-                </div>
-                <div class="amplitude-next" id="next">
-                  <i class="fa-solid fa-forward-step"></i>
-                </div>
-                <div class="amplitude-repeat amplitude-repeat-off" id="repeat">
-                  <i class="fa-solid fa-repeat"></i>
-                </div>
-                <div class="player-playlist show-playlist">
-                  <i class="fa-solid fa-music"></i>
-                </div>
-              </div>
-              <div id="playlist-container">
-                <div class="playlist-top">
-                  <h6 class="up-next">القادم</h6>
-                  <button type="button" class="close-playlist">
-                    <i class="fa-solid fa-xmark"></i>
-                  </button>
-                </div>
-                <div class="playlist-content">
-                  <div class="playlist-item">
-                    <div
-                      class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused amplitude-active-song-container"
-                      data-amplitude-song-index="0">
-                      <img src="img/audio/01.jpg" alt="" />
-                      <div class="playlist-song-meta">
-                        <span class="playlist-song-name">بودكاست الأعمال الحلقة 01</span>
-                        <span class="playlist-artist-album">تيموثي ك. أغيلار</span>
+                    <div class="time-container">
+                      <span class="current-time"><span class="amplitude-current-minutes">00</span>:<span class="amplitude-current-seconds">00</span></span>
+                      <div id="player-volume" class="player-volume" style="--volume-before-width: 50%">
+                        <span id="amplitude-mute" class="amplitude-mute amplitude-not-muted"><i class="fa-solid fa-volume-high"></i></span>
+                        <input type="range" id="volume-slider" max="100" class="amplitude-volume-slider" />
                       </div>
+                      <span class="duration"><span class="amplitude-duration-minutes">02</span>:<span class="amplitude-duration-seconds">41</span></span>
                     </div>
-                    <button type="button" class="playlist-remove" data-remove-id="d1">
+                  </div>
+                </div>
+                <div class="player-controls">
+                  <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                  </div>
+                  <div class="amplitude-prev" id="previous">
+                    <i class="fa-solid fa-backward-step"></i>
+                  </div>
+                  <div class="amplitude-play-pause amplitude-paused" id="play-pause">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <div class="amplitude-next" id="next">
+                    <i class="fa-solid fa-forward-step"></i>
+                  </div>
+                  <div class="amplitude-repeat amplitude-repeat-off" id="repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                  </div>
+                  <div class="player-playlist show-playlist">
+                    <i class="fa-solid fa-music"></i>
+                  </div>
+                </div>
+                <div id="playlist-container">
+                  <div class="playlist-top">
+                    <h6 class="up-next">القادم</h6>
+                    <button type="button" class="close-playlist">
                       <i class="fa-solid fa-xmark"></i>
                     </button>
                   </div>
-                  <div class="playlist-item">
-                    <div class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused"
-                      data-amplitude-song-index="1">
-                      <img src="img/audio/02.jpg" alt="" />
-                      <div class="playlist-song-meta">
-                        <span class="playlist-song-name">بودكاست التعليم الحلقة 02</span>
-                        <span class="playlist-artist-album">دونا سي. نيكولز</span>
+                  <div class="playlist-content">
+                    <div class="playlist-item">
+                      <div class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused amplitude-active-song-container" data-amplitude-song-index="0">
+                        <img src="img/audio/01.jpg" alt="غلاف الحلقة 01" />
+                        <div class="playlist-song-meta">
+                          <span class="playlist-song-name">بودكاست الأعمال الحلقة 01</span>
+                          <span class="playlist-artist-album">تيموثي ك. أغيلار</span>
+                        </div>
                       </div>
+                      <button type="button" class="playlist-remove" data-remove-id="d1">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
                     </div>
-                    <button type="button" class="playlist-remove" data-remove-id="d2">
-                      <i class="fa-solid fa-xmark"></i>
-                    </button>
-                  </div>
-                  <div class="playlist-item">
-                    <div class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused"
-                      data-amplitude-song-index="2">
-                      <img src="img/audio/03.jpg" alt="" />
-                      <div class="playlist-song-meta">
-                        <span class="playlist-song-name">بودكاست الأعمال الحلقة 03</span>
-                        <span class="playlist-artist-album">ألفين ك. بيفريدج</span>
+                    <div class="playlist-item">
+                      <div class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused" data-amplitude-song-index="1">
+                        <img src="img/audio/02.jpg" alt="غلاف الحلقة 02" />
+                        <div class="playlist-song-meta">
+                          <span class="playlist-song-name">بودكاست التعليم الحلقة 02</span>
+                          <span class="playlist-artist-album">دونا سي. نيكولز</span>
+                        </div>
                       </div>
+                      <button type="button" class="playlist-remove" data-remove-id="d2">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
                     </div>
-                    <button type="button" class="playlist-remove" data-remove-id="d3">
-                      <i class="fa-solid fa-xmark"></i>
-                    </button>
+                    <div class="playlist-item">
+                      <div class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused" data-amplitude-song-index="2">
+                        <img src="img/audio/03.jpg" alt="غلاف الحلقة 03" />
+                        <div class="playlist-song-meta">
+                          <span class="playlist-song-name">بودكاست الأعمال الحلقة 03</span>
+                          <span class="playlist-artist-album">ألفين ك. بيفريدج</span>
+                        </div>
+                      </div>
+                      <button type="button" class="playlist-remove" data-remove-id="d3">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -280,25 +237,22 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Enhanced Services Section -->
+  <!-- Our Services Section -->
   <section class="our-services bg-light" id="services">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <!-- Section header with a creative title and a decorative icon -->
-          <header class="d-flex justify-content-between align-items-center">
+          <header class="header text-center">
             <h4 class="title">
-              <i class="fas fa-microphone-alt"></i>
-              <!-- Creative microphone icon -->
+              <i class="fas fa-microphone-alt" aria-hidden="true"></i>
               اكتشف عالماً من الإبداع الصوتي
             </h4>
-            <!-- Call-to-action link with a creative, descriptive text -->
-            <a href="services.html" class="btn btn-secondary" title="استكشف خدماتنا">
-              انطلق الآن
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            </a>
+            <p class="subtitle">
+              انطلق في رحلة سمعية مليئة بالأفكار والإلهام تُحرك شغفك وتروي قصصاً تلامس قلبك.
+            </p>
           </header>
         </div>
         <div class="services-list">
@@ -307,13 +261,11 @@
             <div class="col-md-4 col-12 my-4">
               <div class="services-item bg-dark">
                 <div class="icon">
-                  <!-- Updated icon to a microphone icon -->
                   <img src="./img/services/microphone.png" alt="أيقونة إنتاج البودكاست" loading="lazy" />
                 </div>
                 <h4>إنتاج البودكاست</h4>
                 <p class="description three-line">
-                  هل لديك فكرة ملهمة؟ نحن هنا لتحويلها إلى بودكاست يحقق رؤيتك
-                  وأهدافك. نحن شريكك في كل خطوة من الفكرة إلى النشر.
+                  هل لديك فكرة ملهمة؟ نحن هنا لتحويلها إلى بودكاست يحقق رؤيتك وأهدافك. نحن شريكك في كل خطوة من الفكرة إلى النشر.
                 </p>
                 <a href="contact.html" class="btn btn-primary my-3" title="تواصل معنا">
                   تواصل معنا
@@ -325,13 +277,11 @@
             <div class="col-md-4 col-12 my-4">
               <div class="services-item bg-dark">
                 <div class="icon">
-                  <!-- Updated icon to a voiceover icon -->
                   <img src="./img/services/voiceover.png" alt="أيقونة التعليق الصوتي" loading="lazy" />
                 </div>
                 <h4>التعليق الصوتي</h4>
                 <p class="description three-line">
-                  نقدم مجموعة واسعة من الأصوات الاحترافية مع أساليب تحرير
-                  متقنة لضمان تقديم بودكاست بجودة عالية تناسب مشاريعك.
+                  نقدم مجموعة واسعة من الأصوات الاحترافية مع أساليب تحرير متقنة لضمان تقديم بودكاست بجودة عالية تناسب مشاريعك.
                 </p>
                 <a href="voices.html" class="btn btn-primary my-3" title="تعرف على أصواتنا">
                   تعرف على أصواتنا
@@ -343,13 +293,11 @@
             <div class="col-md-4 col-12 my-4">
               <div class="services-item bg-dark">
                 <div class="icon">
-                  <!-- Updated icon to a studio building icon -->
                   <img src="./img/services/studio.png" alt="أيقونة تأجير الاستوديو" loading="lazy" />
                 </div>
                 <h4>تأجير الاستوديو</h4>
                 <p class="description two-line">
-                  احجز استوديو البودكاست الخاص بنا المجهز بأحدث التقنيات
-                  الصوتية لضمان تسجيل محتوى احترافي مع دعم فني مستمر.
+                  احجز استوديو البودكاست الخاص بنا المجهز بأحدث التقنيات الصوتية لضمان تسجيل محتوى احترافي مع دعم فني مستمر.
                 </p>
                 <a href="booking.html" class="btn btn-primary my-3" title="احجز الآن">
                   احجز الآن
@@ -358,26 +306,34 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Call-to-action button for exploring more services -->
+              <a href="services.html" class="btn btn-secondary mt-5 m-auto" title="استكشف خدماتنا" aria-label="استكشف خدماتنا">
+                انطلق الآن
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Most Listened Section -->
-  <section class="most-listened section bg-dark" aria-labelledby="most-listened-title">
+  <section class="most-listened section bg-dark" aria-label="أشهر الحلقات">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <!-- Section header with a creative title and updated call-to-action -->
-          <header class="d-flex justify-content-between align-items-center">
+          <!-- Section header with creative title and subtitle -->
+          <header class="header text-center">
             <h4 id="most-listened-title" class="title">
-              <i class="fas fa-headphones-alt"></i>
+              <i class="fas fa-headphones-alt" aria-hidden="true"></i>
               أروع الحلقات
             </h4>
-            <a href="#" class="btn btn-secondary" title="استكشف المزيد من الحلقات">
-              استمع واكتشف
-              <i class="fas fa-microphone-alt"></i>
-            </a>
+            <p class="subtitle">
+              اكتشف الحلقات التي تأسر القلوب وتُلهم المستمعين، حيث نعرض أفضل الأعمال الصوتية المميزة.
+            </p>
           </header>
         </div>
         <ul class="list-listened">
@@ -387,20 +343,19 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح" loading="lazy" />
+                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
-                    <!-- Additional podcast details can be added below (optional) -->
-                    <!-- <p class="episode-detail"><i class="fas fa-clock"></i> 41 دقيقة</p> -->
+               
                   </div>
                 </a>
               </li>
@@ -410,20 +365,19 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح" loading="lazy" />
+                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
-                    <!-- Uncomment and modify the next line to add more podcast details -->
-                    <!-- <p class="episode-detail"><i class="fas fa-calendar-alt"></i> 21 ديسمبر 2024</p> -->
+               
                   </div>
                 </a>
               </li>
@@ -433,17 +387,17 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح" loading="lazy" />
+                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
                   </div>
                 </a>
@@ -454,17 +408,17 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح" loading="lazy" />
+                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
                   </div>
                 </a>
@@ -475,18 +429,17 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/abo-zeid.png" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح"
-                      loading="lazy" />
+                    <img src="./img/podcast/2.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
                   </div>
                 </a>
@@ -497,18 +450,17 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/abo-zeid.png" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح"
-                      loading="lazy" />
+                    <img src="./img/podcast/2.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
                   </div>
                 </a>
@@ -519,18 +471,17 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/abo-zeid.png" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح"
-                      loading="lazy" />
+                    <img src="./img/podcast/2.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
                   </div>
                 </a>
@@ -541,22 +492,29 @@
               <li class="list-item">
                 <a href="#" class="item d-flex">
                   <div class="image">
-                    <img src="./img/podcast/abo-zeid.png" alt="غلاف بودكاست يا حب البرغل من برنامج اللويح"
-                      loading="lazy" />
+                    <img src="./img/podcast/2.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي" loading="lazy" />
                   </div>
                   <div class="body-card">
                     <h3 class="episode-name">
-                      <i class="fas fa-music"></i> يا حب البرغل
+                      <i class="fas fa-music" aria-hidden="true"></i> يا حب البرغل
                     </h3>
                     <p class="podcust-name">
-                      <i class="fas fa-podcast"></i> برنامج اللويح
+                      <i class="fas fa-podcast" aria-hidden="true"></i> برنامج اللويح
                     </p>
                     <p class="presenter-name">
-                      <i class="fas fa-user"></i> تقديم: عمار أبو حسين
+                      <i class="fas fa-user" aria-hidden="true"></i> تقديم: عمار أبو حسين
                     </p>
                   </div>
                 </a>
               </li>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <a href="/podcasts" class="btn btn-secondary mt-5 m-auto" title="استكشف المزيد من الحلقات" aria-label="استكشف المزيد من الحلقات">
+                استكشف المزيد
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </ul>
@@ -564,423 +522,35 @@
     </div>
   </section>
 
-  <!-- Our Suggestions Section (المضاف حديثًا) -->
-  <section class="our-suggestions" aria-labelledby="suggestions-title">
-    <div class="container">
-      <div class="row">
-        <!-- Section Header -->
-        <div class="col-md-12">
-          <header class="d-flex justify-content-between align-items-center">
-            <h4 id="suggestions-title" class="title-section">
-              <i class="fas fa-headphones-alt" aria-hidden="true"></i> المضاف حديثًا
-            </h4>
-            <a href="/podcasts" class="btn btn-secondary" title="استكشف المزيد من مقترحاتنا"
-              aria-label="استكشف المزيد من مقترحاتنا">
-              اسكتشف المزيد
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            </a>
-          </header>
-        </div>
-
-        <!-- Carousel Container -->
-        <div class="col-md-12">
-          <div class="owl-suggestions owl-carousel owl-theme" role="list">
-
-            <!-- Podcast Card 1 -->
-            <div class="item" role="listitem">
-              <img src="img/podcast/1.webp" alt="غلاف بودكاست اللويح 2 - التراث الفلسطيني" loading="lazy" />
-              <div class="content">
-                <!-- Category Badges with Distinct Colors -->
-                <div class="episode-badges">
-                  <span class="badge badge-category badge-heritage">تراث</span>
-                  <span class="badge badge-category badge-music">أغاني</span>
-                  <span class="badge badge-category badge-story">قصص</span>
-                </div>
-                <h5>بودكاست اللويح 2</h5>
-                <p>
-                  "اللويح" هو بودكاست فلسطيني يجمع قصص وأغاني شعبية من التراث الفلسطيني. نغوص في أعماق الحكايات المنسية
-                  ونفهم علاقتنا بجذورنا وتاريخنا.
-                </p>
-
-                <!-- Episode Additional Details -->
-                <div class="episode-details">
-                  <p><i class="fas fa-user" aria-hidden="true"></i> عمار أبو حسين</p>
-                  <p><i class="fas fa-calendar-alt" aria-hidden="true"></i> 21 ديسمبر 2024</p>
-                  <p><i class="fas fa-film" aria-hidden="true"></i> 12 حلقات</p>
-                </div>
-                <!-- Platform Icons -->
-                <div class="platform-icons">
-                  <a href="#" title="استمع الآن" aria-label="استمع الآن">
-                    <i class="fas fa-play" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://soundcloud.com" target="_blank" title="استمع على SoundCloud"
-                    aria-label="استمع على SoundCloud">
-                    <i class="fab fa-soundcloud"></i>
-                  </a>
-                  <a href="https://spotify.com" target="_blank" title="استمع على Spotify"
-                    aria-label="استمع على Spotify">
-                    <i class="fab fa-spotify"></i>
-                  </a>
-                  <a href="https://apple.com/apple-podcasts" target="_blank" title="استمع على Apple Podcasts"
-                    aria-label="استمع على Apple Podcasts">
-                    <i class="fab fa-apple"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Podcast Card 2 -->
-            <div class="item" role="listitem">
-              <img src="img/podcast/2.webp" alt="غلاف بودكاست مطبات - قصص يومية من فلسطين" loading="lazy" />
-              <div class="content">
-                <!-- Category Badges with Distinct Colors -->
-                <div class="episode-badges">
-                  <span class="badge badge-category badge-life">حياة</span>
-                  <span class="badge badge-category badge-challenge">تحديات</span>
-                  <span class="badge badge-category badge-real">واقعية</span>
-                </div>
-                <h5>بودكاست مطبات</h5>
-                <p>
-                  "مطبات" هو بودكاست فلسطيني بيحكي عن تفاصيل الحياة اليومية والمعيشة في فلسطين. بنناقش تحديات التنقل
-                  والمعابر، والمسافات الطويلة اللي بتمثل جزء من صمودنا
-                </p>
-
-                <!-- Episode Additional Details -->
-                <div class="episode-details">
-                  <p><i class="fas fa-user" aria-hidden="true"></i> عمار أبو حسين</p>
-                  <p><i class="fas fa-calendar-alt" aria-hidden="true"></i> 22 ديسمبر 2024</p>
-                  <p><i class="fas fa-film" aria-hidden="true"></i> 8 حلقات</p>
-                </div>
-                <!-- Platform Icons -->
-                <div class="platform-icons">
-                  <a href="#" title="استمع الآن" aria-label="استمع الآن">
-                    <i class="fas fa-play" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://soundcloud.com" target="_blank" title="استمع على SoundCloud"
-                    aria-label="استمع على SoundCloud">
-                    <i class="fab fa-soundcloud"></i>
-                  </a>
-                  <a href="https://spotify.com" target="_blank" title="استمع على Spotify"
-                    aria-label="استمع على Spotify">
-                    <i class="fab fa-spotify"></i>
-                  </a>
-                  <a href="https://apple.com/apple-podcasts" target="_blank" title="استمع على Apple Podcasts"
-                    aria-label="استمع على Apple Podcasts">
-                    <i class="fab fa-apple"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Podcast Card 3 -->
-            <div class="item" role="listitem">
-              <img src="img/podcast/3.webp" alt="غلاف بودكاست بطولات - قصص أبطال ملهمين" loading="lazy" />
-              <div class="content">
-                <!-- Category Badges with Distinct Colors -->
-                <div class="episode-badges">
-                  <span class="badge badge-category badge-hero">أبطال</span>
-                  <span class="badge badge-category badge-inspiration">إلهام</span>
-                  <span class="badge badge-category badge-leadership">قيادة</span>
-                </div>
-                <h5>بودكاست بطولات</h5>
-                <!-- Description now clamped to four lines using the 'four-line' class -->
-                <p class="four-line">
-                  "بطولات" هو بودكاست فلسطيني بيسلط الضوء على قصص أبطال واجهوا التحديات وصنعوا الفرق. بنروي حكايات ملهمة
-                  عن القيادة والصمود والإبداع، ونعكس قوة الإنسان الفلسطيني.
-                </p>
-
-                <!-- Episode Additional Details -->
-                <div class="episode-details">
-                  <p><i class="fas fa-user" aria-hidden="true"></i> عمار أبو حسين</p>
-                  <p><i class="fas fa-calendar-alt" aria-hidden="true"></i> 23 ديسمبر 2024</p>
-                  <p><i class="fas fa-film" aria-hidden="true"></i> 15 حلقات</p>
-                </div>
-                <!-- Platform Icons -->
-                <div class="platform-icons">
-                  <a href="#" title="استمع الآن" aria-label="استمع الآن">
-                    <i class="fas fa-play" aria-hidden="true"></i>
-                  </a>
-                  <a href="https://soundcloud.com" target="_blank" title="استمع على SoundCloud"
-                    aria-label="استمع على SoundCloud">
-                    <i class="fab fa-soundcloud"></i>
-                  </a>
-                  <a href="https://spotify.com" target="_blank" title="استمع على Spotify"
-                    aria-label="استمع على Spotify">
-                    <i class="fab fa-spotify"></i>
-                  </a>
-                  <a href="https://apple.com/apple-podcasts" target="_blank" title="استمع على Apple Podcasts"
-                    aria-label="استمع على Apple Podcasts">
-                    <i class="fab fa-apple"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- News Section Slider -->
-  <section class="blog section bg-dark">
-    <div class="container">
-      <div class="row">
-        <!-- Section Header -->
-        <div class="col-md-12">
-          <header class="d-flex justify-content-between align-items-center">
-            <h4 class="title">
-              <i class="fas fa-newspaper" aria-hidden="true"></i>
-              استكشف آخر الأخبار 
-            </h4>
-            <a href="#" class="btn btn-secondary" title="اقرأ المزيد من الأخبار" aria-label="اقرأ المزيد من الأخبار">
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-              المزيد من الأخبار
-            </a>
-          </header>
-        </div>
-        <!-- Owl Carousel Slider Container -->
-        <div class="col-md-12">
-          <div class="owl-blog owl-carousel owl-theme" role="list">
-            <!-- News Item 1 -->
-            <div class="item" role="listitem">
-              <div class="blog-item">
-                <div class="image-container">
-                  <img src="./img/blog-01.jpg" alt="صورة الخبر - تحديث جديد لمنصة حنجرة" loading="lazy" />
-                  <span class="badge">أخبار</span>
-                </div>
-                <div class="blog-info">
-                  <h3>إطلاق تحديث جديد لمنصة حنجرة</h3>
-                  <p>
-                    أعلنت منصة حنجرة عن إطلاق تحديث جديد يشمل تحسينات على تجربة المستخدم وتعزيز جودة المحتوى الصوتي، مما
-                    يدعم مسيرة .
-                  </p>
-                  <!-- News Details -->
-                  <div class="blog-details">
-                    <span class="blog-author"><i class="fas fa-user" aria-hidden="true"></i> فريق حنجرة</span>
-                    <span class="blog-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 25 ديسمبر 2024</span>
-                    <span class="blog-readtime"><i class="fas fa-clock" aria-hidden="true"></i> 3 دقائق قراءة</span>
-                  </div>
-                  <a href="#" class="btn btn-outline-primary " title="اقرأ المزيد">اقرأ المزيد <i
-                      class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <!-- News Item 2 -->
-            <div class="item" role="listitem">
-              <div class="blog-item">
-                <div class="image-container">
-                  <img src="./img/blog-01.jpg" alt="صورة الخبر - شراكة استراتيجية جديدة" loading="lazy" />
-                  <span class="badge">شراكة</span>
-                </div>
-                <div class="blog-info">
-                  <h3>شراكة استراتيجية مع كبرى الشركات الإعلامية</h3>
-                  <p>
-                    تم التوقيع على اتفاقية شراكة استراتيجية تهدف إلى تعزيز البث وتوسيع قاعدة المستمعين، مما يفتح آفاقاً
-                    جديدة للتطوير الإعلامي.
-                  </p>
-                  <!-- News Details -->
-                  <div class="blog-details">
-                    <span class="blog-author"><i class="fas fa-user" aria-hidden="true"></i> مدير الشراكات</span>
-                    <span class="blog-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 24 ديسمبر 2024</span>
-                    <span class="blog-readtime"><i class="fas fa-clock" aria-hidden="true"></i> 4 دقائق قراءة</span>
-                  </div>
-                  <a href="#" class="btn  btn-outline-primary" title="اقرأ المزيد">اقرأ المزيد <i
-                      class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-            <!-- News Item 3 -->
-            <div class="item" role="listitem">
-              <div class="blog-item">
-                <div class="image-container">
-                  <img src="./img/blog-01.jpg" alt="صورة الخبر - تجربة بث مباشر مبتكرة" loading="lazy" />
-                  <span class="badge">ابتكار</span>
-                </div>
-                <div class="blog-info">
-                  <h3>تجربة بث مباشر تفاعلية جديدة</h3>
-                  <p>
-                    تقدم منصة حنجرة تجربة بث مباشر تجمع بين الإبداع والتكنولوجيا لتقديم محتوى إعلامي فريد يواكب التطورات
-                    الحديثة في البث.
-                  </p>
-                  <!-- News Details -->
-                  <div class="blog-details">
-                    <span class="blog-author"><i class="fas fa-user" aria-hidden="true"></i> فريق التقنية</span>
-                    <span class="blog-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 23 ديسمبر 2024</span>
-                    <span class="blog-readtime"><i class="fas fa-clock" aria-hidden="true"></i> 5 دقائق قراءة</span>
-                  </div>
-                  <a href="#" class="btn  btn-outline-primary" title="اقرأ المزيد">اقرأ المزيد <i
-                      class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Popular Section -->
-  <section class="popular section bg-dark" aria-label="أشهر الحلقات">
-    <div class="container">
-      <div class="row">
-        <!-- Section Header -->
-        <div class="col-md-12">
-          <header class="d-flex justify-content-between align-items-center">
-            <h4 class="title">
-              <i class="fas fa-headphones-alt" aria-hidden="true"></i>
-              أشهر الحلقات 
-            </h4>
-            <a href="#" class="btn btn-secondary" title="استكشف المزيد من الحلقات"
-              aria-label="استكشف المزيد من الحلقات">
-              استكشف المزيد
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            </a>
-          </header>
-        </div>
-        <div class="popular-content">
-          <div class="row">
-            <!-- Popular Item 1 -->
-            <div class="col-12">
-              <div class="popular-item d-flex justify-content-between align-items-center">
-                <div class="popular-info d-flex align-items-center">
-                  <div class="popular-img">
-                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست - كيفية نجاح العلاقات مع ياسر الحزيمي"
-                      loading="lazy">
-                  </div>
-                  <div class="popular-desc ms-3">
-                    <h4>كيفية نجاح العلاقات مع ياسر الحزيمي</h4>
-                    <p class="episode-title">بودكاست اللويح</p>
-                    <!-- Category Badges -->
-                    <div class="badge-group">
-                      <span class="badge badge-custom badge-interview">حواري</span>
-                      <span class="badge badge-custom badge-tips">نصائح</span>
-                      <span class="badge badge-custom badge-success">نجاح</span>
-                    </div>
-                    <!-- Episode Details -->
-                    <div class="episode-details">
-                      <span class="detail"><i class="fas fa-user" aria-hidden="true"></i> ياسر الحزيمي</span>
-                      <span class="detail"><i class="fas fa-clock" aria-hidden="true"></i> 40 دقيقة</span>
-                      <span class="detail"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 21 ديسمبر 2024</span>
-                      <span class="detail"><i class="fas fa-play" aria-hidden="true"></i> 12,000 استماع</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="popular-play-btn">
-                  <a href="#" title="تشغيل الحلقة" aria-label="تشغيل الحلقة">
-                    <i class="fas fa-play-circle fa-2x" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Popular Item 2 -->
-            <div class="col-12">
-              <div class="popular-item d-flex justify-content-between align-items-center">
-                <div class="popular-info d-flex align-items-center">
-                  <div class="popular-img">
-                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست - أسرار النجاح في عالم البودكاست" loading="lazy">
-                  </div>
-                  <div class="popular-desc ms-3">
-                    <h4>أسرار النجاح في عالم البودكاست</h4>
-                    <p class="episode-title">بودكاست الإبداع</p>
-                    <!-- Category Badges -->
-                    <div class="badge-group">
-                      <span class="badge badge-custom badge-interview">حواري</span>
-                      <span class="badge badge-custom badge-strategy">استراتيجية</span>
-                      <span class="badge badge-custom badge-insight">تحليل</span>
-                    </div>
-                    <!-- Episode Details -->
-                    <div class="episode-details">
-                      <span class="detail"><i class="fas fa-user" aria-hidden="true"></i> سامي العلي</span>
-                      <span class="detail"><i class="fas fa-clock" aria-hidden="true"></i> 35 دقيقة</span>
-                      <span class="detail"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 20 ديسمبر 2024</span>
-                      <span class="detail"><i class="fas fa-play" aria-hidden="true"></i> 8,000 استماع</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="popular-play-btn">
-                  <a href="#" title="تشغيل الحلقة" aria-label="تشغيل الحلقة">
-                    <i class="fas fa-play-circle fa-2x" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Popular Item 3 -->
-            <div class="col-12">
-              <div class="popular-item d-flex justify-content-between align-items-center">
-                <div class="popular-info d-flex align-items-center">
-                  <div class="popular-img">
-                    <img src="./img/podcast/1.webp" alt="غلاف بودكاست - مفاتيح النجاح في العلاقات" loading="lazy">
-                  </div>
-                  <div class="popular-desc ms-3">
-                    <h4>مفاتيح النجاح في العلاقات</h4>
-                    <p class="episode-title">بودكاست الرواد</p>
-                    <!-- Category Badges -->
-                    <div class="badge-group">
-                      <span class="badge badge-custom badge-interview">حواري</span>
-                      <span class="badge badge-custom badge-advice">نصائح</span>
-                      <span class="badge badge-custom badge-trend">رائج</span>
-                    </div>
-                    <!-- Episode Details -->
-                    <div class="episode-details">
-                      <span class="detail"><i class="fas fa-user" aria-hidden="true"></i> مريم الزعبي</span>
-                      <span class="detail"><i class="fas fa-clock" aria-hidden="true"></i> 50 دقيقة</span>
-                      <span class="detail"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 19 ديسمبر 2024</span>
-                      <span class="detail"><i class="fas fa-play" aria-hidden="true"></i> 15,000 استماع</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="popular-play-btn">
-                  <a href="#" title="تشغيل الحلقة" aria-label="تشغيل الحلقة">
-                    <i class="fas fa-play-circle fa-2x" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
   <!-- Upcoming Events Section -->
   <section class="upcoming-events section bg-light" aria-labelledby="events-title">
     <div class="container">
       <div class="row">
         <!-- Section Header -->
         <div class="col-md-12">
-          <header class="d-flex justify-content-between align-items-center">
+          <header class="header text-center">
             <h4 id="events-title" class="title">
-              <i class="fas fa-calendar-alt" aria-hidden="true"></i> أحداث قادمة
+              <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+              أحداث قادمة
             </h4>
-            <a href="/events" class="btn btn-secondary" title="استكشف الأحداث القادمة"
-              aria-label="استكشف الأحداث القادمة">
-              المزيد من الأحداث
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-            </a>
+            <p class="upcoming-subtitle subtitle">
+              استعد لاكتشاف فعاليات تميزك وتجعل من تجربتك لحظات لا تُنسى
+            </p>
           </header>
         </div>
-
         <!-- Slider Container using Owl Carousel -->
         <div class="col-md-12">
           <div class="owl-events owl-carousel owl-theme" role="list">
-
             <!-- Event Item 1 -->
             <div class="item" role="listitem">
               <div class="event-item">
                 <div class="event-image">
-                  <img src="img/events/event-01.jpg" alt="ورشة عمل بودكاست متقدمة" loading="lazy">
+                  <img src="img/events/event-01.webp" alt="ورشة عمل بودكاست متقدمة" loading="lazy">
                 </div>
                 <div class="event-info">
                   <h5>ورشة عمل بودكاست متقدمة</h5>
                   <p class="event-desc">
-                    انضم إلينا لتعلم أحدث أساليب الإنتاج والتحرير مع خبراء البودكاست، وتطوير مهاراتك لتكون صانع محتوى
-                    مميز.
+                    انضم إلينا لتعلم أحدث أساليب الإنتاج والتحرير مع خبراء البودكاست، وتطوير مهاراتك لتكون صانع محتوى مميز.
                   </p>
                   <!-- Category Badges -->
                   <div class="event-badges">
@@ -995,25 +565,22 @@
                     <span class="detail"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 05 يناير 2025</span>
                     <span class="detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> غزة</span>
                   </div>
-                  <a href="/events/advanced-podcast-workshop" class="btn btn-primary event-btn" title="سجل الآن"
-                    aria-label="سجل الآن">
+                  <a href="/events/advanced-podcast-workshop" class="btn btn-primary event-btn" title="سجل الآن" aria-label="سجل الآن">
                     سجل الآن <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
-
             <!-- Event Item 2 -->
             <div class="item" role="listitem">
               <div class="event-item">
                 <div class="event-image">
-                  <img src="img/events/event-02.jpg" alt="ندوة إعلامية حول المحتوى الصوتي" loading="lazy">
+                  <img src="img/events/event-02.webp" alt="ندوة إعلامية حول المحتوى الصوتي" loading="lazy">
                 </div>
                 <div class="event-info">
                   <h5>ندوة إعلامية حول المحتوى الصوتي</h5>
                   <p class="event-desc">
-                    انضم إلى جلسة نقاشية مع خبراء الإعلام لتعزيز فهمك لدور المحتوى الصوتي في التحول الرقمي وتطوير
-                    استراتيجيات جديدة.
+                    انضم إلى جلسة نقاشية مع خبراء الإعلام لتعزيز فهمك لدور المحتوى الصوتي في التحول الرقمي وتطوير استراتيجيات جديدة.
                   </p>
                   <!-- Category Badges -->
                   <div class="event-badges">
@@ -1028,19 +595,18 @@
                     <span class="detail"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 12 يناير 2025</span>
                     <span class="detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> رام الله</span>
                   </div>
-                  <a href="/events/media-discussion" class="btn btn-primary event-btn" title="سجل الآن"
-                    aria-label="سجل الآن">
+                  <a href="/events/media-discussion" class="btn btn-primary event-btn" title="سجل الآن" aria-label="سجل الآن">
                     سجل الآن <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
-
             <!-- Event Item 3 -->
             <div class="item" role="listitem">
               <div class="event-item">
                 <div class="event-image">
-                  <img src="img/events/event-03.jpg" alt="ملتقى المبدعين الصوتيين" loading="lazy">
+                  <img src="img/events/event-03.webp" alt="ملتقى المبدعين الصوتيين" loading="lazy">
+                  
                 </div>
                 <div class="event-info">
                   <h5>ملتقى المبدعين الصوتيين</h5>
@@ -1060,365 +626,615 @@
                     <span class="detail"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 20 يناير 2025</span>
                     <span class="detail"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> القدس</span>
                   </div>
-                  <a href="/events/creative-meetup" class="btn btn-primary event-btn" title="سجل الآن"
-                    aria-label="سجل الآن">
+                  <a href="/events/creative-meetup" class="btn btn-primary event-btn" title="سجل الآن" aria-label="سجل الآن">
                     سجل الآن <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
-
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <a href="/events" class="btn btn-secondary mt-5 m-auto" title="استكشف المزيد من الأحداث" aria-label="استكشف المزيد من الأحداث">
+                المزيد من الأحداث
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-<!-- Our Partners Section -->
-<section class="partners-section section bg-dark" aria-label="شركاؤنا المميزون">
-  <div class="container">
-    
-    <header class="partners-header text-center mb-5">
-      <h4 class="title text-center justify-content-center">
-        شركاؤنا <i class="fas fa-handshake" aria-hidden="true"></i>
-      </h4>
-      <p class="partners-subtitle subtitle">ندعم من قبل أفضل العلامات التجارية</p>
-    </header>
-    <!-- Owl Carousel Slider for Partner Logos -->
-    <div class="partners-slider owl-carousel owl-theme" role="list">
-      <!-- Partner Item 1 -->
-      <div class="partner-item" role="listitem">
-        <div class="partner-logo">
-          <img src="./img/customers-logo-01.png" alt="شعار الشريك 1" loading="lazy">
+  <!-- Our Partners Section -->
+  <section class="partners-section section bg-dark" aria-label="شركاؤنا المميزون">
+    <div class="container">
+      <header class="header partners-header text-center">
+        <h4 class="title text-center">
+          <i class="fas fa-handshake" aria-hidden="true"></i>
+          شركاؤنا
+        </h4>
+        <p class="partners-subtitle subtitle">ندعم من قبل أفضل العلامات التجارية</p>
+      </header>
+      <!-- Owl Carousel Slider for Partner Logos -->
+      <div class="partners-slider owl-carousel owl-theme" role="list">
+        <!-- Partner Item 1 -->
+        <div class="partner-item" role="listitem">
+          <div class="partner-logo">
+            <img src="./img/customers-logo-01.png" alt="شعار الشريك 1" loading="lazy">
+          </div>
         </div>
-      </div>
-      <!-- Partner Item 2 -->
-      <div class="partner-item" role="listitem">
-        <div class="partner-logo">
-          <img src="./img/customers-logo-01.png" alt="شعار الشريك 2" loading="lazy">
+        <!-- Partner Item 2 -->
+        <div class="partner-item" role="listitem">
+          <div class="partner-logo">
+            <img src="./img/customers-logo-01.png" alt="شعار الشريك 2" loading="lazy">
+          </div>
         </div>
-      </div>
-      <!-- Partner Item 3 -->
-      <div class="partner-item" role="listitem">
-        <div class="partner-logo">
-          <img src="./img/customers-logo-01.png" alt="شعار الشريك 3" loading="lazy">
+        <!-- Partner Item 3 -->
+        <div class="partner-item" role="listitem">
+          <div class="partner-logo">
+            <img src="./img/customers-logo-01.png" alt="شعار الشريك 3" loading="lazy">
+          </div>
         </div>
-      </div>
-      <!-- Partner Item 4 -->
-      <div class="partner-item" role="listitem">
-        <div class="partner-logo">
-          <img src="./img/customers-logo-01.png" alt="شعار الشريك 4" loading="lazy">
+        <!-- Partner Item 4 -->
+        <div class="partner-item" role="listitem">
+          <div class="partner-logo">
+            <img src="./img/customers-logo-01.png" alt="شعار الشريك 4" loading="lazy">
+          </div>
         </div>
-      </div>
-      <!-- Partner Item 5 -->
-      <div class="partner-item" role="listitem">
-        <div class="partner-logo">
-          <img src="./img/customers-logo-01.png" alt="شعار الشريك 5" loading="lazy">
+        <!-- Partner Item 5 -->
+        <div class="partner-item" role="listitem">
+          <div class="partner-logo">
+            <img src="./img/customers-logo-01.png" alt="شعار الشريك 5" loading="lazy">
+          </div>
         </div>
-      </div>
-      <!-- Partner Item 6 -->
-      <div class="partner-item" role="listitem">
-        <div class="partner-logo">
-          <img src="./img/customers-logo-01.png" alt="شعار الشريك 6" loading="lazy">
+        <!-- Partner Item 6 -->
+        <div class="partner-item" role="listitem">
+          <div class="partner-logo">
+            <img src="./img/customers-logo-01.png" alt="شعار الشريك 6" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Statistics Section -->
+  <section class="statistics-section section bg-light" aria-label="إحصائيات المنصة">
+    <div class="container">
+      <!-- Section Header -->
+      <header class="header stats-header text-center">
+        <h2 class="title text-center">
+          <i class="fas fa-chart-line" aria-hidden="true"></i>
+          إحصائيات المنصة
+        </h2>
+        <p class="stats-subtitle subtitle">نحن نفخر بأرقامنا وإنجازاتنا</p>
+      </header>
+      <div class="stats-wrapper">
+        <!-- Statistic Item 1: Listeners -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <img src="./img/icons/deaf.png" alt="أيقونة المستمعين" loading="lazy">
+          </div>
+          <h2 class="stat-number" data-count="1100">0</h2>
+          <p class="stat-label">مستمعين</p>
+        </div>
+        <!-- Statistic Item 2: Content Creators -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <img src="./img/icons/podcast.png" alt="أيقونة مقدمي المحتوى" loading="lazy">
+          </div>
+          <h2 class="stat-number" data-count="1200">0</h2>
+          <p class="stat-label">مقدمي المحتوى</p>
+        </div>
+        <!-- Statistic Item 3: Live Events -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <img src="./img/icons/calendar.png" alt="أيقونة الأحداث المباشرة" loading="lazy">
+          </div>
+          <h2 class="stat-number" data-count="15">0</h2>
+          <p class="stat-label">أحداث مباشرة</p>
+        </div>
+        <!-- Statistic Item 4: Episodes Broadcasted -->
+        <div class="stat-item">
+          <div class="stat-icon">
+            <img src="./img/icons/chapter.png" alt="أيقونة الحلقات المُبثقة" loading="lazy">
+          </div>
+          <h2 class="stat-number" data-count="1500">0</h2>
+          <p class="stat-label">حلقة تم بثها</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Statistics Section -->
-<section class="statistics-section section bg-light" aria-label="إحصائيات المنصة">
+  <!-- Team Section Slider -->
+<section class="team-section bg-dark" aria-label="فريق حنجرة">
   <div class="container">
     <!-- Section Header -->
-    <header class="stats-header text-center mb-5">
-      <h2 class="title text-center justify-content-center">
-        إحصائيات المنصة <i class="fas fa-chart-line" aria-hidden="true"></i>
+    <header class="header team-header text-center">
+      <h2 class="team-title title">
+        <i class="fas fa-headphones-alt" aria-hidden="true"></i>
+        فريق حنجرة
       </h2>
-      <p class="stats-subtitle subtitle">نحن نفخر بأرقامنا وإنجازاتنا</p>
+      <p class="team-subtitle subtitle">
+        تعرف على فريقنا المبدع الذي يقود نجاح المنصة
+      </p>
     </header>
-    <div class="stats-wrapper">
-      <!-- Statistic Item 1: Listeners -->
-      <div class="stat-item">
-        <div class="stat-icon">
-          <i class="fas fa-headphones" aria-hidden="true"></i>
+    <!-- Owl Carousel Slider Container for Team Members -->
+    <div class="owl-team owl-carousel owl-theme" role="list">
+      <!-- Team Member 1 -->
+      <div class="team-item" role="listitem">
+        <div class="team-card">
+          <div class="team-image">
+            <img src="./img/team/team-01.jpg" alt="علي محمد" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">علي محمد</h3>
+            <p class="team-role">مدير الإنتاج</p>
+            <p class="team-bio">
+              خبير إدارة الإنتاج الصوتي وتنسيق الأعمال الإبداعية مع أكثر من 10 سنوات من الخبرة.
+            </p>
+            <div class="team-social">
+              <a href="#" title="تابع علي على فيسبوك" aria-label="فيسبوك">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" title="تابع علي على تويتر" aria-label="تويتر">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" title="تابع علي على إنستجرام" aria-label="إنستجرام">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" title="تابع علي على لينكد إن" aria-label="لينكدإن">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <h2 class="stat-number" data-count="1100">0</h2>
-        <p class="stat-label">مستمعين</p>
       </div>
-      <!-- Statistic Item 2: Content Creators -->
-      <div class="stat-item">
-        <div class="stat-icon">
-          <i class="fas fa-microphone" aria-hidden="true"></i>
+      <!-- Team Member 2 -->
+      <div class="team-item" role="listitem">
+        <div class="team-card">
+          <div class="team-image">
+            <img src="./img/team/team-02.jpg" alt="سارة أحمد" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">سارة أحمد</h3>
+            <p class="team-role">المحررة الإبداعية</p>
+            <p class="team-bio">
+              متخصصة في خلق محتوى متميز من خلال مقالات وتقارير إبداعية تتماشى مع رؤية المنصة.
+            </p>
+            <div class="team-social">
+              <a href="#" title="تابعي سارة على فيسبوك" aria-label="فيسبوك">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" title="تابعي سارة على تويتر" aria-label="تويتر">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" title="تابعي سارة على إنستجرام" aria-label="إنستجرام">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" title="تابعي سارة على لينكد إن" aria-label="لينكدإن">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <h2 class="stat-number" data-count="1200">0</h2>
-        <p class="stat-label">مقدمي المحتوى</p>
       </div>
-      <!-- Statistic Item 3: Live Events -->
-      <div class="stat-item">
-        <div class="stat-icon">
-          <i class="fas fa-video" aria-hidden="true"></i>
+      <!-- Team Member 3 -->
+      <div class="team-item" role="listitem">
+        <div class="team-card">
+          <div class="team-image">
+            <img src="./img/team/team-03.jpg" alt="مازن خالد" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">مازن خالد</h3>
+            <p class="team-role">مطور تقني</p>
+            <p class="team-bio">
+              يعمل على تطوير وصيانة البنية التحتية التقنية للمنصة، ويمتلك خبرة واسعة في البرمجة والتقنيات الحديثة.
+            </p>
+            <div class="team-social">
+              <a href="#" title="تابع مازن على فيسبوك" aria-label="فيسبوك">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" title="تابع مازن على تويتر" aria-label="تويتر">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" title="تابع مازن على إنستجرام" aria-label="إنستجرام">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" title="تابع مازن على لينكد إن" aria-label="لينكدإن">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <h2 class="stat-number" data-count="15">0</h2>
-        <p class="stat-label">أحداث مباشرة</p>
       </div>
-      <!-- Statistic Item 4: Episodes Broadcasted -->
-      <div class="stat-item">
-        <div class="stat-icon">
-          <i class="fas fa-film" aria-hidden="true"></i>
+      <!-- Team Member 4 -->
+      <div class="team-item" role="listitem">
+        <div class="team-card">
+          <div class="team-image">
+            <img src="./img/team/team-04.jpg" alt="فاطمة سعيد" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">فاطمة سعيد</h3>
+            <p class="team-role">مديرة التسويق</p>
+            <p class="team-bio">
+              متخصصة في استراتيجيات التسويق الرقمي والإعلام الاجتماعي، تساهم في بناء العلامة التجارية وزيادة التفاعل.
+            </p>
+            <div class="team-social">
+              <a href="#" title="تابعي فاطمة على فيسبوك" aria-label="فيسبوك">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" title="تابعي فاطمة على تويتر" aria-label="تويتر">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" title="تابعي فاطمة على إنستجرام" aria-label="إنستجرام">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" title="تابعي فاطمة على لينكد إن" aria-label="لينكدإن">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <h2 class="stat-number" data-count="1500">0</h2>
-        <p class="stat-label">حلقة تم بثها</p>
       </div>
     </div>
   </div>
 </section>
 
-
-  <!-- Start Team -->
-  <section class="team section bg-dark">
+  <!-- Testimonials Section -->
+  <section class="testimonials-section bg-light" aria-label="آراء العملاء">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <header class="d-flex justify-content-between align-items-center">
-            <h4 id="suggestions-title" class="title">
-              فريق حنجرة <i class="fas fa-headphones-alt"></i>
-            </h4>
-            <a href="#" class="btn btn-secondary">
-              اسكتشف المزيد
-              <img src="./img/right-icon.png" alt="img" />
-            </a>
-          </header>
-        </div>
-        <div class="col-md-3 col-12">
-          <div class="team-card">
-            <img src="./img/team/team-01.jpg" alt="team" />
+      <!-- Section Header -->
+      <header class="testimonials-header text-center mb-5">
+        <h2 class="testimonials-title">
+          <i class="fas fa-quote-left" aria-hidden="true"></i>
+          آراء عملائنا 
+        </h2>
+        <p class="testimonials-subtitle">
+          اكتشف ما يقوله عملاؤنا عن تجربتهم مع منصة حنجرة
+        </p>
+      </header>
+      <!-- Owl Carousel Slider for Testimonials -->
+      <div class="owl-testimonials owl-carousel owl-theme" role="list">
+        <!-- Testimonial Card 1 -->
+        <div class="testimonial-card" role="listitem">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "لقد استخدمت منصة حنجرة لأكثر من عام، وكانت تجربتي مذهلة. الدعم الفني سريع، والخدمة عالية الجودة. أوصي بها بشدة لأي شخص يبحث عن الإبداع والاحتراف."
+            </p>
+            <div class="testimonial-rating">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <img class="author-photo" src="./img/team/team-01.jpg" alt="محمد أحمد" loading="lazy">
+            <h3 class="author-name">محمد أحمد</h3>
+            <p class="author-role">مطور مواقع</p>
+            <div class="author-social">
+              <a href="#" title="تابع محمد على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="تابع محمد على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="تابع محمد على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="تابع محمد على لينكد إن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 col-12">
-          <div class="team-card">
-            <img src="./img/team/team-02.jpg" alt="team" />
+        <!-- Testimonial Card 2 -->
+        <div class="testimonial-card" role="listitem">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "تجربتي مع حنجرة كانت رائعة، حيث تمكنت من الوصول إلى جمهور واسع والاستفادة من دعم فني متميز. المنصة تجمع بين الإبداع والتقنية لتقديم أفضل تجربة."
+            </p>
+            <div class="testimonial-rating">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <img class="author-photo" src="./img/team/team-02.jpg" alt="سارة أحمد" loading="lazy">
+            <h3 class="author-name">سارة أحمد</h3>
+            <p class="author-role">مديرة المحتوى</p>
+            <div class="author-social">
+              <a href="#" title="تابعي سارة على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="تابعي سارة على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="تابعي سارة على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="تابعي سارة على لينكد إن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 col-12">
-          <div class="team-card">
-            <img src="./img/team/team-01.jpg" alt="team" />
+        <!-- Testimonial Card 3 -->
+        <div class="testimonial-card" role="listitem">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "منصة حنجرة غيرت مفهوم البودكاست في العالم العربي. تجربة استثنائية في إنتاج المحتوى الصوتي، مع دعم فني متواصل واحترافية لا مثيل لها."
+            </p>
+            <div class="testimonial-rating">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <img class="author-photo" src="./img/team/team-03.jpg" alt="مازن خالد" loading="lazy">
+            <h3 class="author-name">مازن خالد</h3>
+            <p class="author-role">مبدع الصوت</p>
+            <div class="author-social">
+              <a href="#" title="تابع مازن على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="تابع مازن على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="تابع مازن على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="تابع مازن على لينكد إن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 col-12">
-          <div class="team-card">
-            <img src="./img/team/team-02.jpg" alt="team" />
+        <div class="testimonial-card" role="listitem">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              "منصة حنجرة غيرت مفهوم البودكاست في العالم العربي. تجربة استثنائية في إنتاج المحتوى الصوتي، مع دعم فني متواصل واحترافية لا مثيل لها."
+            </p>
+            <div class="testimonial-rating">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="testimonial-author">
+            <img class="author-photo" src="./img/team/team-03.jpg" alt="مازن خالد" loading="lazy">
+            <h3 class="author-name">مازن خالد</h3>
+            <p class="author-role">مبدع الصوت</p>
+            <div class="author-social">
+              <a href="#" title="تابع مازن على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="تابع مازن على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="تابع مازن على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+              <a href="#" title="تابع مازن على لينكد إن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Start Testimonils -->
-  <div class="testim section bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 mb-5">
-          <h1 class="text-center title">ما يقولوا عنا</h1>
-        </div>
-        <div class="col-md-4 col-12 mb-4">
-          <div class="testim-content">
-            <p>
-              ”لقد استخدمت خدمة استضافة الويب هذه لأكثر من عام وأنا معجب حقًا
-              بوقت التشغيل والدعم. لم يتوقف الموقع أبدًا وخدمة العملاء سريعة
-              دائمًا في المساعدة في أي مشكلات أواجهها. أوصي بها بشدة!“
-            </p>
-            <img src="./img/five-stars.png" alt="img" />
-            <img class="person" src="./img/team/team-01.jpg" alt="img" />
-            <h3>محمد أحمد</h3>
-            <p>مطور مواقع</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 mb-4">
-          <div class="testim-content">
-            <p>
-              ”لقد استخدمت خدمة استضافة الويب هذه لأكثر من عام وأنا معجب حقًا
-              بوقت التشغيل والدعم. لم يتوقف الموقع أبدًا وخدمة العملاء سريعة
-              دائمًا في المساعدة في أي مشكلات أواجهها. أوصي بها بشدة!“
-            </p>
-            <img src="./img/five-stars.png" alt="img" />
-            <img class="person" src="./img/team/team-01.jpg" alt="img" />
-            <h3>محمد أحمد</h3>
-            <p>مطور مواقع</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 mb-4">
-          <div class="testim-content">
-            <p>
-              ”لقد استخدمت خدمة استضافة الويب هذه لأكثر من عام وأنا معجب حقًا
-              بوقت التشغيل والدعم. لم يتوقف الموقع أبدًا وخدمة العملاء سريعة
-              دائمًا في المساعدة في أي مشكلات أواجهها. أوصي بها بشدة!“
-            </p>
-            <img src="./img/five-stars.png" alt="img" />
-            <img class="person" src="./img/team/team-01.jpg" alt="img" />
-            <h3>محمد أحمد</h3>
-            <p>مطور مواقع</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- Enhanced Footer Section -->
   <footer class="footer text-white" role="contentinfo" aria-label="Footer">
     <div class="container">
       <div class="row mb-4">
         <!-- Logo & Description -->
         <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
-          <!-- Logo with lazy loading for performance -->
           <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
           <p class="footer-description">
-            نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا
-            وتحقيق تجربة استماع مميزة.
+            نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا وتحقيق تجربة استماع مميزة.
           </p>
           <p class="mb-3">تابعنا على</p>
           <div class="social-icons">
-            <!-- Added descriptive titles and aria-labels for accessibility -->
             <a href="#" class="text-white mx-2" title="فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white mx-2" title="إنستجرام" aria-label="إنستجرام"><i
-                class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2" title="إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
             <a href="#" class="text-white mx-2" title="يوتيوب" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
             <a href="#" class="text-white mx-2" title="تيك توك" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
             <a href="#" class="text-white mx-2" title="تويتر" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
           </div>
         </div>
-
         <!-- Quick Links Section -->
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h5 class="footer-title mb-3">بودكاست</h5>
           <ul class="list-unstyled">
             <li>
               <a href="#" class="footer-link" title="الرئيسية">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                الرئيسية
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الرئيسية
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="الحلقات">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                الحلقات
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الحلقات
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="من نحن">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                من نحن
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> من نحن
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="الأخبار">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                الأخبار
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الأخبار
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="المدونة">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                المدونة
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> المدونة
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="تواصل معنا">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                تواصل معنا
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> تواصل معنا
               </a>
             </li>
           </ul>
         </div>
-
         <!-- Explore Section -->
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h5 class="footer-title mb-3">استكشف</h5>
           <ul class="list-unstyled">
             <li>
               <a href="#" class="footer-link" title="الأكثر شهرة">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                الأكثر شهرة
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الأكثر شهرة
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="مقترحاتنا">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                مقترحاتنا
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> مقترحاتنا
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="أشهر الحلقات">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                أشهر الحلقات
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> أشهر الحلقات
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="أشهر المقدمين">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                أشهر المقدمين
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> أشهر المقدمين
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="ما يقولوا عنا">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                ما يقولوا عنا
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> ما يقولوا عنا
               </a>
             </li>
             <li>
               <a href="#" class="footer-link" title="سياسة الخصوصية">
-                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" />
-                سياسة الخصوصية
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> سياسة الخصوصية
               </a>
             </li>
           </ul>
         </div>
-
-        <!-- Subscription and Contact Information Section -->
+        <!-- Subscription and Contact Section -->
         <div class="col-lg-5 col-md-6">
           <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
-          <p class="mb-3">
-            انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.
-          </p>
-          <!-- Newsletter subscription form with input group for better structure -->
+          <p class="mb-3">انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
+          <!-- Newsletter Subscription Form -->
           <form action="#" method="post" class="subscription-form" novalidate>
             <div class="input-group mb-3">
               <label for="footer-email" class="visually-hidden">البريد الإلكتروني</label>
-              <input type="email" id="footer-email" class="footer-email form-control"
-                placeholder="أدخل بريدك الإلكتروني" required />
+              <input type="email" id="footer-email" class="footer-email form-control" placeholder="أدخل بريدك الإلكتروني" required />
               <button class="btn btn-primary" type="submit" title="اشترك الآن">
-                اشترك
-                <img src="./img/right-icon.png" alt="أيقونة" class="ms-1" loading="lazy" />
+                اشترك <img src="./img/right-icon.png" alt="أيقونة" class="ms-1" loading="lazy" />
               </button>
             </div>
           </form>
-          <!-- Additional contact information to boost trust and provide quick access -->
+          <!-- Additional Contact Information -->
           <div class="contact-info mt-4">
             <p><i class="fas fa-phone-alt me-2"></i> هاتف: 123456789</p>
-            <p>
-              <i class="fas fa-envelope me-2"></i> بريد إلكتروني:
-              info@hanjara.ps
-            </p>
+            <p><i class="fas fa-envelope me-2"></i> بريد إلكتروني: info@hanjara.ps</p>
             <p><i class="fas fa-map-marker-alt me-2"></i> العنوان: فلسطين</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer Bottom with Copyright and Back-to-Top Link -->
+    <!-- Footer Bottom -->
     <div class="footer-bottom mt-4 text-center">
-      <p class="mb-0">
-        حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق محفوظة.
-      </p>
+      <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق محفوظة.</p>
     </div>
   </footer>
 
   <!-- Scripts -->
+  <!-- jQuery -->
   <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <!-- Owl Carousel JS -->
   <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <!-- Bootstrap Bundle -->
   <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <!-- Amplitude JS -->
   <script src="js/amplitude.min.js" type="text/javascript"></script>
   <script src="js/amplitude-custom.js" type="text/javascript"></script>
+  <!-- Custom Script -->
   <script src="js/script.js" type="text/javascript"></script>
-</body>
+<!-- Include GSAP and ScrollTrigger from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
+<script>
+  // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  /*--------------------------------------------------------------
+    Animate Header Elements on Scroll
+  --------------------------------------------------------------*/
+  // Fade in and slide up the header subtitle
+  gsap.from(".header-subtitle", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".header-home",
+      start: "top 70%", // When the header is 70% into view
+    }
+  });
+
+  // Fade in and slide down the header title
+  gsap.from(".header-title", {
+    opacity: 0,
+    y: -50,
+    duration: 1,
+    delay: 0.3,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".header-home",
+      start: "top 70%",
+    }
+  });
+
+  /*--------------------------------------------------------------
+    Stagger Animation for Section Containers
+  --------------------------------------------------------------*/
+  // Animate each child of section containers with a stagger effect
+  gsap.utils.toArray(".section .container").forEach((container) => {
+    gsap.from(container.children, {
+      opacity: 0,
+      y: 30,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: container,
+        start: "top 80%",
+      }
+    });
+  });
+
+  /*--------------------------------------------------------------
+    Animate Testimonial Cards
+  --------------------------------------------------------------*/
+  // Scale and fade in testimonial cards with a subtle bounce
+  gsap.from(".testimonial-card", {
+    opacity: 0,
+    scale: 0.9,
+    duration: 1,
+    ease: "back.out(1.7)",
+    scrollTrigger: {
+      trigger: ".testimonials-section",
+      start: "top 75%",
+    }
+  });
+
+  /*--------------------------------------------------------------
+    Animate Service Items
+  --------------------------------------------------------------*/
+  // Rotate slightly and fade in service cards for a creative effect
+  gsap.from(".services-item", {
+    opacity: 0,
+    rotation: 10,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".our-services",
+      start: "top 80%",
+    }
+  });
+
+  /*--------------------------------------------------------------
+    Animate Popular Items
+  --------------------------------------------------------------*/
+  // Slide in popular items from the left and scale up slightly
+  gsap.from(".popular-item", {
+    opacity: 0,
+    x: -50,
+    scale: 0.95,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".popular",
+      start: "top 80%",
+    }
+  });
+</script>
+
+</body>
 </html>

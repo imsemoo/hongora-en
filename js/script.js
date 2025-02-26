@@ -1,69 +1,57 @@
 $(document).ready(function () {
-  // عند التمرير
+  // Fixed Navbar: Toggle 'fixed-nav' class when scrolling past 50px
   $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 50) {
-      $(".navbar").addClass("fixed-nav");
-    } else {
-      $(".navbar").removeClass("fixed-nav");
-    }
+    $(".navbar").toggleClass("fixed-nav", $(window).scrollTop() > 50);
   });
 
-
+  // Counter Animation: Animate each .stat-number from 0 to its data-count value
   $('.stat-number').each(function () {
     var $this = $(this);
-    var countTo = parseInt($this.attr('data-count'));
-    $({ countNum: 0 }).animate({
-        countNum: countTo
-    },
-    {
+    var targetCount = parseInt($this.attr('data-count'), 10);
+    $({ count: 0 }).animate(
+      { count: targetCount },
+      {
         duration: 2000,
         easing: 'swing',
-        step: function() {
-          $this.text(Math.floor(this.countNum));
+        step: function () {
+          $this.text(Math.floor(this.count));
         },
-        complete: function() {
-          $this.text(this.countNum);
+        complete: function () {
+          $this.text(this.count);
         }
-    });
+      }
+    );
   });
-  $(".owl-suggestions").owlCarousel({
+
+  // Helper function to initialize an Owl Carousel slider
+  function initCarousel(selector, options) {
+    $(selector).owlCarousel(options);
+  }
+
+  // Initialize Owl Carousel for various sections
+
+  // Suggestions Slider
+  initCarousel('.owl-suggestions', {
     loop: true,
     margin: 20,
     nav: true,
     rtl: true,
     navText: [
-      '<i class="fas fa-chevron-right"></i>', // Font Awesome right arrow
-      '<i class="fas fa-chevron-left"></i>' // Font Awesome left arrow
+      '<i class="fas fa-chevron-right"></i>', // Right arrow icon
+      '<i class="fas fa-chevron-left"></i>'   // Left arrow icon
     ],
     responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  });
-  $('.owl-blog').owlCarousel({
-    loop: true,
-    rtl: true,
-    margin: 10,
-    nav: true,
-    dots: true,
-    responsive: {
       0: { items: 1 },
       600: { items: 2 },
       1000: { items: 3 }
     }
   });
-  $('.owl-events').owlCarousel({
-    loop: true,
-    rtl: true,
 
-    margin: 10,
+  // Blog Slider
+  initCarousel('.owl-blog', {
+    loop: true,
+    rtl: true,
+    margin: 20,
     nav: true,
     dots: true,
     responsive: {
@@ -72,7 +60,23 @@ $(document).ready(function () {
       1000: { items: 3 }
     }
   });
-  $('.partners-slider').owlCarousel({
+
+  // Events Slider
+  initCarousel('.owl-events', {
+    loop: true,
+    rtl: true,
+    margin: 20,
+    nav: true,
+    dots: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+
+  // Partners Slider
+  initCarousel('.partners-slider', {
     rtl: true,
     loop: true,
     margin: 20,
@@ -84,5 +88,31 @@ $(document).ready(function () {
       1000: { items: 5 }
     }
   });
-});
 
+  // Testimonials Slider
+  initCarousel('.owl-testimonials', {
+    loop: true,
+    rtl: true,
+    margin: 20,
+    nav: false,
+    dots: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+
+  // Team Slider
+  initCarousel('.owl-team', {
+    loop: true,
+    margin: 0,
+    dots: true,
+    rtl: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 4 }
+    }
+  });
+});

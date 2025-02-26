@@ -494,7 +494,7 @@ p {
 }
 
 section header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .header-home {
@@ -599,7 +599,12 @@ section header {
 }
 
 .audio-player.show {
-  bottom: -125px;
+  bottom: -90px;
+  border-top-left-radius: 0;
+}
+
+.audio-player.show i {
+  transform: rotate(-180deg);
 }
 
 .audio-player.show .audio-player-hide {
@@ -849,8 +854,6 @@ section header {
   transform: scale(1.2);
 }
 
-
-
 /* Enhanced Services Section   */
 /* =========================== */
 
@@ -861,8 +864,6 @@ section header {
   background-size: cover;
   background-position: center;
 }
-
-
 
 /* Service Item Card Styling */
 .services-list .services-item {
@@ -928,7 +929,6 @@ section header {
   background-color: var(--hover-color);
 }
 
-
 /* Start Section BreadCrumb */
 .breadcrumb {
   position: relative;
@@ -950,15 +950,14 @@ section header {
   z-index: 2;
 }
 
-.title {
+/* .title {
   position: relative;
   font-size: 2rem;
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 0;
-}
-
+} */
 
 /* End Section BreadCrumb */
 
@@ -1031,32 +1030,115 @@ section header {
   border-radius: 12px;
 }
 
-/* Start Team  */
-.team {
-  background-color: var(--secondary-background-color);
-}
-
-.team-card {
+.team-header {
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  margin-bottom: 40px;
 }
 
-.team-card:hover {
-  transform: scale(1.02);
-}
-
-.team-card img {
-  border-radius: 12px;
+.title {
+  font-size: 2rem;
+  color: var(--accent-color-2);
   margin-bottom: 10px;
 }
 
-.team-card h3 {
-  font-size: 24px;
+.subtitle {
+  font-size: 1rem;
+  color: #dcd7e8;
 }
 
-.team-card p {
-  font-size: 14px;
+/* =========================== */
+/* Team Section Styles         */
+/* =========================== */
+
+/* =========================== */
+/* Team Section Slider Styles  */
+/* =========================== */
+
+.team-section {
+  padding: 60px 0;
+  background-color: #1c1620;
+  /* Dark background */
+  direction: rtl;
+  /* RTL layout for Arabic */
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-title {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+.team-title i {
+  margin-left: 10px;
+}
+
+.team-subtitle {
+  font-size: 1rem;
+  color: #dcd7e8;
+}
+
+.owl-team .team-item {
+  padding: 15px;
+}
+
+.team-card {
+  background-color: #2c2233;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.team-image img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #444;
+}
+
+.team-info {
+  padding: 20px;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  color: #ffc107;
+  margin: 10px 0 5px;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #dcd7e8;
+  margin-bottom: 10px;
+}
+
+.team-bio {
+  font-size: 0.875rem;
+  color: #cfcfcf;
+  margin-bottom: 15px;
+  min-height: 60px;
+  /* Consistent height */
+}
+
+.team-social a {
   color: #fff;
+  font-size: 1.2rem;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.team-social a:hover {
+  color: #ffc107;
 }
 
 /* Start Services */
@@ -1138,7 +1220,6 @@ section header {
   padding: 90px 0;
   background-color: #17111c;
 }
-
 
 /* Owl Carousel Slider Container */
 .owl-blog .item {
@@ -1304,7 +1385,6 @@ section header {
   height: 150px;
   background-image: url("../img/bg-wave-bottom.png");
   background-size: auto 100%;
-  z-index: 1;
 }
 
 .popular-item {
@@ -1361,6 +1441,7 @@ section header {
 .badge-group {
   margin-bottom: 8px;
 }
+
 .badge-custom {
   display: inline-block;
   padding: 4px 8px;
@@ -1372,27 +1453,69 @@ section header {
 }
 
 /* Distinct Badge Colors */
-.badge-interview { background-color: #e67e22; }  /* Orange for حواري */
-.badge-tips      { background-color: #16a085; }  /* Teal for نصائح */
-.badge-success   { background-color: #27ae60; }  /* Green for نجاح */
+.badge-interview {
+  background-color: #e67e22;
+}
 
-.badge-life      { background-color: #2980b9; }  /* Blue for حياة */
-.badge-challenge { background-color: #c0392b; }  /* Red for تحديات */
-.badge-real      { background-color: #8e44ad; }  /* Purple for واقعية */
+/* Orange for حواري */
+.badge-tips {
+  background-color: #16a085;
+}
 
-.badge-advice    { background-color: #2ecc71; }  /* Light Green for نصائح */
-.badge-trend     { background-color: #34495e; }  /* Dark Gray for رائج */
+/* Teal for نصائح */
+.badge-success {
+  background-color: #27ae60;
+}
+
+/* Green for نجاح */
+
+.badge-life {
+  background-color: #2980b9;
+}
+
+/* Blue for حياة */
+.badge-challenge {
+  background-color: #c0392b;
+}
+
+/* Red for تحديات */
+.badge-real {
+  background-color: #8e44ad;
+}
+
+/* Purple for واقعية */
+
+.badge-advice {
+  background-color: #2ecc71;
+}
+
+/* Light Green for نصائح */
+.badge-trend {
+  background-color: #34495e;
+}
+
+/* Dark Gray for رائج */
 
 /* For Podcast Card 3, using alternative badge classes if needed */
-.badge-inspiration { background-color: #9b59b6; } /* Violet for إلهام */
-.badge-leadership  { background-color: #f1c40f; } /* Yellow for قيادة */
+.badge-inspiration {
+  background-color: #9b59b6;
+}
+
+/* Violet for إلهام */
+.badge-leadership {
+  background-color: #f1c40f;
+}
+
+/* Yellow for قيادة */
 /* Define background colors for custom strategy and insight badges */
 .badge-strategy {
-  background-color: #1abc9c; /* Turquoise color for "استراتيجية" */
+  background-color: #1abc9c;
+  /* Turquoise color for "استراتيجية" */
 }
 
 .badge-insight {
-  background-color: #3498db; /* Blue color for "تحليل" */
+  background-color: #3498db;
+  /* Blue color for "تحليل" */
 }
 
 /* Episode Details Styling */
@@ -1404,6 +1527,7 @@ section header {
   flex-wrap: wrap;
   margin-top: 8px;
 }
+
 .episode-details .detail {
   display: flex;
   align-items: center;
@@ -1418,6 +1542,7 @@ section header {
   color: var(--text-color);
   transition: transform 0.3s ease;
 }
+
 .popular-play-btn a:hover {
   transform: scale(1.1);
 }
@@ -1426,16 +1551,19 @@ section header {
   .popular-desc h4 {
     font-size: 1rem;
   }
+
   .episode-details {
     gap: 5px;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .popular-info {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
 /* Episode Details Styling */
 .episode-details {
   font-size: 0.75rem;
@@ -1445,44 +1573,121 @@ section header {
   flex-wrap: wrap;
   margin-top: 8px;
 }
+
 .episode-details .detail {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-/* Start Testim */
-.testim-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
+/* =========================== */
+/* Testimonial Section Styles  */
+/* =========================== */
+
+.testimonials-section {
+  padding: 60px 0;
+  background-color: #1c1620;
+  /* Dark background to match the site's theme */
+  direction: rtl;
+  /* RTL layout for Arabic */
+}
+
+.testimonials-header {
   text-align: center;
-  background-color: var(--background-color);
-  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  color: #ffc107;
+  /* Accent color */
+  margin-bottom: 10px;
+}
+
+.testimonials-title i {
+  margin-left: 10px;
+}
+
+.testimonials-subtitle {
+  font-size: 1rem;
+  color: #dcd7e8;
+}
+
+/* Owl Carousel container for testimonials */
+.owl-testimonials .item {
   padding: 15px;
 }
 
-.testim-content p {
+/* Testimonial Card */
+.testimonial-card {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
   color: #dcd7e8;
-  font-size: 14px;
-  line-height: 2;
+  line-height: 1.5;
   margin-bottom: 10px;
+  font-style: italic;
 }
 
-.testim-content img {
-  width: 150px;
-  margin-bottom: 10px;
+.testimonial-rating i {
+  color: #ffc107;
+  margin: 0 2px;
 }
 
-.testim-content .person {
-  width: 100px;
+/* Author Information */
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-card .author-photo {
+  width: 100px !important;
   border-radius: 50%;
   margin-bottom: 10px;
+  border: 2px solid #ffc107;
 }
 
-.testim-content h3 {
-  font-size: 24px;
+.testimonial-card .author-name {
+  font-size: 1.25rem;
+  color: #ffc107;
+  margin-bottom: 5px;
+}
+
+.testimonial-card .author-role {
+  font-size: 0.875rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.author-social a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.author-social a:hover {
+  color: #ffc107;
 }
 
 /* Start  Episodes */
@@ -1774,6 +1979,7 @@ section header {
   color: #fff;
   border: 1px solid #c0c0c0;
 }
+
 /* =========================== */
 /* Upcoming Events Section     */
 /* =========================== */
@@ -1802,6 +2008,7 @@ section header {
   flex-direction: column;
   height: 100%;
 }
+
 .event-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -1820,11 +2027,13 @@ section header {
   padding: 15px;
   flex-grow: 1;
 }
+
 .event-info h5 {
   font-size: 1.25rem;
   margin-bottom: 10px;
   color: #ffc107;
 }
+
 .event-desc {
   font-size: 0.95rem;
   color: var(--text-muted-color);
@@ -1836,6 +2045,7 @@ section header {
 .event-badges {
   margin-bottom: 10px;
 }
+
 .badge-custom {
   display: inline-block;
   padding: 4px 8px;
@@ -1847,17 +2057,53 @@ section header {
 }
 
 /* Custom Badge Colors */
-.badge-workshop   { background-color: #e67e22; } /* Orange */
-.badge-production { background-color: #8e44ad; } /* Purple */
-.badge-expert     { background-color: #27ae60; } /* Green */
+.badge-workshop {
+  background-color: #e67e22;
+}
 
-.badge-discussion { background-color: #1abc9c; } /* Turquoise */
-.badge-media      { background-color: #3498db; } /* Blue */
-.badge-strategy   { background-color: #1abc9c; } /* Turquoise */
+/* Orange */
+.badge-production {
+  background-color: #8e44ad;
+}
 
-.badge-network    { background-color: #f39c12; } /* Orange */
-.badge-innovation { background-color: #9b59b6; } /* Violet */
-.badge-community  { background-color: #34495e; } /* Dark Gray */
+/* Purple */
+.badge-expert {
+  background-color: #27ae60;
+}
+
+/* Green */
+
+.badge-discussion {
+  background-color: #1abc9c;
+}
+
+/* Turquoise */
+.badge-media {
+  background-color: #3498db;
+}
+
+/* Blue */
+.badge-strategy {
+  background-color: #1abc9c;
+}
+
+/* Turquoise */
+
+.badge-network {
+  background-color: #f39c12;
+}
+
+/* Orange */
+.badge-innovation {
+  background-color: #9b59b6;
+}
+
+/* Violet */
+.badge-community {
+  background-color: #34495e;
+}
+
+/* Dark Gray */
 
 /* Event Details */
 .event-details {
@@ -1868,6 +2114,7 @@ section header {
   color: var(--text-muted-color);
   margin-bottom: 15px;
 }
+
 .event-details .detail {
   display: flex;
   align-items: center;
@@ -1884,9 +2131,11 @@ section header {
   color: #fff;
   transition: background-color 0.3s ease;
 }
+
 .event-btn i {
   margin-left: 5px;
 }
+
 .event-btn:hover {
   background-color: var(--hover-color);
 }
@@ -1900,12 +2149,15 @@ section header {
   font-size: 1.25rem;
   padding: 10px 15px;
 }
+
 .owl-events .owl-nav button:hover {
   background-color: var(--accent-color-2) !important;
 }
+
 .owl-events .owl-dots {
   margin-top: 15px;
 }
+
 .owl-events .owl-dots .owl-dot span {
   background-color: var(--accent-color-1);
   width: 12px;
@@ -1914,7 +2166,6 @@ section header {
   display: inline-block;
   margin: 5px;
 }
-
 
 /* =========================== */
 /* Partners Section Styles     */
@@ -1925,7 +2176,6 @@ section header {
   padding: 60px 0;
   background-color: #17111c;
 }
-
 
 /* Owl Carousel slider styling for partner logos */
 .partners-slider .partner-item {
@@ -1942,6 +2192,7 @@ section header {
   padding: 20px;
   transition: transform 0.3s ease;
 }
+
 .partner-logo:hover {
   transform: scale(1.05);
 }
@@ -1954,7 +2205,7 @@ section header {
 }
 
 /* Owl Carousel Navigation Styles */
-.partners-slider  .owl-nav button {
+.owl-nav button {
   background-color: var(--accent-color-1) !important;
   border: none;
   border-radius: 50%;
@@ -1962,14 +2213,17 @@ section header {
   font-size: 1.25rem;
   padding: 10px 15px;
 }
-.partners-slider  .owl-nav button:hover {
+
+.owl-nav button:hover {
   background-color: var(--accent-color-2) !important;
 }
-.partners-slider  .owl-dots {
+
+.owl-dots {
   margin-top: 15px;
   text-align: center;
 }
-.partners-slider  .owl-dots .owl-dot span {
+
+.owl-dots .owl-dot span {
   background-color: var(--accent-color-1);
   width: 12px;
   height: 12px;
@@ -1978,11 +2232,11 @@ section header {
   margin: 5px;
 }
 
-
 /* Dark-Themed Statistics Section */
 .statistics-section {
   padding: 60px 0;
-  background-color: #1c1620; /* Dark background matching your theme */
+  background-color: #1c1620;
+  /* Dark background matching your theme */
 }
 
 .stats-wrapper {
@@ -1993,8 +2247,10 @@ section header {
 }
 
 .stat-item {
-  flex: 1 1 220px; /* Responsive sizing */
-  background-color: var(--background-color); /* Slightly lighter dark tone */
+  flex: 1 1 220px;
+  /* Responsive sizing */
+  background-color: var(--background-color);
+  /* Slightly lighter dark tone */
   border-radius: 12px;
   padding: 30px 20px;
   text-align: center;
@@ -2009,12 +2265,19 @@ section header {
 
 .stat-icon {
   font-size: 3rem;
-  color: #ffc107; /* Accent color */
+  color: #ffc107;
+  /* Accent color */
   margin-bottom: 15px;
+}
+
+.stat-icon img {
+  width: 60px;
 }
 
 .stat-number {
   font-size: 2.5rem;
+  line-height: 2.5rem;
+
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 10px;
@@ -2025,7 +2288,8 @@ section header {
   color: #dcd7e8;
   margin: 0;
 }
-.subtitle{
+
+.subtitle {
   margin-top: 10px;
   font-size: 1.2rem;
 }
