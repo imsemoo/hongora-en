@@ -204,6 +204,16 @@ p {
   background-color: unset;
   color: var(--secondary-color);
 }
+.title {
+  font-size: 2rem;
+  color: var(--accent-color-2);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #dcd7e8;
+}
 
 .overlay {
   background: rgba(0, 0, 0, 0.6);
@@ -1025,26 +1035,185 @@ section header {
   z-index: 21;
 }
 
-/* Start Air Section */
-.air-img img {
-  border-radius: 12px;
+/*--------------------------------------------------------------
+   About Section Enhanced Styling
+--------------------------------------------------------------*/
+
+/* Container styling for the About section */
+.about {
+  padding: 80px 0;
+  background-color: var(--background-color);
 }
 
-.team-header {
-  text-align: center;
-  margin-bottom: 40px;
+/* Styling for the text content within the About section */
+.about-content {
+  color: var(--text-color);
 }
 
-.title {
-  font-size: 2rem;
+/* Section title with improved typography */
+.about-content .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
   color: var(--accent-color-2);
-  margin-bottom: 10px;
 }
 
-.subtitle {
-  font-size: 1rem;
-  color: #dcd7e8;
+/* Reset list styles and create a flex layout for list items */
+.about-content ul {
+  list-style: none;
+  padding: 0;
 }
+.about-content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Icon styling for each list item */
+.about-content ul li img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 4px; /* Slight top margin for alignment */
+}
+
+/* Strong tag styling to emphasize key text */
+.about-content ul li strong {
+  margin-right: 5px;
+  color: var(--accent-color-2);
+}
+
+/* Styling for the image container to center and add hover effect */
+.about-img {
+  text-align: center;
+  padding: 20px;
+}
+.about-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.about-img img:hover {
+  transform: scale(1.05);
+}
+/*--------------------------------------------------------------
+   Enhanced Target Section Styles
+--------------------------------------------------------------*/
+.target {
+  padding: 80px 0;
+  background-color: var(--background-color);
+}
+.target-content {
+  color: var(--text-color);
+  padding: 20px;
+}
+.target-content .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-color-2);
+}
+.target-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.target-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.target-content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.target-content ul li img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+.target-content ul li strong {
+  margin-right: 5px;
+  color: var(--accent-color-2);
+}
+
+/*--------------------------------------------------------------
+   Enhanced On Air Section Styles
+--------------------------------------------------------------*/
+.air {
+  padding: 80px 0;
+  background-color: #f9f9f9; /* You may adjust this color to suit your theme */
+}
+
+.air-content {
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.air-content .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-color-2);
+}
+
+.air-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* On Air List Styling */
+.onair-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.onair-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.onair-list li img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-top: 8px; /* Align icon with text */
+}
+
+.onair-list li strong {
+  margin-right: 5px;
+  color: var(--accent-color-2);
+}
+
+/* On Air Image Enhancements */
+.air-img {
+  text-align: center;
+  padding: 20px;
+}
+
+.air-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.air-img img:hover {
+  transform: scale(1.05);
+}
+
+
 
 /* =========================== */
 /* Team Section Styles         */
