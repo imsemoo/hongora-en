@@ -955,6 +955,8 @@ section header {
   text-align: center;
   padding: 40px 40px;
   margin: 0;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
 
 .breadcrumb .title {
@@ -1381,11 +1383,11 @@ section header {
 /* Form Enhancements */
 .contact-form .form-control,
 .contact-form .form-select {
-  border: 1px solid var(--accent-color-4);
+  border: 1px solid hsl(258 27% 25% / 1);
   border-radius: 4px;
   padding: 0.8rem;
   background: var(--secondary-background-color);
-  color: var(--text-color);
+  color:#fff;
 }
 
 .contact-form .form-control:focus,
@@ -1398,7 +1400,7 @@ section header {
 .contact-form .additional-info h3 {
   font-size: 1.4rem;
   margin-top: 1.5rem;
-  color: var(--highlight-color);
+  color: var(--accent-color-2);
 }
 
 .contact-form .additional-info p {

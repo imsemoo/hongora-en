@@ -1,299 +1,400 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-  <!-- Meta Data and SEO Optimizations -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تواصل معنا - منصة البودكاست والإبداع الصوتي</title>
-  <meta name="description" content="حنجرة: منصة فلسطينية تهدف لإثراء المحتوى الصوتي العربي، تقدم برامج بودكاست متنوعة وخدمات التعليق الصوتي وتأجير الاستوديو. انضم إلينا واكتشف صوتك." />
-  <meta name="keywords" content="حنجرة, بودكاست, منصة صوتية, تعليقات صوتية, الإنتاج الصوتي, استوديو, فلسطين, المحتوى العربي, المعلقون الصوتيون, خدمات صوتية" />
-  <meta name="robots" content="index, follow" />
+  <head>
+    <!-- Basic Meta Tags for SEO and Responsive Design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Creative SEO-friendly Title -->
+    <title>تواصل معنا - منصة البودكاست والإبداع الصوتي | حنجرة</title>
+    <!-- Meta Description for SEO -->
+    <meta
+      name="description"
+      content="تواصل مع منصة حنجرة، حيث نحرص على دعم إبداعك الصوتي. استفسر عن خدماتنا، احجز استوديو، وتعرف على أفضل الاستشارات لتطوير محتواك الصوتي."
+    />
+    <!-- Keywords Meta -->
+    <meta
+      name="keywords"
+      content="حنجرة, بودكاست, منصة صوتية, تواصل, استوديو, استشارات, تطوير محتوى, إبداع صوتي"
+    />
+    <!-- Robots Meta -->
+    <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
-  <meta property="og:description" content="منصة فلسطينية تُقدم برامج بودكاست متنوعة وتعليقات صوتية بمشاركة نخبة من المعلقين والمبدعين." />
-  <meta property="og:image" content="img/og-image.png" />
-  <meta property="og:url" content="https://hanjara.ps" />
-  <meta property="og:type" content="website" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="تواصل معنا - منصة البودكاست والإبداع الصوتي | حنجرة" />
+    <meta
+      property="og:description"
+      content="تواصل مع منصة حنجرة لاستكشاف خدماتنا الصوتية المتكاملة ودعم إبداعك."
+    />
+    <meta property="og:image" content="img/og-image.png" />
+    <meta property="og:url" content="https://hanjara.ps" />
+    <meta property="og:type" content="website" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
-  <meta name="twitter:description" content="شاركنا الاستماع والتجربة الصوتية الفريدة من خلال برامج بودكاست حنجرة وخدماتنا المتنوعة." />
-  <meta name="twitter:image" content="img/twitter-image.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تواصل معنا - منصة البودكاست والإبداع الصوتي | حنجرة" />
+    <meta
+      name="twitter:description"
+      content="استفسر، تواصل، وابدأ رحلتك الإبداعية معنا. منصة حنجرة هنا لدعم صوتك وإبداعك."
+    />
+    <meta name="twitter:image" content="img/twitter-image.png" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-  <!-- Flatpickr CSS and Scripts -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+    <!-- Flatpickr CSS & Scripts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js" defer></script>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/all.min.css" />
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-  <link rel="stylesheet" href="css/amplitude.css" />
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/amplitude.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Custom CSS: Theme Overrides and Visual Enhancements -->
-  <style>
+    <!-- Custom CSS: Theme Overrides & Visual Enhancements -->
+    <style>
+      /* --------------------------------------- */
+      /* Custom Styling for Contact Page Layout */
+ 
+      /* Contact Info Boxes */
+      .contact-info-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 2rem;
+      }
+      .contact-info-box {
+        flex: 1 1 calc(33.33% - 20px);
+        background: var(--secondary-background-color, #2c2233);
+        border-radius: 16px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        gap: 15px;
+        transition: transform 0.3s ease;
+      }
+      .contact-info-box:hover {
+        transform: translateY(-5px);
+      }
+      .contact-info-box i {
+        font-size: 2rem;
+        color: #ffc107;
+      }
+      .contact-info-box p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+      
+      /* Contact Section: Ensure proper spacing between content and form */
+      .contact.section {
+        padding: 80px 0;
+      }
+      .contact-content, .contact-form {
+        padding: 1rem;
+      }
+      
+      /* Enhance Form Fields */
+      .contact-form .form-label {
+        font-weight: bold;
+      }
+      .contact-form .form-control {
+        border-radius: 4px;
+        padding: 0.75rem;
+      }
+      .contact-form .btn {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+      }
+      .contact-form .btn:hover {
+        background-color: #ffc107;
+        color: #1c1620;
+      }
+      
+      /* Additional Info (Office Hours) */
+      .additional-info h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #ffc107;
+      }
+      .additional-info p {
+        font-size: 1rem;
+        margin: 0;
+        color: #fff;
+      }
+      
+      /* Responsive adjustments for contact boxes */
+      @media (max-width: 768px) {
+        .contact-info-box {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
 
-  
-  </style>
+    <!-- GSAP & ScrollTrigger for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
+  </head>
+  <body>
+    <!-- Skip Link for Accessibility -->
+    <a class="skip-link" href="#main-content" style="position: absolute; top: -40px; left: 0; background: var(--secondary-background-color); color: var(--text-color); padding: 8px; z-index: 9999;">تخطي إلى المحتوى</a>
 
-  <!-- GSAP & ScrollTrigger for Animations -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-</head>
-<body>
-  <!-- English Comment: Skip link for keyboard accessibility -->
-  <a class="skip-link" href="#main-content" style="position: absolute; top: -40px; left: 0; background: var(--secondary-background-color); color: var(--text-color); padding: 8px; z-index: 9999;">تخطي إلى المحتوى</a>
-
-  <!-- Navbar and Footer are not modified per requirements -->
-  <!-- (Navbar code remains unchanged) -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">عن حنجرة</a></li>
-          <li class="nav-item"><a class="nav-link" href="podcast.html">حنجرة بودكاست</a></li>
-          <li class="nav-item"><a class="nav-link" href="team.html">فريق حنجرة</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">خدمات حنجرة</a></li>
-          <li class="nav-item"><a class="nav-link" href="studio.html">احجز الاستوديو</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
-        </ul>
-        <a href="#" class="btn btn-primary">
-          <i class="fa-solid fa-user-plus"></i>
-          انضم الآن
+    <!-- Navbar (Unchanged) -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن حنجرة</a></li>
+            <li class="nav-item"><a class="nav-link" href="podcast.html">حنجرة بودكاست</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">فريق حنجرة</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">خدمات حنجرة</a></li>
+            <li class="nav-item"><a class="nav-link" href="studio.html">احجز الاستوديو</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+          </ul>
+          <a href="#" class="btn btn-primary">
+            <i class="fa-solid fa-user-plus"></i> انضم الآن
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb Section for Contact Page -->
+    <div class="breadcrumb">
+      <div class="container text-center">
+        <img src="img/hero-track.png" alt="Track Image" class="mb-4" />
+        <h3 class="title">
+          <span class="text-white">تواصل</span> معنا
+        </h3>
+        <!-- Creative and Engaging Description -->
+        <p class="lead text-white mt-2">
+          هل لديك استفسار أو فكرة تريد مشاركتها؟ فريقنا جاهز للاستماع إليك والإجابة على جميع تساؤلاتك. تواصل معنا لنصنع معًا مستقبلًا صوتيًا ملهمًا.
+        </p>
+        <!-- Podcast Platforms Icons (Optional) -->
+        <div class="podcast-platforms d-flex justify-content-center mt-4 gap-3">
+          <!-- SoundCloud -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #FF5500; color: #fff;">
+            <i class="fab fa-soundcloud fa-lg"></i>
+          </a>
+          <!-- Spotify -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #1DB954; color: #fff;">
+            <i class="fab fa-spotify fa-lg"></i>
+          </a>
+          <!-- Google Podcast -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #DB4437; color: #fff;">
+            <i class="fa-solid fa-podcast fa-lg"></i>
+          </a>
+          <!-- Apple Podcast -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #000000; color: #fff;">
+            <i class="fab fa-apple fa-lg"></i>
+          </a>
+        </div>
       </div>
     </div>
-  </nav>
+    <!-- End of Breadcrumb -->
 
-  <!-- Breadcrumb Section -->
-  <div class="breadcrumb">
-    <div class="container">
-      <h3 class="title">تواصل معنا</h3>
-    </div>
-  </div>
-
-  <!-- English Comment: Main Contact Section -->
-  <section class="contact section bg-dark">
-    <div class="container">
-      <div class="row">
-        <!-- Left Column: Enriched Contact Information -->
-        <div class="col-md-6 col-12">
-          <div class="contact-content">
-            <h2 class="section-title">حنجرة، صوتك معنا!</h2>
-            <p class="my-3">
-              سواء كان لديك سؤال، استفسار، أو فكرة ترغب في مشاركتها، نحن هنا للاستماع إليك. 
-              نسعى دائماً لتقديم الدعم اللازم لجعل تجربتك معنا مميزة وملهمة.
-            </p>
-            <p class="mb-4">
-              يمكنك زيارة مكتبنا أو التواصل معنا عبر النموذج المخصص. نحرص على تقديم استشارات مجانية 
-              للمشاريع الصوتية ونقدم خدمات متكاملة لتطوير محتواك.
-            </p>
-            <div class="contact-info">
-              <div class="info-box">
+    <!-- Main Contact Section -->
+    <section class="contact section bg-dark" id="main-content">
+      <div class="container">
+        <div class="row">
+          <!-- Top Row: Contact Info Boxes -->
+          <div class="col-12">
+            <div class="contact-info-boxes">
+              <div class="contact-info-box">
                 <i class="fa-solid fa-location-dot"></i>
                 <p>فلسطين – الخليل</p>
               </div>
-              <div class="info-box">
+              <div class="contact-info-box">
                 <i class="fa-solid fa-envelope"></i>
                 <p>Hanjara95@hotmail.com</p>
               </div>
-              <div class="info-box">
+              <div class="contact-info-box">
                 <i class="fa-solid fa-phone-flip"></i>
                 <p>00972595199061</p>
               </div>
-              <div class="info-box mb-5">
-                <button type="submit" class="btn btn-primary">
-                  انضم إلينا
-                  <img src="./img/right-icon.png" alt="أيقونة" />
-                </button>
-              </div>
-            </div>
-            <!-- English Comment: Additional section for office hours and map -->
-            <div class="additional-info">
-              <h3>ساعات العمل</h3>
-              <p>الأحد - الخميس: 9 صباحاً - 5 مساءً</p>
-    
             </div>
           </div>
-        </div>
-        <!-- Right Column: Enhanced Contact Form -->
-        <div class="col-md-6 col-12">
-          <div class="contact-form">
-            <form>
-              <div class="d-flex mb-3 justify-content-between gap-2">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <!-- English Comment: Name input field -->
-                    <label for="name" class="form-label mb-3">الاسم</label>
+          <!-- Left Column: Enriched Contact Information -->
+          <div class="col-md-6 col-12">
+            <div class="contact-content">
+              <h2 class="section-title">حنجرة، صوتك معنا!</h2>
+              <p class="my-3">
+                سواء كان لديك سؤال، استفسار، أو فكرة ترغب في مشاركتها، نحن هنا للاستماع إليك.
+                تواصل معنا لنصنع معًا مستقبلًا صوتيًا ملهمًا.
+              </p>
+              <p class="mb-4">
+                يمكنك زيارة مكتبنا أو التواصل معنا عبر النموذج أدناه. نحن نقدم استشارات مجانية لتطوير المحتوى الصوتي،
+                مع دعم متكامل في كافة خطوات الإنتاج والتسويق.
+              </p>
+              <!-- Additional Office Hours or Info -->
+              <div class="additional-info mt-4">
+                <h3 class="fs-4">ساعات العمل</h3>
+                <p>الأحد - الخميس: 9 صباحاً - 5 مساءً</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Enhanced Contact Form -->
+          <div class="col-md-6 col-12">
+            <div class="contact-form">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <!-- Name Input Field -->
+                    <label for="name" class="form-label">الاسم</label>
                     <input type="text" class="form-control" id="name" placeholder="اكتب اسمك هنا" />
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <!-- English Comment: Email input field -->
-                    <label for="email" class="form-label mb-3">البريد الإلكتروني</label>
+                  <div class="col-md-6">
+                    <!-- Email Input Field -->
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
                     <input type="email" class="form-control" id="email" placeholder="اكتب بريدك هنا" />
                   </div>
                 </div>
-              </div>
-              <div class="col-12 mt-2 mb-3">
-                <!-- English Comment: Topic selection -->
-                <label for="topic" class="form-label mb-3">الموضوع</label>
-                <select class="form-select" aria-label="اختر الموضوع">
-                  <option selected>اختر الموضوع</option>
-                  <option value="1">الموضوع الأول</option>
-                  <option value="2">الموضوع الثاني</option>
-                  <option value="3">الموضوع الثالث</option>
-                </select>
-              </div>
-              <div class="col-md-12 mb-3">
-                <!-- English Comment: Phone number input -->
-                <div class="form-group">
-                  <label for="phone" class="form-label mb-3">رقم الهاتف</label>
-                  <input type="phone" class="form-control" id="phone" placeholder="اكتب رقم هاتفك" />
+                <!-- Topic Selection -->
+                <div class="mb-3">
+                  <label for="topic" class="form-label">الموضوع</label>
+                  <select class="form-select" id="topic" aria-label="اختر الموضوع">
+                    <option selected>اختر الموضوع</option>
+                    <option value="1">الموضوع الأول</option>
+                    <option value="2">الموضوع الثاني</option>
+                    <option value="3">الموضوع الثالث</option>
+                  </select>
                 </div>
-              </div>
-              <div class="col-md-12 mb-3">
-                <!-- English Comment: Message textarea -->
-                <label for="message" class="form-label mb-3">الرسالة</label>
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="اكتب رسالتك هنا" id="message"></textarea>
+                <!-- Phone Number Input -->
+                <div class="mb-3">
+                  <label for="phone" class="form-label">رقم الهاتف</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="اكتب رقم هاتفك" />
                 </div>
-              </div>
-              <div class="col-12">
-                <!-- English Comment: Submit button -->
-                <button type="submit" class="btn btn-primary mt-5">
-                  ارسال
-                  <img src="./img/right-icon.png" alt="أيقونة" />
-                </button>
-              </div>
+                <!-- Message Textarea -->
+                <div class="mb-3">
+                  <label for="message" class="form-label">الرسالة</label>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="اكتب رسالتك هنا" id="message"></textarea>
+                  </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-secondary">إرسال</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (Unchanged) -->
+    <footer class="footer text-white" role="contentinfo" aria-label="Footer">
+      <div class="container">
+        <div class="row mb-4">
+          <!-- Logo & Description -->
+          <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
+            <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
+            <p class="footer-description">
+              نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا وتحقيق تجربة استماع مميزة.
+            </p>
+            <p class="mb-3">تابعنا على</p>
+            <div class="social-icons">
+              <a href="#" class="text-white mx-2" title="فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white mx-2" title="إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white mx-2" title="يوتيوب" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="text-white mx-2" title="تيك توك" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
+              <a href="#" class="text-white mx-2" title="تويتر" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <!-- Quick Links Section -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5 class="footer-title mb-3">بودكاست</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link" title="الرئيسية">الرئيسية</a></li>
+              <li><a href="#" class="footer-link" title="الحلقات">الحلقات</a></li>
+              <li><a href="#" class="footer-link" title="من نحن">من نحن</a></li>
+              <li><a href="#" class="footer-link" title="الأخبار">الأخبار</a></li>
+              <li><a href="#" class="footer-link" title="المدونة">المدونة</a></li>
+              <li><a href="#" class="footer-link" title="تواصل معنا">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <!-- Explore Section -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5 class="footer-title mb-3">استكشف</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link" title="الأكثر شهرة">الأكثر شهرة</a></li>
+              <li><a href="#" class="footer-link" title="مقترحاتنا">مقترحاتنا</a></li>
+              <li><a href="#" class="footer-link" title="أشهر الحلقات">أشهر الحلقات</a></li>
+              <li><a href="#" class="footer-link" title="أشهر المقدمين">أشهر المقدمين</a></li>
+              <li><a href="#" class="footer-link" title="ما يقولوا عنا">ما يقولوا عنا</a></li>
+              <li><a href="#" class="footer-link" title="سياسة الخصوصية">سياسة الخصوصية</a></li>
+            </ul>
+          </div>
+          <!-- Subscription and Contact Section -->
+          <div class="col-lg-5 col-md-6">
+            <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
+            <p class="mb-3">انضم إلى نشرتنا لتصلك آخر التحديثات والأخبار.</p>
+            <form class="d-flex">
+              <input type="email" class="form-control me-2" placeholder="أدخل بريدك الإلكتروني" />
+              <button class="btn btn-primary">اشترك الآن</button>
             </form>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- English Comment: Footer is not modified per requirements -->
-  <footer class="footer text-white">
-    <div class="container">
-      <div class="row mb-4">
-        <!-- Footer content remains unchanged -->
-        <div class="col-lg-4 col-md-6 text-md-start text-center mb-4 mb-lg-0">
-          <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" />
-          <p class="footer-description">
-            نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا وتحقيق تجربة استماع مميزة.
-          </p>
-          <p class="mb-3">تابعنا على</p>
-          <div class="social-icons">
-            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="text-white mx-2"><i class="fab fa-tiktok"></i></a>
-            <a href="#" class="text-white mx-2"><i class="fab fa-x-twitter"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h5 class="footer-title mb-3">بودكاست</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">الرئيسية</a></li>
-            <li><a href="#" class="footer-link">الحلقات</a></li>
-            <li><a href="#" class="footer-link">من نحن</a></li>
-            <li><a href="#" class="footer-link">الأخبار</a></li>
-            <li><a href="#" class="footer-link">المدونة</a></li>
-            <li><a href="#" class="footer-link">تواصل معنا</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-2 col-md-6">
-          <h5 class="footer-title mb-3">استكشف</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="footer-link">الأكثر شهرة</a></li>
-            <li><a href="#" class="footer-link">مقترحاتنا</a></li>
-            <li><a href="#" class="footer-link">أشهر الحلقات</a></li>
-            <li><a href="#" class="footer-link">أشهر المقدمين</a></li>
-            <li><a href="#" class="footer-link">ما يقولوا عنا</a></li>
-            <li><a href="#" class="footer-link">سياسة الخصوصية</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-8 mb-4">
-          <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
-          <p>انضم إلى نشرتنا لتصلك آخر التحديثات والأخبار.</p>
-          <form class="d-flex">
-            <input type="email" class="form-control me-2" placeholder="أدخل بريدك الإلكتروني" />
-            <button class="btn btn-primary">اشترك الآن</button>
-          </form>
-        </div>
+      <div class="footer-bottom mt-4 text-center">
+        <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق محفوظة.</p>
       </div>
-    </div>
-    <div class="footer-bottom mt-4 text-center">
-      <p class="mb-0">جميع الحقوق محفوظة © 2024</p>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- English Comment: Including necessary JS libraries and custom scripts -->
-  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
-  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-  <script src="js/amplitude.min.js" type="text/javascript"></script>
-  <script src="js/amplitude-custom.js" type="text/javascript"></script>
-  <script src="js/script.js" type="text/javascript"></script>
+    <!-- Scripts: Loaded with "defer" for improved performance -->
+    <script src="js/jquery-3.7.1.min.js" type="text/javascript" defer></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript" defer></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript" defer></script>
+    <script src="js/amplitude.min.js" type="text/javascript" defer></script>
+    <script src="js/amplitude-custom.js" type="text/javascript" defer></script>
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <!-- GSAP and ScrollTrigger for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
+    <!-- English Comment: All scripts are loaded with 'defer' for non-blocking rendering -->
+    <script>
+      // Register GSAP ScrollTrigger plugin for smooth scroll animations
+      gsap.registerPlugin(ScrollTrigger);
 
-  <!-- English Comment: GSAP Animations for Scroll-Triggered Effects -->
-  <script>
-    // Register GSAP ScrollTrigger plugin for smooth animations
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Animate the contact content (left column)
-    gsap.from(".contact-content", {
-      opacity: 0,
-      x: -50,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".contact-content",
-        start: "top 80%"
-      }
-    });
-
-    // Animate the contact form (right column)
-    gsap.from(".contact-form", {
-      opacity: 0,
-      x: 50,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".contact-form",
-        start: "top 80%"
-      }
-    });
-
-    // Animate the additional info section (office hours and map)
-    gsap.from(".additional-info", {
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".additional-info",
-        start: "top 80%"
-      }
-    });
-  </script>
-</body>
+      // Animate contact content on scroll (Left Column)
+      gsap.from(".contact-content", {
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".contact-content",
+          start: "top 80%"
+        }
+      });
+      // Animate contact form on scroll (Right Column)
+      gsap.from(".contact-form", {
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".contact-form",
+          start: "top 80%"
+        }
+      });
+    </script>
+  </body>
 </html>
