@@ -1,609 +1,788 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>حنجرة بودكاست - منصة البودكاست والإبداع الصوتي</title>
 
-    <meta
-      name="description"
-      content="حنجرة: منصة فلسطينية تهدف لإثراء المحتوى الصوتي العربي، تقدم برامج بودكاست متنوعة وخدمات التعليق الصوتي وتأجير الاستوديو. انضم إلينا واكتشف صوتك."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حنجرة بودكاست - منصة البودكاست والإبداع الصوتي</title>
 
-    <meta
-      name="keywords"
-      content="حنجرة, بودكاست, منصة صوتية, تعليقات صوتية, الإنتاج الصوتي, استوديو, فلسطين, المحتوى العربي, المعلقون الصوتيون, خدمات صوتية"
-    />
+  <meta name="description"
+    content="حنجرة: منصة فلسطينية تهدف لإثراء المحتوى الصوتي العربي، تقدم برامج بودكاست متنوعة وخدمات التعليق الصوتي وتأجير الاستوديو. انضم إلينا واكتشف صوتك." />
 
-    <!-- Robots Meta -->
-    <meta name="robots" content="index, follow" />
+  <meta name="keywords"
+    content="حنجرة, بودكاست, منصة صوتية, تعليقات صوتية, الإنتاج الصوتي, استوديو, فلسطين, المحتوى العربي, المعلقون الصوتيون, خدمات صوتية" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي"
-    />
-    <meta
-      property="og:description"
-      content="منصة فلسطينية تُقدم برامج بودكاست متنوعة وتعليقات صوتية بمشاركة نخبة من المعلقين والمبدعين."
-    />
-    <meta property="og:image" content="img/og-image.png" />
-    <meta property="og:url" content="https://hanjara.ps" />
-    <meta property="og:type" content="website" />
+  <!-- Robots Meta -->
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي"
-    />
-    <meta
-      name="twitter:description"
-      content="شاركنا الاستماع والتجربة الصوتية الفريدة من خلال برامج بودكاست حنجرة وخدماتنا المتنوعة."
-    />
-    <meta name="twitter:image" content="img/twitter-image.png" />
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
+  <meta property="og:description"
+    content="منصة فلسطينية تُقدم برامج بودكاست متنوعة وتعليقات صوتية بمشاركة نخبة من المعلقين والمبدعين." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://hanjara.ps" />
+  <meta property="og:type" content="website" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
+  <meta name="twitter:description"
+    content="شاركنا الاستماع والتجربة الصوتية الفريدة من خلال برامج بودكاست حنجرة وخدماتنا المتنوعة." />
+  <meta name="twitter:image" content="img/twitter-image.png" />
 
-    <!-- Flatpickr CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <!-- Flatpickr Script -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <!-- Flatpickr Arabic Localization -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="css/amplitude.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <!-- Flatpickr Script -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- Flatpickr Arabic Localization -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-      <div class="container">
-        <!-- Logo -->
-        <a
-          class="navbar-brand d-flex align-items-center gap-2"
-          href="index.html"
-        >
-          <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/amplitude.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">عن حنجرة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="podcast.html">حنجرة بودكاست</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">فريق حنجرة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">خدمات حنجرة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="studio.html">احجز الاستوديو</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">تواصل معنا</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary">
+          <i class="fa-solid fa-user-plus"></i>
+          انضم الآن
         </a>
-
-        <!-- Toggler Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
-                >الرئيسية</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">عن حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="podcast.html">حنجرة بودكاست</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">فريق حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">خدمات حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="studio.html">احجز الاستوديو</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">تواصل معنا</a>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary">
-            <i class="fa-solid fa-user-plus"></i>
-            انضم الآن
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- BreadCrumb -->
-    <div class="breadcrumb">
-      <div class="container">
-        <h3 class="title">حنجرة بودكاست</h3>
       </div>
     </div>
-    <!-- BreadCrumb -->
+  </nav>
 
-    <!-- Services Section -->
-    <section class="services section bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-12">
-            <div class="services-content">
-              <h2 class="section-title">
-                أبحر في عوالم جديدة مع حنجرة بودكاست!
-              </h2>
-              <strong>استمع مباشرة عبر موقعنا أو اختر منصتك المفضلة.</strong>
-              <p>
-                هنا تجد كل برنامج يحمل بصمة فريدة وقصة تستحق أن تُروى. من
-                التاريخ والتراث إلى الأدب والفنون، ومن قضايا المجتمع والعلوم إلى
-                الموسيقى والإبداع، كل حلقة هي رحلة تأخذك إلى قلب الحكاية.تتيح
-                منصة حَنجرة بودكاست للمستمعين متابعة برامجها عبر مختلف المنصات
-                الرقمية في أي وقت ومكان، مما يجعلها مصدرًا سهلاً ومرنًا للمعرفة
-                والتثقيف. تسعى المنصة إلى أن تكون الرائدة في مجال صناعة
-                البودكاست في فلسطين، وإلى تعزيز الهوية الثقافية من خلال إنتاج
-                محتوى صوتي يعبر عن المجتمع الفلسطيني والعربي ويلبي تطلعات مختلف
-                الفئات.
+<!-- BreadCrumb -->
+<div class="breadcrumb">
+  <div class="container text-center">
+    <img src="img/hero-track.png" alt="Track Image" class="mb-4">
+    <h3 class="title"><span class="text-white">حنجرة</span> بودكاست</h3>
+    <!-- Description -->
+    <p class="lead text-white mt-2">
+      استمع إلى أجمل الحكايات والقصص الصوتية مع منصة حنجرة بودكاست، حيث يجتمع الإبداع والتجربة الصوتية الفريدة.
+    </p>
+    <!-- Podcast Platforms Icons -->
+    <!-- Podcast Platforms Icons -->
+<div class="podcast-platforms d-flex justify-content-center mt-4 gap-3">
+  <!-- SoundCloud -->
+  <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: #FF5500; color: #fff;">
+    <i class="fab fa-soundcloud fa-lg"></i>
+  </a>
+  <!-- Spotify -->
+  <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: #1DB954; color: #fff;">
+    <i class="fab fa-spotify fa-lg"></i>
+  </a>
+  <!-- Google Podcast -->
+  <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: #DB4437; color: #fff;">
+    <!-- استخدم أيقونة "fa-podcast" إذا كانت متوفرة في Font Awesome 6، أو يمكنك استخدام أيقونة بديلة -->
+    <i class="fa-solid fa-podcast fa-lg"></i>
+  </a>
+  <!-- Apple Podcast -->
+  <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: #000000; color: #fff;">
+    <i class="fab fa-apple fa-lg"></i>
+  </a>
+  <!-- Instagram -->
+  <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: #E1306C; color: #fff;">
+    <i class="fab fa-instagram fa-lg"></i>
+  </a>
+  <!-- Facebook -->
+  <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: #1877F2; color: #fff;">
+    <i class="fab fa-facebook-f fa-lg"></i>
+  </a>
+</div>
+
+  </div>
+</div>
+<!-- BreadCrumb -->
+
+<div class="container">
+  <div class="search-with-filter p-sm-3 p-1 mt-lg-15 mt-sm-10 mt-6 bgc-3" data-aos="fade-down" data-aos-duration="1000">
+    <form action="#" class="d-flex align-items-sm-center align-items-baseline gap-md-6 gap-sm-3 gap-1">
+      <!-- Category Select -->
+      <div class="select-category-area">
+        <select class="select-category">
+          <option value="1">الكل</option>
+          <option value="2">السرد القصصي</option>
+          <option value="3">رعب</option>
+          <option value="4">دراما</option>
+          <option value="5">تقنية</option>
+          <option value="6">تعليمي</option>
+          <option value="7">كوميدي</option>
+          <option value="8">رياضي</option>
+          <option value="9">موسيقي</option>
+          <option value="10">ترفيهي</option>
+          <option value="11">ألعاب</option>
+          <option value="12">وثائقي</option>
+        </select>
+      </div>
+      <!-- Search Input Area -->
+      <div class="input-area p-0 w-100">
+        <input type="text" class="py-1" placeholder="ابحث عن حلقة..." />
+        <button class="btn btn-primary">
+          ابحث
+        </button>
+    
+      </div>
+    </form>
+  </div>
+</div>
+
+  <section class="latest-episodes-section pt-120 pb-120 bg-dark">
+    <div class="container">
+      <!-- Header with Result Count and Tag Filters -->
+      <div class="header d-flex justify-content-between align-items-center mb-lg-10 mb-sm-6 mb-4" data-aos="fade-up"
+        data-aos-duration="1000">
+        <p class="result-count fw-normal">
+          507 حلقة بودكاست متاحة
+        </p>
+        <ul class="tag-list d-flex flex-wrap gap-3">
+          <li class="tag-item d-flex align-items-center gap-2">
+            <a href="#">تقنية</a>
+            <button class="remove-tag"><i class="fa-solid fa-xmark"></i></button>
+          </li>
+          <li class="tag-item d-flex align-items-center gap-2">
+            <a href="#">ثقافة</a>
+            <button class="remove-tag"><i class="fa-solid fa-xmark"></i></button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Episodes Grid -->
+      <div class="row g-6">
+        <!-- Episode Card 1 -->
+        <div class="col-xxl-6" data-aos="flip-left">
+          <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+            <div class="card-img p-3">
+              <img class="w-100 h-100 rounded" src="img/podcast/1.webp" alt="صورة الحلقة">
+            </div>
+            <div class="card-content p-6">
+              <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+                <div class="info d-flex align-items-center flex-wrap gap-4">
+                  <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                    <span class="icon fs-xl">
+                      <i class="fa-solid fa-microphone-lines"></i>
+                    </span>
+                    <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                      فاطمة الزهراء
+                    </span>
+                  </a>
+                  <div class="episode-time d-flex align-items-center gap-2">
+                    <span class="icon fs-lg">
+                      <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <span class="time fs-lg fw-normal text-nowrap">
+                      4 ساعة 12 دقيقة
+                    </span>
+                  </div>
+                </div>
+                <button class="heart-icon fs-lg">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <h3 class="card-title fw-semibold mb-4">
+                <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+                  قصص تُلهِم: فن السرد القصصي
+                </a>
+              </h3>
+              <p class="fs-sm">
+                اكتشف كيف يمكن للقصة أن تُحدث فرقاً في عالم البودكاست.
               </p>
-              <a href="#" class="btn btn-primary mt-5 mb-5">
-                ابدأ استماعك الآن <img src="./img/right-icon.png" alt="" />
+              <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+                <a href="#" class="btn btn-secondary">
+                  <span class="icon fs-xl fw-bold">
+                    <i class="fa-solid fa-headphones"></i>
+                  </span>
+                  <span class="btn-text fw-semibold">استمع الآن</span>
+                </a>
+                <span class="tag-btn">الحلقة 04</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Episode Card 2 -->
+        <div class="col-xxl-6" data-aos="flip-right">
+          <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+            <div class="card-img p-3">
+              <img class="w-100 h-100 rounded" src="img/podcast/2.webp" alt="صورة الحلقة">
+            </div>
+            <div class="card-content p-6">
+              <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+                <div class="info d-flex align-items-center flex-wrap gap-4">
+                  <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                    <span class="icon fs-xl">
+                      <i class="fa-solid fa-microphone-lines"></i>
+                    </span>
+                    <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                      محمد الأمين
+                    </span>
+                  </a>
+                  <div class="episode-time d-flex align-items-center gap-2">
+                    <span class="icon fs-lg">
+                      <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <span class="time fs-lg fw-normal text-nowrap">
+                      2 ساعة 2 دقيقة
+                    </span>
+                  </div>
+                </div>
+                <button class="heart-icon fs-lg">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <h3 class="card-title fw-semibold mb-4">
+                <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+                  همسات مخيفة: حكايات من الظلال
+                </a>
+              </h3>
+              <p class="fs-sm">
+                رحلة مثيرة عبر قصص غامضة تُثير الرعب وتحيي خيال المستمع.
+              </p>
+              <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+                <a href="#" class="btn btn-secondary">
+                  <span class="icon fs-xl fw-bold">
+                    <i class="fa-solid fa-headphones"></i>
+                  </span>
+                  <span class="btn-text fw-semibold">استمع الآن</span>
+                </a>
+                <span class="tag-btn">الحلقة 90</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Episode Card 3 -->
+        <div class="col-xxl-6" data-aos="flip-left">
+          <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+            <div class="card-img p-3">
+              <img class="w-100 h-100 rounded" src="img/podcast/3.webp" alt="صورة الحلقة">
+            </div>
+            <div class="card-content p-6">
+              <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+                <div class="info d-flex align-items-center flex-wrap gap-4">
+                  <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                    <span class="icon fs-xl">
+                      <i class="fa-solid fa-microphone-lines"></i>
+                    </span>
+                    <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                      أحمد الريس
+                    </span>
+                  </a>
+                  <div class="episode-time d-flex align-items-center gap-2">
+                    <span class="icon fs-lg">
+                      <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <span class="time fs-lg fw-normal text-nowrap">
+                      1 ساعة 52 دقيقة
+                    </span>
+                  </div>
+                </div>
+                <button class="heart-icon fs-lg">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <h3 class="card-title fw-semibold mb-4">
+                <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+                  عمالقة التقنية: رسم ملامح المستقبل
+                </a>
+              </h3>
+              <p class="fs-sm">
+                تحليل عميق لأثر التكنولوجيا على حياتنا وتشكيل مستقبل جديد.
+              </p>
+              <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+                <a href="#" class="btn btn-secondary">
+                  <span class="icon fs-xl fw-bold">
+                    <i class="fa-solid fa-headphones"></i>
+                  </span>
+                  <span class="btn-text fw-semibold">استمع الآن</span>
+                </a>
+                <span class="tag-btn">الحلقة 40</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Episode Card 4 -->
+        <div class="col-xxl-6" data-aos="flip-right">
+          <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+            <div class="card-img p-3">
+              <img class="w-100 h-100 rounded" src="img/podcast/1.webp" alt="صورة الحلقة">
+            </div>
+            <div class="card-content p-6">
+              <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+                <div class="info d-flex align-items-center flex-wrap gap-4">
+                  <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                    <span class="icon fs-xl">
+                      <i class="fa-solid fa-microphone-lines"></i>
+                    </span>
+                    <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                      ريم الهاشمي
+                    </span>
+                  </a>
+                  <div class="episode-time d-flex align-items-center gap-2">
+                    <span class="icon fs-lg">
+                      <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <span class="time fs-lg fw-normal text-nowrap">
+                      5 ساعة 1 دقيقة
+                    </span>
+                  </div>
+                </div>
+                <button class="heart-icon fs-lg">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <h3 class="card-title fw-semibold mb-4">
+                <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+                  فكاهة وتسلية: الضحك في كل زاوية
+                </a>
+              </h3>
+              <p class="fs-sm">
+                حلقة مرحة تُبرز قوة الفكاهة والضحك في تغيير المزاج.
+              </p>
+              <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+                <a href="#" class="btn btn-secondary">
+                  <span class="icon fs-xl fw-bold">
+                    <i class="fa-solid fa-headphones"></i>
+                  </span>
+                  <span class="btn-text fw-semibold">استمع الآن</span>
+                </a>
+                <span class="tag-btn">الحلقة 41</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Episode Card 1 -->
+    <div class="col-xxl-6" data-aos="flip-left">
+      <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+        <div class="card-img p-3">
+          <img class="w-100 h-100 rounded" src="img/podcast/1.webp" alt="صورة الحلقة">
+        </div>
+        <div class="card-content p-6">
+          <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+            <div class="info d-flex align-items-center flex-wrap gap-4">
+              <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                <span class="icon fs-xl">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                </span>
+                <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                  فاطمة الزهراء
+                </span>
               </a>
-            </div>
-          </div>
-          <div class="col-md-6 col-12">
-            <div class="services-img">
-              <img src="./img/podcast/podcast-04.jpg" alt="services" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recently Added -->
-    <section
-      class="our-suggestions section bg-light"
-      aria-labelledby="suggestions-title"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-12 mb-5">
-            <div class="content">
-              <img
-                src="img/recently-added-01.png"
-                loading="lazy"
-                width="100%"
-              />
-              <div class="title-card">
-                <span>فنجان / ثمانية</span>
-                <h5>حكاية حلقة ياسر</h5>
-              </div>
-              <div class="content-info d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/content-creator-icon.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">ياسر الحزيمي</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/data-date.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">21 ديسمبر 2024</p>
-                </div>
-              </div>
-              <hr />
-              <div class="content-activity d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img src="./img/eye.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">2.5K</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img src="./img/heart.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">1.4K</p>
-                </div>
+              <div class="episode-time d-flex align-items-center gap-2">
+                <span class="icon fs-lg">
+                  <i class="fa-regular fa-clock"></i>
+                </span>
+                <span class="time fs-lg fw-normal text-nowrap">
+                  4 ساعة 12 دقيقة
+                </span>
               </div>
             </div>
+            <button class="heart-icon fs-lg">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="col-md-4 col-12 mb-5">
-            <div class="content">
-              <img
-                src="img/recently-added-01.png"
-                loading="lazy"
-                width="100%"
-              />
-              <div class="title-card">
-                <span>فنجان / ثمانية</span>
-                <h5>حكاية حلقة ياسر</h5>
-              </div>
-              <div class="content-info d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/content-creator-icon.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">ياسر الحزيمي</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/data-date.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">21 ديسمبر 2024</p>
-                </div>
-              </div>
-              <hr />
-              <div class="content-activity d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img src="./img/eye.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">2.5K</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img src="./img/heart.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">1.4K</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 mb-5">
-            <div class="content">
-              <img
-                src="img/recently-added-01.png"
-                loading="lazy"
-                width="100%"
-              />
-              <div class="title-card">
-                <span>فنجان / ثمانية</span>
-                <h5>حكاية حلقة ياسر</h5>
-              </div>
-              <div class="content-info d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/content-creator-icon.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">ياسر الحزيمي</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/data-date.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">21 ديسمبر 2024</p>
-                </div>
-              </div>
-              <hr />
-              <div class="content-activity d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img src="./img/eye.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">2.5K</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img src="./img/heart.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">1.4K</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 mb-5">
-            <div class="content">
-              <img
-                src="img/recently-added-01.png"
-                loading="lazy"
-                width="100%"
-              />
-              <div class="title-card">
-                <span>فنجان / ثمانية</span>
-                <h5>حكاية حلقة ياسر</h5>
-              </div>
-              <div class="content-info d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/content-creator-icon.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">ياسر الحزيمي</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/data-date.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">21 ديسمبر 2024</p>
-                </div>
-              </div>
-              <hr />
-              <div class="content-activity d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img src="./img/eye.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">2.5K</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img src="./img/heart.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">1.4K</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 mb-5">
-            <div class="content">
-              <img
-                src="img/recently-added-01.png"
-                loading="lazy"
-                width="100%"
-              />
-              <div class="title-card">
-                <span>فنجان / ثمانية</span>
-                <h5>حكاية حلقة ياسر</h5>
-              </div>
-              <div class="content-info d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/content-creator-icon.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">ياسر الحزيمي</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/data-date.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">21 ديسمبر 2024</p>
-                </div>
-              </div>
-              <hr />
-              <div class="content-activity d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img src="./img/eye.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">2.5K</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img src="./img/heart.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">1.4K</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 mb-5">
-            <div class="content">
-              <img
-                src="img/recently-added-01.png"
-                loading="lazy"
-                width="100%"
-              />
-              <div class="title-card">
-                <span>فنجان / ثمانية</span>
-                <h5>حكاية حلقة ياسر</h5>
-              </div>
-              <div class="content-info d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/content-creator-icon.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">ياسر الحزيمي</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/data-date.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">21 ديسمبر 2024</p>
-                </div>
-              </div>
-              <hr />
-              <div class="content-activity d-flex justify-content-between">
-                <div class="d-flex justify-content-between">
-                  <img src="./img/eye.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">2.5K</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img src="./img/heart.png" style="width: 100%" alt="img" />
-                  <p class="ms-2">1.4K</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Pagination -->
-        <div class="row mt-5">
-          <div class="col-12">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link"
-                    ><img src="./img/right-icon-gold.png" alt="img"
-                  /></a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link"
-                    ><img
-                      src="./img/right-icon-gold.png"
-                      style="transform: rotate(180deg)"
-                      alt="img"
-                  /></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-white">
-      <div class="container">
-        <div class="row mb-4">
-          <!-- Logo and Description -->
-          <div class="col-lg-4 col-md-6 text-md-start text-center mb-4 mb-lg-0">
-            <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" />
-            <p class="footer-description">
-              نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا
-              وتحقيق تجربة استماع مميزة.
-            </p>
-            <p class="mb-3">تابعنا على</p>
-            <div class="social-icons">
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-tiktok"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-x-twitter"></i
-              ></a>
-            </div>
-          </div>
-          <!-- Links -->
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="footer-title mb-3">بودكاست</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الرئيسية
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الحلقات
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  من نحن
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الأخبار
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  المدونة
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  تواصل معنا
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6">
-            <h5 class="footer-title mb-3">استكشف</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الأكثر شهرة
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  مقترحاتنا
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  أشهر الحلقات
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  أشهر المقدمين
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  ما يقولوا عنا
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  سياسة الخصوصية
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- Subscription Section -->
-          <div class="col-lg-4 col-md-8 mb-4">
-            <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
-            <p>انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
-
-            <input
-              type="email"
-              class="footer-email"
-              placeholder="أدخل بريدك الإلكتروني"
-            />
-            <br />
-
-            <a href="#" class="btn btn-primary mt-4">
-              اشترك الآن
-              <img src="./img/right-icon.png" alt="img" />
+          <h3 class="card-title fw-semibold mb-4">
+            <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+              قصص تُلهِم: فن السرد القصصي
             </a>
+          </h3>
+          <p class="fs-sm">
+            اكتشف كيف يمكن للقصة أن تُحدث فرقاً في عالم البودكاست.
+          </p>
+          <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+            <a href="#" class="btn btn-secondary">
+              <span class="icon fs-xl fw-bold">
+                <i class="fa-solid fa-headphones"></i>
+              </span>
+              <span class="btn-text fw-semibold">استمع الآن</span>
+            </a>
+            <span class="tag-btn">الحلقة 04</span>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom mt-4 text-center">
-        <p class="mb-0">جميع الحقوق محفوظة © 2024</p>
+    <!-- Episode Card 2 -->
+    <div class="col-xxl-6" data-aos="flip-right">
+      <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+        <div class="card-img p-3">
+          <img class="w-100 h-100 rounded" src="img/podcast/2.webp" alt="صورة الحلقة">
+        </div>
+        <div class="card-content p-6">
+          <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+            <div class="info d-flex align-items-center flex-wrap gap-4">
+              <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                <span class="icon fs-xl">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                </span>
+                <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                  محمد الأمين
+                </span>
+              </a>
+              <div class="episode-time d-flex align-items-center gap-2">
+                <span class="icon fs-lg">
+                  <i class="fa-regular fa-clock"></i>
+                </span>
+                <span class="time fs-lg fw-normal text-nowrap">
+                  2 ساعة 2 دقيقة
+                </span>
+              </div>
+            </div>
+            <button class="heart-icon fs-lg">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <h3 class="card-title fw-semibold mb-4">
+            <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+              همسات مخيفة: حكايات من الظلال
+            </a>
+          </h3>
+          <p class="fs-sm">
+            رحلة مثيرة عبر قصص غامضة تُثير الرعب وتحيي خيال المستمع.
+          </p>
+          <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+            <a href="#" class="btn btn-secondary">
+              <span class="icon fs-xl fw-bold">
+                <i class="fa-solid fa-headphones"></i>
+              </span>
+              <span class="btn-text fw-semibold">استمع الآن</span>
+            </a>
+            <span class="tag-btn">الحلقة 90</span>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
 
-    <!-- Scripts -->
-    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="js/amplitude.min.js" type="text/javascript"></script>
-    <script src="js/amplitude-custom.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
-  </body>
+    <!-- Episode Card 3 -->
+    <div class="col-xxl-6" data-aos="flip-left">
+      <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+        <div class="card-img p-3">
+          <img class="w-100 h-100 rounded" src="img/podcast/3.webp" alt="صورة الحلقة">
+        </div>
+        <div class="card-content p-6">
+          <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+            <div class="info d-flex align-items-center flex-wrap gap-4">
+              <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                <span class="icon fs-xl">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                </span>
+                <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                  أحمد الريس
+                </span>
+              </a>
+              <div class="episode-time d-flex align-items-center gap-2">
+                <span class="icon fs-lg">
+                  <i class="fa-regular fa-clock"></i>
+                </span>
+                <span class="time fs-lg fw-normal text-nowrap">
+                  1 ساعة 52 دقيقة
+                </span>
+              </div>
+            </div>
+            <button class="heart-icon fs-lg">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <h3 class="card-title fw-semibold mb-4">
+            <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+              عمالقة التقنية: رسم ملامح المستقبل
+            </a>
+          </h3>
+          <p class="fs-sm">
+            تحليل عميق لأثر التكنولوجيا على حياتنا وتشكيل مستقبل جديد.
+          </p>
+          <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+            <a href="#" class="btn btn-secondary">
+              <span class="icon fs-xl fw-bold">
+                <i class="fa-solid fa-headphones"></i>
+              </span>
+              <span class="btn-text fw-semibold">استمع الآن</span>
+            </a>
+            <span class="tag-btn">الحلقة 40</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Episode Card 4 -->
+    <div class="col-xxl-6" data-aos="flip-right">
+      <div class="episode-card d-flex flex-md-row flex-column align-items-center bgc-2 rounded-3">
+        <div class="card-img p-3">
+          <img class="w-100 h-100 rounded" src="img/podcast/1.webp" alt="صورة الحلقة">
+        </div>
+        <div class="card-content p-6">
+          <div class="card-top d-flex justify-content-between flex-wrap gap-4 mb-4">
+            <div class="info d-flex align-items-center flex-wrap gap-4">
+              <a href="host-details.html" class="episode-host d-flex align-items-center gap-2">
+                <span class="icon fs-xl">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                </span>
+                <span class="host-name fs-lg fw-medium text-nowrap link-text">
+                  ريم الهاشمي
+                </span>
+              </a>
+              <div class="episode-time d-flex align-items-center gap-2">
+                <span class="icon fs-lg">
+                  <i class="fa-regular fa-clock"></i>
+                </span>
+                <span class="time fs-lg fw-normal text-nowrap">
+                  5 ساعة 1 دقيقة
+                </span>
+              </div>
+            </div>
+            <button class="heart-icon fs-lg">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <h3 class="card-title fw-semibold mb-4">
+            <a href="episodes-details.html" class="link-text char-limit" data-maxlength="60">
+              فكاهة وتسلية: الضحك في كل زاوية
+            </a>
+          </h3>
+          <p class="fs-sm">
+            حلقة مرحة تُبرز قوة الفكاهة والضحك في تغيير المزاج.
+          </p>
+          <div class="card-btns d-flex justify-content-between flex-wrap gap-4 mt-4">
+            <a href="#" class="btn btn-secondary">
+              <span class="icon fs-xl fw-bold">
+                <i class="fa-solid fa-headphones"></i>
+              </span>
+              <span class="btn-text fw-semibold">استمع الآن</span>
+            </a>
+            <span class="tag-btn">الحلقة 41</span>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Additional episode cards can be added here following the same structure -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                <i class="fa-solid fa-angle-right"></i> </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <i class="fa-solid fa-angle-left"></i> </a>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Enhanced Footer Section -->
+  <footer class="footer text-white" role="contentinfo" aria-label="Footer">
+    <div class="container">
+      <div class="row mb-4">
+        <!-- Logo & Description -->
+        <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
+          <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
+          <p class="footer-description">
+            نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا وتحقيق تجربة استماع مميزة.
+          </p>
+          <p class="mb-3">تابعنا على</p>
+          <div class="social-icons">
+            <a href="#" class="text-white mx-2" title="فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2" title="إنستجرام" aria-label="إنستجرام"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2" title="يوتيوب" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white mx-2" title="تيك توك" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white mx-2" title="تويتر" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">بودكاست</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="footer-link" title="الرئيسية">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الرئيسية
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="الحلقات">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الحلقات
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="من نحن">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> من نحن
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="الأخبار">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الأخبار
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="المدونة">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> المدونة
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="تواصل معنا">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> تواصل معنا
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Explore Section -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">استكشف</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="footer-link" title="الأكثر شهرة">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الأكثر شهرة
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="مقترحاتنا">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> مقترحاتنا
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="أشهر الحلقات">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> أشهر الحلقات
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="أشهر المقدمين">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> أشهر المقدمين
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="ما يقولوا عنا">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> ما يقولوا عنا
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="سياسة الخصوصية">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> سياسة الخصوصية
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Subscription and Contact Section -->
+        <div class="col-lg-5 col-md-6">
+          <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
+          <p class="mb-3">انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
+          <!-- Newsletter Subscription Form -->
+          <form action="#" method="post" class="subscription-form" novalidate>
+            <div class="input-group mb-3">
+              <label for="footer-email" class="visually-hidden">البريد الإلكتروني</label>
+              <input type="email" id="footer-email" class="footer-email form-control"
+                placeholder="أدخل بريدك الإلكتروني" required />
+              <button class="btn btn-primary" type="submit" title="اشترك الآن">
+                اشترك <img src="./img/right-icon.png" alt="أيقونة" class="ms-1" loading="lazy" />
+              </button>
+            </div>
+          </form>
+          <!-- Additional Contact Information -->
+          <div class="contact-info mt-4">
+            <p><i class="fas fa-phone-alt me-2"></i> هاتف: 123456789</p>
+            <p><i class="fas fa-envelope me-2"></i> بريد إلكتروني: info@hanjara.ps</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> العنوان: فلسطين</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom mt-4 text-center">
+      <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/amplitude.min.js" type="text/javascript"></script>
+  <script src="js/amplitude-custom.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <!-- Include GSAP and ScrollTrigger from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <!-- GSAP Script for Card Flip Animation -->
+  <script>
+    // Register GSAP ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate each episode card on scroll with a flip effect
+    gsap.utils.toArray('.episode-card').forEach(function (card) {
+      gsap.fromTo(card,
+        { rotationY: 180, opacity: 0 },
+        {
+          rotationY: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    });
+
+  </script>
+</body>
+
 </html>

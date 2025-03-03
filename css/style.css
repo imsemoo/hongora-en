@@ -170,9 +170,9 @@ p {
   grid-gap: 8px;
   justify-content: center;
   width: max-content;
-
-  padding: 8px 20px;
-  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 35px;
+  font-size: 14px;
 }
 
 .btn-outline-primary {
@@ -180,7 +180,7 @@ p {
   border-color: var(--accent-color-2);
   border: none;
   padding: 0;
-  font-size: 1rem;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -192,11 +192,13 @@ p {
 .btn-secondary {
   background-color: var(--accent-color-2);
   border-color: var(--accent-color-2);
+  color: #000;
+
 }
 
 .btn-primary:hover {
-  background-color: var(--highlight-color);
-  border-color: var(--highlight-color);
+  background-color: var(--link-color);
+  border-color: var(--link-color);
 }
 
 .btn-outline-primary:hover {
@@ -446,7 +448,6 @@ p {
 
 /* Contact Info Styling */
 .contact-info p {
-  margin: 0.5rem 0;
   font-size: 0.95rem;
 }
 
@@ -900,7 +901,7 @@ section header {
 .services-list .services-item h4 {
   font-size: 24px;
   margin: 10px 0;
-  color: #ffc107;
+  color: #fff;
 }
 
 /* Service Item Paragraphs */
@@ -908,18 +909,19 @@ section header {
   font-size: 16px;
   line-height: 2;
   margin: 10px 0;
-  color: #ccc;
+  color: #fff;
 }
 
 .services-list .services-item .icon {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px;
-  background: #fff;
+  background: transparent;
+  border: 2px solid var(--accent-color-2);
 }
 
 /* Service Icons Styling */
@@ -937,16 +939,14 @@ section header {
 
 /* Button hover effect */
 .services-list .services-item a.btn:hover {
-  background-color: var(--hover-color);
+  background-color: var(--link-color);
 }
 
 /* Start Section BreadCrumb */
 .breadcrumb {
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: 40vh;
+
+  height: 450px;
   background-image: url("../img/breadcrumb-bg.png");
   background-size: cover;
   background-position: center;
@@ -954,6 +954,10 @@ section header {
   text-align: center;
   padding: 40px 40px;
   margin: 0;
+}
+
+.breadcrumb .title {
+  font-size: 3rem;
 }
 
 .breadcrumb .container {
@@ -1373,32 +1377,33 @@ section header {
   margin-bottom: 20px;
 }
 
-.contact .contact-info .info-box i {
-  font-size: 20px;
-  color: var(--link-color);
+/* Form Enhancements */
+.contact-form .form-control,
+.contact-form .form-select {
+  border: 1px solid var(--accent-color-4);
+  border-radius: 4px;
+  padding: 0.8rem;
+  background: var(--secondary-background-color);
+  color: var(--text-color);
 }
 
-.contact-form form .form-group input,
-.contact-form form .form-control,
-.contact-form form .form-select {
-  background-color: transparent;
-  color: #eee;
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: var(--accent-color-1);
+  box-shadow: 0 0 5px var(--accent-color-1);
 }
 
-.contact-form form .form-select option {
-  background-color: var(--background-color);
+/* Additional Spacing for Map and Office Hours */
+.contact-form .additional-info h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  color: var(--highlight-color);
 }
 
-.contact-form form .form-floating textarea {
-  resize: none;
-  height: 100px;
-  padding: 5px;
+.contact-form .additional-info p {
+  font-size: 1.1rem;
 }
 
-.contact-form form .form-floating textarea::placeholder,
-.contact-form form .form-select option {
-  color: rgba(172, 172, 172, 1) !important;
-}
 
 /* =========================== */
 /* Blog/News Slider Section    */
@@ -2480,4 +2485,209 @@ section header {
 .subtitle {
   margin-top: 10px;
   font-size: 1.2rem;
+}
+
+.team-header-content {
+  text-align: start;
+}
+
+
+
+/* Ensure proper 3D perspective for flip animation */
+.latest-episodes-section {
+
+  padding: 90px 0;
+  perspective: 1000px;
+}
+
+.latest-episodes-section .episode-card {
+  transform-style: preserve-3d;
+  background: var(--secondary-background-color);
+  border-radius: 16px;
+  margin-bottom: 24px;
+  height: 250px;
+}
+
+/* Example adjustments for spacing and alignment */
+.latest-episodes-section .header {
+  margin-bottom: 2rem;
+}
+
+.latest-episodes-section .tag-list li a {
+  color: var(--accent-color-2);
+}
+
+.latest-episodes-section .episode-host i,
+.episode-time i {
+  color: var(--accent-color-2);
+
+}
+
+.tag-btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+  background: rgb(var(--bg-3));
+  background: hsl(275 20% 27% / 1);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.latest-episodes-section .tag-item {
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color-2);
+  border-radius: 60px;
+
+}
+
+.latest-episodes-section .card-title {
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+.latest-episodes-section .card-title .link-text {
+  color: #fff;
+
+}
+
+.latest-episodes-section .host-name {
+  color: #fff;
+
+}
+
+.latest-episodes-section .card-img {
+  width: 240px;
+}
+
+.latest-episodes-section .card-content {
+  flex: 1;
+  padding: 16px;
+}
+
+.remove-tag,
+.heart-icon {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #fff;
+  font-size: 28px;
+}
+
+
+.remove-tag {
+  font-size: 14px;
+  color: var(--accent-color-2);
+
+}
+
+.pagination {
+  margin-top: 50px;
+}
+
+.pagination .page-link {
+  background-color: var(--accent-color-1);
+  border: 1px solid hsl(260 30% 30% / 1);
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.7;
+}
+
+.pagination .page-link:hover {
+  background-color: #ffc107;
+  color: #1c1620;
+}
+
+.pagination .active .page-link {
+  background-color: #ffc107;
+  color: #1c1620;
+  border-color: #ffc107;
+}
+
+/* Search with Filter Section Styling */
+.search-with-filter {
+  padding: 20px 30px;
+  margin-top: -45px;
+  background-color: var(--background-color);
+  border-radius: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  border: 2px solid hsl(45deg 100% 51% / 23%);
+
+}
+
+.search-with-filter .search-form {
+  width: 100%;
+  gap: 20px;
+}
+
+/* Select Category Styling */
+.select-category-area select {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 2px solid hsl(45deg 100% 51% / 23%);
+
+  background-color: var(--secondary-background-color);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+  appearance: none;
+  height: 54px;
+  text-align: center;
+}
+
+.select-category-area select:focus {
+  border: 2px solid hsl(45deg 100% 51% / 23%);
+
+}
+
+/* Input Area Styling */
+.search-with-filter .input-area {
+  position: relative;
+  flex: 1;
+}
+
+.search-with-filter .input-area input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+  height: 54px;
+
+}
+
+.search-with-filter .input-area input::placeholder {
+  color: #dcd7e8;
+}
+
+.search-with-filter .input-area input:focus {
+  border-color: transparent;
+}
+
+/* Button Styling */
+.search-with-filter .input-area button {
+  position: absolute;
+  left:  5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffc107;
+  color: #1c1620;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-with-filter .input-area button:hover {
+  background-color: #e0b200;
 }
