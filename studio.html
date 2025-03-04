@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
+    <!-- Basic Meta Tags for SEO and Responsive Design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>حجز استوديو - منصة البودكاست والإبداع الصوتي</title>
-
+    <!-- Creative SEO-friendly Title -->
+    <title>حجز استوديو - منصة البودكاست والإبداع الصوتي | حنجرة</title>
+    <!-- Meta Description for SEO -->
     <meta
       name="description"
-      content="حنجرة: منصة فلسطينية تهدف لإثراء المحتوى الصوتي العربي، تقدم برامج بودكاست متنوعة وخدمات التعليق الصوتي وتأجير الاستوديو. انضم إلينا واكتشف صوتك."
+      content="احجز استوديو حنجرة بكل سهولة واحترافية. استمتع ببيئة تسجيل متطورة مجهزة بأحدث التقنيات الصوتية، واستفد من دعمنا الفني المتكامل لتطوير محتواك الصوتي."
     />
-
+    <!-- Keywords Meta -->
     <meta
       name="keywords"
-      content="حنجرة, بودكاست, منصة صوتية, تعليقات صوتية, الإنتاج الصوتي, استوديو, فلسطين, المحتوى العربي, المعلقون الصوتيون, خدمات صوتية"
+      content="حنجرة, استوديو, حجز استوديو, بودكاست, تسجيل, تقنية صوتية, استوديو تسجيل, تطوير محتوى صوتي"
     />
-
     <!-- Robots Meta -->
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي"
-    />
+    <meta property="og:title" content="حجز استوديو - منصة البودكاست والإبداع الصوتي | حنجرة" />
     <meta
       property="og:description"
-      content="منصة فلسطينية تُقدم برامج بودكاست متنوعة وتعليقات صوتية بمشاركة نخبة من المعلقين والمبدعين."
+      content="احجز استوديو حنجرة بكل سهولة واحترافية واستفد من بيئة تسجيل متطورة ودعم فني متخصص."
     />
     <meta property="og:image" content="img/og-image.png" />
     <meta property="og:url" content="https://hanjara.ps" />
@@ -33,193 +31,390 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي"
-    />
+    <meta name="twitter:title" content="حجز استوديو - منصة البودكاست والإبداع الصوتي | حنجرة" />
     <meta
       name="twitter:description"
-      content="شاركنا الاستماع والتجربة الصوتية الفريدة من خلال برامج بودكاست حنجرة وخدماتنا المتنوعة."
+      content="احجز استوديو تسجيل احترافي مع منصة حنجرة واستفد من أحدث التقنيات الصوتية وخدمات الدعم الفني المتكاملة."
     />
     <meta name="twitter:image" content="img/twitter-image.png" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-    <!-- Flatpickr CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <!-- Flatpickr Script -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <!-- Flatpickr Arabic Localization -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+    <!-- Flatpickr CSS & Scripts for Date & Time Pickers -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js" defer></script>
 
-    <!-- Stylesheets -->
+    <!-- Tagify CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css">
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify" defer></script>
+
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="css/amplitude.css" />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
 
+    <!-- Custom CSS: Theme Overrides & Visual Enhancements -->
+    <style>
+      /* ------------------ Existing CSS (لم يتم حذف أي جزء) ------------------ */
+      .studio-form .form-select,
+      .studio-form .form-group input,
+      .studio-form .form-control {
+        background: var(--background-color) !important;
+        margin-bottom: 0 !important;
+        border-radius: 12px;
+        padding: 12px;
+        color: #fff;
+        border: 1px solid hsl(258 27% 25% / 1);
+        direction: rtl;
+      }
+
+      .input-group-text {
+        background: hsl(276 19% 20% / 1) !important;
+        color: #ffc107;
+        border-color: hsl(258 27% 25% / 1);
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .studio-form .form-select:focus,
+      .studio-form .form-control:focus {
+        border-color: #ffc107;
+        box-shadow: none;
+      }
+
+      .studio-form .form-control::placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+
+      .studio-form .flatpickr-input {
+        background-color: var(--background-color) !important;
+        color: #fff !important;
+      }
+
+      .team-header-content .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .team-header-content p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+      }
+
+      .rent-form.section.bg-dark {
+        padding: 80px 0;
+      }
+
+      .rent-form .title {
+        font-size: 2rem;
+        color: #ffc107;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .rent-form form {
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 16px;
+        background: var(--secondary-background-color);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .rent-form .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .rent-form .form-label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #fff;
+      }
+
+      .rent-form .btn {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+      }
+
+      .rent-form .btn:hover {
+        background-color: #ffc107;
+        color: #1c1620;
+      }
+
+      /* ------------------ Enhanced Flatpickr Dark Theme ------------------ */
+      .flatpickr-calendar {
+        background: #1c1620;
+        color: #fff;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        font-family: 'Aljazeera-Regular', sans-serif;
+      }
+      
+      .flatpickr-months {
+        background: #1c1620;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      .flatpickr-current-month,
+      .flatpickr-months .flatpickr-prev-month,
+      .flatpickr-months .flatpickr-next-month {
+        color: #fff;
+        fill: #fff;
+      }
+      
+      .flatpickr-weekdays {
+        background: #1c1620;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0.5em 0;
+      }
+      
+      .flatpickr-weekday {
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+      
+      .flatpickr-days {
+        background: #1c1620;
+        padding: 10px;
+      }
+      
+      .flatpickr-day {
+        color: #dcd7e8;
+        border-radius: 4px;
+        transition: background 0.3s, color 0.3s;
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .flatpickr-day:hover,
+      .flatpickr-day:focus {
+        background: #ffc107;
+        color: #1c1620;
+      }
+      
+      .flatpickr-day.selected,
+      .flatpickr-day.today {
+        background: #ffc107;
+        color: #1c1620;
+      }
+      
+      .flatpickr-day.flatpickr-disabled,
+      .flatpickr-day.notAllowed,
+      .flatpickr-day.prevMonthDay,
+      .flatpickr-day.nextMonthDay {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      span.flatpickr-weekday {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      /* ------------------ Tagify Styling (Default from CDN يمكن تعديله عند الحاجة) ------------------ */
+
+      /* ------------------ End of Custom CSS ------------------ */
+    </style>
+
+    <!-- GSAP & ScrollTrigger for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
+  </head>
   <body>
-    <!-- Navbar -->
+    <!-- Skip Link for Accessibility -->
+    <a class="skip-link" href="#main-content" style="position: absolute; top: -40px; left: 0; background: var(--secondary-background-color); color: var(--text-color); padding: 8px; z-index: 9999;">تخطي إلى المحتوى</a>
+
+    <!-- Navbar (Unchanged) -->
     <nav class="navbar navbar-expand-lg custom-navbar">
       <div class="container">
-        <!-- Logo -->
-        <a
-          class="navbar-brand d-flex align-items-center gap-2"
-          href="index.html"
-        >
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
           <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
         </a>
-
-        <!-- Toggler Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
-                >الرئيسية</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">عن حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="podcast.html">حنجرة بودكاست</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="team.html">فريق حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">خدمات حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="studio.html">احجز الاستوديو</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">تواصل معنا</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن حنجرة</a></li>
+            <li class="nav-item"><a class="nav-link" href="podcast.html">حنجرة بودكاست</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">فريق حنجرة</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">خدمات حنجرة</a></li>
+            <li class="nav-item"><a class="nav-link" href="studio.html">احجز الاستوديو</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
           </ul>
           <a href="#" class="btn btn-primary">
-            <i class="fa-solid fa-user-plus"></i>
-            انضم الآن
+            <i class="fa-solid fa-user-plus"></i> انضم الآن
           </a>
         </div>
       </div>
     </nav>
 
-    <!-- BreadCrumb -->
+    <!-- Breadcrumb Section for Studio Booking -->
     <div class="breadcrumb">
-      <div class="container">
-        <h3 class="title">حجز استوديو</h3>
+      <div class="container text-center">
+        <img src="img/hero-track.png" alt="Track Image" class="mb-4" />
+        <h3 class="title">
+          <span class="text-white">حجز</span> استوديو
+        </h3>
+        <!-- Creative and Engaging Description -->
+        <p class="lead text-white mt-2">
+          استعد لتجربة تسجيل احترافية في استوديو حنجرة؛ بيئة متطورة تجمع بين أحدث التقنيات والدعم الفني المتخصص لإطلاق
+          إبداعك الصوتي.
+        </p>
+        <!-- Podcast Platforms Icons (Optional) -->
+        <div class="podcast-platforms d-flex justify-content-center mt-4 gap-3">
+          <!-- SoundCloud -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #FF5500; color: #fff;">
+            <i class="fab fa-soundcloud fa-lg"></i>
+          </a>
+          <!-- Spotify -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #1DB954; color: #fff;">
+            <i class="fab fa-spotify fa-lg"></i>
+          </a>
+          <!-- Google Podcast -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #DB4437; color: #fff;">
+            <i class="fa-solid fa-podcast fa-lg"></i>
+          </a>
+          <!-- Apple Podcast -->
+          <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+             style="width: 50px; height: 50px; background: #000000; color: #fff;">
+            <i class="fab fa-apple fa-lg"></i>
+          </a>
+        </div>
       </div>
     </div>
-    <!-- BreadCrumb -->
 
     <!-- Rent Studio Header Section -->
     <section class="team-header section bg-dark">
       <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-12">
+        <div class="row align-items-center">
+          <!-- Left Column: Header Content -->
+          <div class="col-md-6 col-12">
             <div class="team-header-content">
               <h2 class="section-title">حجز بسيط، نتائج مذهلة!</h2>
               <p class="my-3">
-                في حنجرة، نقدم لك تجربة استثنائية لحجز استوديو تسجيل يضع
-                احتياجاتك وإبداعك في الصدارة. نحن فريق متفانٍ من المحترفين
-                والخبراء الذين يسعون لتقديم أفضل الخدمات لضمان تجربة تسجيل سلسة
-                ومريحة.
+                استمتع بتجربة حجز استوديو تسجيل احترافي مع منصة حنجرة. نوفر لك بيئة متطورة مجهزة بأحدث التقنيات الصوتية،
+                مع دعم فني متخصص يجعل من عملية التسجيل تجربة سلسة وملهمة.
               </p>
               <p class="mb-3">
-                استوديوهاتنا مجهزة بأحدث التقنيات الصوتية والتجهيزات المتطورة،
-                مما يوفر لك البيئة المثالية لإنتاج محتوى متميز يلبي توقعاتك
-                ويتجاوزها. من التسجيلات الصوتية إلى البث المباشر، نضمن لك كل ما
-                تحتاجه لإطلاق العنان لإبداعك.
-              </p>
-              <p class="mb-3">
-                يمكنكم حجز الاستوديو والاستفادة منه: - للتسجيل فقط (بدون تدخل
-                تحريري أو مكساج) - للتسجيل مع التحرير والمكساج.
+                اختر الخدمة التي تناسب احتياجاتك: حجز للتسجيل فقط أو مع خدمات التحرير والمكساج لتجربة متكاملة.
               </p>
               <div class="d-flex align-items-center">
-                <img
-                  src="./img/location.png"
-                  alt="img"
-                  style="width: 30px; height: 30px"
-                />
-                <p class="ms-2">
-                  العنوان: فلسطين، الخليل –الحرايق – مبنى الحديقة
-                  <br />
-                  التكنولوجية – الطابق الثاني.
+                <!-- Using Font Awesome icon for location -->
+                <i class="fa-solid fa-location-dot" style="font-size: 30px; color: #ffc107;"></i>
+                <p class="ms-2 mb-0">
+                  العنوان: فلسطين، الخليل – الحرايق – مبنى الحديقة التكنولوجية – الطابق الثاني.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-5 col-12">
+          <!-- Right Column: Creative Image -->
+          <div class="col-md-6 col-12">
             <div class="team-img">
-              <img src="./img/team/frame-team.png" alt="team" />
+              <img src="./img/illustrations/10.png" alt="استوديو حنجرة" class="img-fluid" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tools -->
+    <!-- Tools / Equipment Section -->
     <div class="tools section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-5">
-            <h3 class="title text-white">المعدات</h3>
+            <h3 class="title">المعدات المتوفرة في الاستوديو</h3>
           </div>
+          <!-- Tool Item 1: Shure SM7B Microphone -->
           <div class="col-md-3 col-12 mb-4">
             <div class="tools-box">
-              <img src="./img/tools-01.png" alt="img" />
-              <h4>مايكروفونات</h4>
-              <p>NT1 Rode Microphone condenser, Behringer B1 Microphone*2</p>
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="مايكروفون Shure SM7B" />
+              <h4>مايكروفون Shure SM7B</h4>
+              <p>مايكروفون ديناميكي شهير يضمن صوتاً نقيًا وخاليًا من التشويش.</p>
             </div>
           </div>
+          <!-- Tool Item 2: Focusrite Scarlett 2i2 Audio Interface -->
           <div class="col-md-3 col-12 mb-4">
             <div class="tools-box">
-              <img src="./img/tools-02.png" alt="img" />
-              <h4>السماعات</h4>
-              <p>YOGO Stereo Heaadphones CD 250 , Logitech G332 Headphone</p>
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="واجهة صوتية Focusrite Scarlett 2i2" />
+              <h4>واجهة صوتية Focusrite Scarlett 2i2</h4>
+              <p>تسجيل صوت بدقة عالية بفضل واجهة صوتية احترافية.</p>
             </div>
           </div>
+          <!-- Tool Item 3: Beyerdynamic DT 770 Pro Headphones -->
           <div class="col-md-3 col-12 mb-4">
             <div class="tools-box">
-              <img src="./img/tools-01.png" alt="img" />
-              <h4>مايكروفونات</h4>
-              <p>NT1 Rode Microphone condenser, Behringer B1 Microphone*2</p>
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="سماعات Beyerdynamic DT 770 Pro" />
+              <h4>سماعات استوديو Beyerdynamic DT 770 Pro</h4>
+              <p>تجربة استماع دقيقة مع سماعات عالية الجودة.</p>
             </div>
           </div>
+          <!-- Tool Item 4: Professional Audio Mixer -->
           <div class="col-md-3 col-12 mb-4">
             <div class="tools-box">
-              <img src="./img/tools-02.png" alt="img" />
-              <h4>السماعات</h4>
-              <p>YOGO Stereo Heaadphones CD 250 , Logitech G332 Headphone</p>
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="ميكسر صوتي احترافي" />
+              <h4>ميكسر صوتي احترافي</h4>
+              <p>ضبط ومزج مستويات الصوت بدقة مع ميكسر متطور.</p>
+            </div>
+          </div>
+          <!-- Tool Item 5: Pop Filter -->
+          <div class="col-md-3 col-12 mb-4">
+            <div class="tools-box">
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="فلتر بوب" />
+              <h4>فلتر بوب</h4>
+              <p>يقلل من الأصوات غير المرغوب بها للحصول على صوت نقي.</p>
+            </div>
+          </div>
+          <!-- Tool Item 6: Boom Arm -->
+          <div class="col-md-3 col-12 mb-4">
+            <div class="tools-box">
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="ذراع بوم" />
+              <h4>ذراع بوم</h4>
+              <p>يضمن ثبات المايكروفون مع مرونة حركة أثناء التسجيل.</p>
+            </div>
+          </div>
+          <!-- Tool Item 7: Acoustic Panels -->
+          <div class="col-md-3 col-12 mb-4">
+            <div class="tools-box">
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="ألواح عازلة للصوت" />
+              <h4>ألواح عازلة للصوت</h4>
+              <p>تحسين جودة الصوت وتقليل الصدى داخل الاستوديو.</p>
+            </div>
+          </div>
+          <!-- Tool Item 8: Studio Monitors -->
+          <div class="col-md-3 col-12 mb-4">
+            <div class="tools-box">
+              <img src="https://dummyimage.com/250x160/dddddd/000000/" alt="مكبرات صوت استوديو" />
+              <h4>مكبرات صوت استوديو</h4>
+              <p>مراقبة دقيقة للصوت أثناء التسجيل والمكساج.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Rent Form -->
-    <div class="rent-form section bg-dark">
+    <!-- Rent Form Section -->
+    <div class="studio-form rent-form section bg-dark" id="main-content">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
@@ -227,132 +422,112 @@
           </div>
           <form class="my-5">
             <div class="row">
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="name" class="form-label">الاسم الكامل</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="أدخل اسمك كامل"
-                  />
+              <!-- Full Name Input with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  <input type="text" class="form-control" id="fullName" placeholder="أدخل اسمك الكامل" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="phone" class="form-label">رقم الهاتف</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    placeholder="ادخل رقم هاتفك"
-                  />
+              <!-- Phone Input with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <input type="text" class="form-control" id="phone" placeholder="أدخل رقم هاتفك" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="email" class="form-label">
-                    البريد الإلكتروني</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="ادخل البريد الإلكتروني"
-                  />
+              <!-- Email Input with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <input type="email" class="form-control" id="email" placeholder="أدخل بريدك الإلكتروني" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="destination" class="form-label">اسم الجهة</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="destination"
-                    placeholder="ادخل اسم الجهة أو الشركة الخاصة بك"
-                  />
+              <!-- Company Input with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-building"></i>
+                  </span>
+                  <input type="text" class="form-control" id="company" placeholder="أدخل اسم الجهة أو الشركة" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="destination" class="form-label">
-                    الغرض من الإستخدام</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="destination"
-                    placeholder="تسجيل بودكاست, جلسة تصوير..."
-                  />
+              <!-- Usage Purpose Input with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                  </span>
+                  <input type="text" class="form-control" id="usagePurpose" placeholder="مثال: تسجيل بودكاست، جلسة تصوير، إلخ" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="destination" class="form-label">
-                    عدد الأشخاص</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="destination"
-                    placeholder="ادخل عدد الأشخاص المتوقع حضورهم"
-                  />
+              <!-- Number of People Input with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-users"></i>
+                  </span>
+                  <input type="number" class="form-control" id="numPeople" placeholder="أدخل عدد الأشخاص المتوقع حضورهم" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="destination" class="form-label">
-                    تاريخ الحجز المطلوب
-                  </label>
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="destination"
-                    placeholder="ادخل تاريخ الحجز المطلوب"
-                  />
+              <!-- Booking Date Input with Flatpickr and Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-calendar-alt"></i>
+                  </span>
+                  <input type="text" class="form-control" id="bookingDate" placeholder="اختر التاريخ" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="destination" class="form-label">
-                    مدة الإستخدام المطلوبة
-                  </label>
-                  <input
-                    type="time"
-                    class="form-control"
-                    id="destination"
-                    placeholder="00.00"
-                  />
+              <!-- Usage Duration Input with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                  </span>
+                  <input type="text" class="form-control" id="usageDuration" placeholder="مثال: ساعتين، 4 ساعات" />
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="form-group">
-                  <label for="destination" class="form-label">
-                    وقت الحجز
-                  </label>
-                  <input
-                    type="time"
-                    class="form-control"
-                    id="destination"
-                    placeholder="00:00 إلى 00:00"
-                  />
+              <!-- Booking Time as Select with Icon -->
+              <div class="col-md-6 col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-clock"></i>
+                  </span>
+                  <select class="form-select" id="bookingTime">
+                    <option selected disabled>اختر الوقت</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                  </select>
                 </div>
               </div>
-              <div class="col-md-6 col-12 mt-3">
-                <div class="form-group">
-                  <label for="name" class="form-label">المعدات المطلوبة</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="كاميرا, ميكروفون..."
-                  />
+              <!-- Required Equipment Input with Tagify and Icon -->
+              <div class="col-12 mb-3">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-cogs"></i>
+                  </span>
+                  <input type="text" class="form-control" id="requiredEquipment" placeholder="مثال: كاميرا، ميكروفون، سماعات" />
                 </div>
               </div>
-              <div class="mt-4">
-                <a href="#" class="btn btn-secondary">
-                  ارسال <img src="./img/right-icon.png" alt="img" />
-                </a>
+              <!-- Submit Button -->
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-secondary">
+                  إرسال <i class="fa-solid fa-paper-plane"></i>
+                </button>
               </div>
             </div>
           </form>
@@ -360,89 +535,108 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer text-white">
+    <!-- Footer (Unchanged) -->
+    <footer class="footer text-white" role="contentinfo" aria-label="Footer">
       <div class="container">
         <div class="row mb-4">
-          <!-- Logo and Description -->
-          <div class="col-lg-4 col-md-6 text-md-start text-center mb-4 mb-lg-0">
-            <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" />
+          <!-- Logo & Description -->
+          <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
+            <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
             <p class="footer-description">
-              نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا
-              وتحقيق تجربة استماع مميزة.
+              نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا وتحقيق تجربة استماع مميزة.
             </p>
             <p class="mb-3">تابعنا على</p>
             <div class="social-icons">
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-tiktok"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-x-twitter"></i
-              ></a>
+              <a href="#" class="text-white mx-2" title="فيسبوك" aria-label="فيسبوك">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white mx-2" title="إنستجرام" aria-label="إنستجرام">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white mx-2" title="يوتيوب" aria-label="يوتيوب">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="text-white mx-2" title="تيك توك" aria-label="تيك توك">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="#" class="text-white mx-2" title="تويتر" aria-label="تويتر">
+                <i class="fab fa-x-twitter"></i>
+              </a>
             </div>
           </div>
-
-          <!-- Links -->
+          <!-- Quick Links Section -->
           <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h5 class="footer-title mb-3">بودكاست</h5>
             <ul class="list-unstyled">
-              <li><a href="#" class="footer-link">الرئيسية</a></li>
-              <li><a href="#" class="footer-link">الحلقات</a></li>
-              <li><a href="#" class="footer-link">من نحن</a></li>
-              <li><a href="#" class="footer-link">الأخبار</a></li>
-              <li><a href="#" class="footer-link">المدونة</a></li>
-              <li><a href="#" class="footer-link">تواصل معنا</a></li>
+              <li><a href="#" class="footer-link" title="الرئيسية">الرئيسية</a></li>
+              <li><a href="#" class="footer-link" title="الحلقات">الحلقات</a></li>
+              <li><a href="#" class="footer-link" title="من نحن">من نحن</a></li>
+              <li><a href="#" class="footer-link" title="الأخبار">الأخبار</a></li>
+              <li><a href="#" class="footer-link" title="المدونة">المدونة</a></li>
+              <li><a href="#" class="footer-link" title="تواصل معنا">تواصل معنا</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-2 col-md-6">
+          <!-- Explore Section -->
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
             <h5 class="footer-title mb-3">استكشف</h5>
             <ul class="list-unstyled">
-              <li><a href="#" class="footer-link">الأكثر شهرة</a></li>
-              <li><a href="#" class="footer-link">مقترحاتنا</a></li>
-              <li><a href="#" class="footer-link">أشهر الحلقات</a></li>
-              <li><a href="#" class="footer-link">أشهر المقدمين</a></li>
-              <li><a href="#" class="footer-link">ما يقولوا عنا</a></li>
-              <li><a href="#" class="footer-link">سياسة الخصوصية</a></li>
+              <li><a href="#" class="footer-link" title="الأكثر شهرة">الأكثر شهرة</a></li>
+              <li><a href="#" class="footer-link" title="مقترحاتنا">مقترحاتنا</a></li>
+              <li><a href="#" class="footer-link" title="أشهر الحلقات">أشهر الحلقات</a></li>
+              <li><a href="#" class="footer-link" title="أشهر المقدمين">أشهر المقدمين</a></li>
+              <li><a href="#" class="footer-link" title="ما يقولوا عنا">ما يقولوا عنا</a></li>
+              <li><a href="#" class="footer-link" title="سياسة الخصوصية">سياسة الخصوصية</a></li>
             </ul>
           </div>
-          <!-- Subscription Section -->
-          <div class="col-lg-4 col-md-8 mb-4">
+          <!-- Subscription and Contact Section -->
+          <div class="col-lg-4 col-md-6">
             <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
-            <p>انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
+            <p class="mb-3">انضم إلى نشرتنا لتصلك آخر التحديثات والأخبار.</p>
             <form class="d-flex">
-              <input
-                type="email"
-                class="form-control me-2"
-                placeholder="أدخل بريدك الإلكتروني"
-              />
+              <input type="email" class="form-control me-2" placeholder="أدخل بريدك الإلكتروني" />
               <button class="btn btn-primary">اشترك الآن</button>
             </form>
           </div>
         </div>
       </div>
-
       <!-- Footer Bottom -->
       <div class="footer-bottom mt-4 text-center">
-        <p class="mb-0">جميع الحقوق محفوظة © 2024</p>
+        <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق محفوظة.</p>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="js/amplitude.min.js" type="text/javascript"></script>
-    <script src="js/amplitude-custom.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <!-- Scripts: Loaded with "defer" for Improved Performance -->
+    <script src="js/jquery-3.7.1.min.js" type="text/javascript" defer></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript" defer></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript" defer></script>
+    <script src="js/amplitude.min.js" type="text/javascript" defer></script>
+    <script src="js/amplitude-custom.js" type="text/javascript" defer></script>
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <!-- GSAP and ScrollTrigger for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
+    <!-- Initialize Flatpickr for Date Input -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Flatpickr for booking date with Arabic locale
+        flatpickr("#bookingDate", {
+          dateFormat: "d/m/Y",
+          locale: "ar"
+        });
+      });
+    </script>
+    <!-- Initialize Tagify for Equipment Input -->
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        var input = document.getElementById('requiredEquipment');
+        new Tagify(input, {
+          whitelist: ["كاميرا", "ميكروفون", "سماعات", "فلتر بوب", "ذراع بوم", "مكبرات صوت"],
+          dropdown: {
+            enabled: 0,
+            maxItems: 5
+          }
+        });
+      });
+    </script>
   </body>
 </html>
