@@ -116,3 +116,23 @@ $(document).ready(function () {
     }
   });
 });
+
+
+   // Initialize Tagify for Equipment Input
+   document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Flatpickr for booking date with Arabic locale
+    flatpickr("#bookingDate", {
+      dateFormat: "d/m/Y",
+      locale: "ar"
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    var input = document.getElementById('requiredEquipment');
+    new Tagify(input, {
+      whitelist: ["كاميرا", "ميكروفون", "سماعات", "فلتر بوب", "ذراع بوم", "مكبرات صوت"],
+      dropdown: {
+        enabled: 0,
+        maxItems: 5
+      }
+    });
+  });
