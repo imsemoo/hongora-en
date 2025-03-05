@@ -1,318 +1,364 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تفاصيل الخبر - منصة البودكاست والإبداع الصوتي | حنجرة</title>
-    <meta
-      name="description"
-      content="حنجرة: منصة فلسطينية لإثراء المحتوى الصوتي العربي. اقرأ تفاصيل الخبر واكتشف المزيد من القصص والإبداعات." />
-    <meta
-      name="keywords"
-      content="حنجرة, بودكاست, منصة صوتية, أخبار, تفاصيل الخبر" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="تفاصيل الخبر - منصة البودكاست والإبداع الصوتي | حنجرة" />
-    <meta
-      property="og:description"
-      content="منصة حنجرة تقدم تفاصيل الخبر مع كافة المعلومات الخاصة به، بالإضافة إلى مقالات ذات صلة وتعليقات الجمهور." />
-    <meta property="og:image" content="img/og-image.png" />
-    <meta property="og:url" content="https://hanjara.ps" />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تفاصيل الخبر - منصة البودكاست والإبداع الصوتي | حنجرة</title>
+  <meta name="description"
+    content="حنجرة: منصة فلسطينية لإثراء المحتوى الصوتي العربي. اقرأ تفاصيل الخبر واكتشف المزيد من القصص والإبداعات." />
+  <meta name="keywords" content="حنجرة, بودكاست, منصة صوتية, أخبار, تفاصيل الخبر" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="تفاصيل الخبر - منصة البودكاست والإبداع الصوتي | حنجرة" />
-    <meta
-      name="twitter:description"
-      content="اكتشف تفاصيل الخبر واستفد من محتوى متكامل يشمل المعلومات الأساسية والمقالات ذات الصلة، مع إمكانية المشاركة والتعليق." />
-    <meta name="twitter:image" content="img/twitter-image.png" />
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="تفاصيل الخبر - منصة البودكاست والإبداع الصوتي | حنجرة" />
+  <meta property="og:description"
+    content="منصة حنجرة تقدم تفاصيل الخبر مع كافة المعلومات الخاصة به، بالإضافة إلى مقالات ذات صلة وتعليقات الجمهور." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://hanjara.ps" />
+  <meta property="og:type" content="website" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="تفاصيل الخبر - منصة البودكاست والإبداع الصوتي | حنجرة" />
+  <meta name="twitter:description"
+    content="اكتشف تفاصيل الخبر واستفد من محتوى متكامل يشمل المعلومات الأساسية والمقالات ذات الصلة، مع إمكانية المشاركة والتعليق." />
+  <meta name="twitter:image" content="img/twitter-image.png" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="css/amplitude.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-    <!-- Custom Styles -->
-    <style>
-    
-      .news-header h1 {
-        font-size: 2.5rem;
-        color: #ffc107;
-        margin-bottom: 1rem;
-      }
-      .news-meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        color: #dcd7e8;
-        font-size: 0.9rem;
-        margin-bottom: 2rem;
-        justify-content: center;
-      }
-      .news-meta div {
-        display: flex;
-        align-items: center;
-      }
-      .news-meta i {
-        margin-left: 0.5rem;
-        color: #ffc107;
-      }
-      .news-banner img {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-      }
-      .news-content h2 {
-        font-size: 1.8rem;
-        color: #ffc107;
-        margin-bottom: 1rem;
-      }
-      .news-content p {
-        font-size: 1rem;
-        color: #dcd7e8;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-      }
-      .news-content ul {
-        list-style: disc;
-        padding-right: 1.5rem;
-        color: #dcd7e8;
-        margin-bottom: 1.5rem;
-      }
-      .social-share {
-        margin: 2rem 0;
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-      }
-      .social-share a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background: #1c1620;
-        border: 1px solid #ffc107;
-        border-radius: 50%;
-        color: #ffc107;
-        transition: all 0.3s ease;
-      }
-      .social-share a:hover {
-        background: #ffc107;
-        color: #1c1620;
-      }
-      .related-news {
-        margin-top: 4rem;
-      }
-      .related-news h3 {
-        color: #ffc107;
-        margin-bottom: 1.5rem;
-        text-align: center;
-      }
-      .related-cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      .related-card {
-        background: #1c1620;
-        border-radius: 8px;
-        overflow: hidden;
-        flex: 1 1 calc(33.33% - 1rem);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-      }
-      .related-card:hover {
-        transform: translateY(-5px);
-      }
-      .related-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-      .related-card .card-content {
-        padding: 1rem;
-      }
-      .related-card .card-content h4 {
-        font-size: 1.2rem;
-        color: #ffc107;
-        margin-bottom: 0.5rem;
-      }
-      .related-card .card-content p {
-        font-size: 0.9rem;
-        color: #dcd7e8;
-      }
-      .comments-section {
-        margin-top: 4rem;
-      }
-      .comments-section h3 {
-        color: #ffc107;
-        margin-bottom: 1.5rem;
-      }
-      .comment {
-        background: #1c1620;
-        border-radius: 8px;
-        padding: 1rem;
-        margin-bottom: 1rem;
-      }
-      .comment h6 {
-        color: #ffc107;
-        margin-bottom: 0.5rem;
-      }
-      .comment p {
-        color: #dcd7e8;
-        font-size: 0.9rem;
-      }
-      .comment-form {
-        margin-top: 2rem;
-      }
-      .comment-form input,
-      .comment-form textarea {
-        width: 100%;
-        padding: 0.8rem;
-        margin-bottom: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 4px;
-        background: #1c1620;
-        color: #fff;
-      }
-      .comment-form button {
-        background: #ffc107;
-        color: #1c1620;
-        padding: 0.8rem 2rem;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-      }
-      .comment-form button:hover {
-        background: #e0b800;
-      }
-      .background-light{
-        background: var(--secondary-background-color);
-        border-radius: 12px;
-        padding: 16px;
-      }
-      /* Sidebar Styles */
-      .sidebar {
-        background: var(--secondary-background-color);
-        padding: 1.5rem;
-        border-radius: 12px;
-        margin-bottom: 2rem;
-      }
-      .sidebar h4 {
-        color: #ffc107;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid #ffc107;
-        padding-bottom: 0.5rem;
-      }
-      .sidebar ul {
-        list-style: none;
-        padding: 0;
-      }
-      .sidebar li {
-        margin-bottom: 0.8rem;
-      }
-      .sidebar li a {
-        color: #dcd7e8;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-      .sidebar li a:hover {
-        color: #ffc107;
-      }
-      /* Email Subscription Section */
-      .email-subscription {
-        background: var(--secondary-background-color);
-        padding: 2rem;
-        text-align: center;
-        border-radius: 12px;
-        margin: 4rem 0;
-      }
-      .email-subscription h2 {
-        color: #ffc107;
-        margin-bottom: 0.5rem;
-      }
-      .email-subscription p {
-        color: #dcd7e8;
-        margin-bottom: 1rem;
-      }
-      .email-subscription input[type="email"] {
-        width: 60%;
-        padding: 0.8rem;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 4px;
-        margin-right: 0.5rem;
-        background: #1c1620;
-        color: #fff;
-      }
-      .email-subscription button {
-        padding: 0.8rem 2rem;
-        border: none;
-        border-radius: 4px;
-        background: #ffc107;
-        color: #1c1620;
-        cursor: pointer;
-        transition: background 0.3s ease;
-      }
-      .email-subscription button:hover {
-        background: #e0b800;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-          <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/amplitude.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Custom Styles -->
+  <style>
+    .news-header h1 {
+      font-size: 2.5rem;
+      color: #ffc107;
+      margin-bottom: 1rem;
+    }
+
+    .news-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: #dcd7e8;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+
+    .news-meta div {
+      display: flex;
+      align-items: center;
+    }
+
+    .news-meta i {
+      margin-left: 0.5rem;
+      color: #ffc107;
+    }
+
+    .news-banner img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .news-content h2 {
+      font-size: 1.8rem;
+      color: #ffc107;
+      margin-bottom: 1rem;
+    }
+
+    .news-content p {
+      font-size: 1rem;
+      color: #dcd7e8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .news-content ul {
+      list-style: disc;
+      padding-right: 1.5rem;
+      color: #dcd7e8;
+      margin-bottom: 1.5rem;
+    }
+
+    .social-share {
+      margin: 2rem 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .social-share a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #1c1620;
+      border: 1px solid #ffc107;
+      border-radius: 50%;
+      color: #ffc107;
+      transition: all 0.3s ease;
+    }
+
+    .social-share a:hover {
+      background: #ffc107;
+      color: #1c1620;
+    }
+
+    .related-news {
+      margin-top: 4rem;
+    }
+
+    .related-news h3 {
+      color: #ffc107;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .related-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .related-card {
+      background: #1c1620;
+      border-radius: 8px;
+      overflow: hidden;
+      flex: 1 1 calc(33.33% - 1rem);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .related-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .related-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .related-card .card-content {
+      padding: 1rem;
+    }
+
+    .related-card .card-content h4 {
+      font-size: 1.2rem;
+      color: #ffc107;
+      margin-bottom: 0.5rem;
+    }
+
+    .related-card .card-content p {
+      font-size: 0.9rem;
+      color: #dcd7e8;
+    }
+
+    .comments-section {
+      margin-top: 4rem;
+    }
+
+    .comments-section h3 {
+      color: #ffc107;
+      margin-bottom: 1.5rem;
+    }
+
+    .comment {
+      background: #1c1620;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .comment h6 {
+      color: #ffc107;
+      margin-bottom: 0.5rem;
+    }
+
+    .comment p {
+      color: #dcd7e8;
+      font-size: 0.9rem;
+    }
+
+    .comment-form {
+      margin-top: 2rem;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      background: #1c1620;
+      color: #fff;
+    }
+
+    .comment-form button {
+      background: #ffc107;
+      color: #1c1620;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .comment-form button:hover {
+      background: #e0b800;
+    }
+
+    .background-light {
+      background: var(--secondary-background-color);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      background: var(--secondary-background-color);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar h4 {
+      color: #ffc107;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ffc107;
+      padding-bottom: 0.5rem;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 0.8rem;
+    }
+
+    .sidebar li a {
+      color: #dcd7e8;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .sidebar li a:hover {
+      color: #ffc107;
+    }
+
+    /* Email Subscription Section */
+    .email-subscription {
+      background: var(--secondary-background-color);
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      margin: 4rem 0;
+    }
+
+    .email-subscription h2 {
+      color: #ffc107;
+      margin-bottom: 0.5rem;
+    }
+
+    .email-subscription p {
+      color: #dcd7e8;
+      margin-bottom: 1rem;
+    }
+
+    .email-subscription input[type="email"] {
+      width: 60%;
+      padding: 0.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      background: #1c1620;
+      color: #fff;
+    }
+
+    .email-subscription button {
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 4px;
+      background: #ffc107;
+      color: #1c1620;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .email-subscription button:hover {
+      background: #e0b800;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">عن حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="podcast.html">حنجرة بودكاست</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">فريق حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">خدمات حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="studio.html">احجز الاستوديو</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <a href="#" class="btn btn-primary">
+          <i class="fa-solid fa-user-plus"></i> انضم الآن
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل التنقل">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">عن حنجرة</a></li>
-            <li class="nav-item"><a class="nav-link" href="podcast.html">حنجرة بودكاست</a></li>
-            <li class="nav-item"><a class="nav-link" href="team.html">فريق حنجرة</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">خدمات حنجرة</a></li>
-            <li class="nav-item"><a class="nav-link" href="studio.html">احجز الاستوديو</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
-          </ul>
-          <a href="#" class="btn btn-primary">
-            <i class="fa-solid fa-user-plus"></i> انضم الآن
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- BreadCrumb -->
-    <div class="breadcrumb">
-      <div class="container">
-        <h3 class="title">تفاصيل الخبر</h3>
       </div>
     </div>
+  </nav>
 
-    <!-- Main Content with Sidebar -->
-    <section class="news-details bg-dark mt-5">
-      <div class="container">
-        <div class="row">
-          <!-- Main Content Column (8/12) -->
-          <div class="col-lg-8 col-md-12">
-            <div class="background-light">
-              <!-- Header with Title, Banner & Meta Data -->
+
+  <!-- Breadcrumb Section -->
+  <div class="breadcrumb">
+    <div class="container text-center">
+      <img src="img/hero-track.png" alt="Track Image" class="mb-4" />
+      <h3 class="title">
+        <span class="text-white">تفاصيل </span>
+        الخبر
+      </h3>
+      <p class="lead text-white mt-2">
+        تابع أحدث المقالات والأخبار عن عالم الصوت والإبداع العربي. اكتشف محتوى ملهم يثري معرفتك ويحفز إبداعك.
+      </p>
+    </div>
+  </div>
+  <!-- End of Breadcrumb -->
+  <!-- Main Content with Sidebar -->
+  <section class="news-details bg-dark mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Main Content Column (8/12) -->
+        <div class="col-lg-8 col-md-12">
+          <div class="background-light">
+            <!-- Header with Title, Banner & Meta Data -->
             <header class="news-header text-center">
               <div class="news-banner">
                 <img src="img/news-details.jpg" alt="صورة الخبر" />
@@ -330,15 +376,19 @@
             <article class="news-content mt-4">
               <h2>رحلة أحمد أبو زيد في التعليم والتأثير</h2>
               <p>
-                أحمد أبو زيد، صانع محتوى تعليمي متميز، استطاع أن يحدث فرقاً من خلال تبسيط المفاهيم وتحويلها إلى مادة تعليمية تفاعلية. باستخدام أسلوبه السلس، استطاع الوصول لقلوب وعقول الشباب الباحثين عن التطوير الذاتي.
+                أحمد أبو زيد، صانع محتوى تعليمي متميز، استطاع أن يحدث فرقاً من خلال تبسيط المفاهيم وتحويلها إلى مادة
+                تعليمية تفاعلية. باستخدام أسلوبه السلس، استطاع الوصول لقلوب وعقول الشباب الباحثين عن التطوير الذاتي.
               </p>
               <h2>بودكاست كورسات فيدني: تجربة فريدة في التعليم</h2>
               <p>
-                قدم بودكاست "كورسات فيدني" رؤية معمقة لأفضل الدورات التعليمية المتوفرة عبر الإنترنت، حيث ناقش موضوعات تطوير الذات ومهارات العمل المستقبلية وأهمية الاستمرار في التعلم مدى الحياة.
+                قدم بودكاست "كورسات فيدني" رؤية معمقة لأفضل الدورات التعليمية المتوفرة عبر الإنترنت، حيث ناقش موضوعات
+                تطوير الذات ومهارات العمل المستقبلية وأهمية الاستمرار في التعلم مدى الحياة.
               </p>
               <h2>الشراكة مع منصة كيميا</h2>
               <p>
-                أثبت التعاون مع منصة كيميا، المتخصصة في المحتوى التعليمي العربي، نجاحه في جذب جمهور أوسع وإثراء المحتوى بالمزيد من الدقة والابتكار. هذا التعاون منح البودكاست بعداً إضافياً في تقديم محتوى متكامل يلبي احتياجات الشباب العربي.
+                أثبت التعاون مع منصة كيميا، المتخصصة في المحتوى التعليمي العربي، نجاحه في جذب جمهور أوسع وإثراء المحتوى
+                بالمزيد من الدقة والابتكار. هذا التعاون منح البودكاست بعداً إضافياً في تقديم محتوى متكامل يلبي احتياجات
+                الشباب العربي.
               </p>
               <h2>أبرز الحلقات والإنجازات</h2>
               <p>من بين الحلقات التي لاقت استحسان الجمهور:</p>
@@ -399,120 +449,121 @@
                 <button type="submit">إرسال التعليق</button>
               </div>
             </section>
-            </div>
-          </div>
-          <!-- Sidebar Column (4/12) -->
-          <div class="col-lg-4 col-md-12">
-            <aside class="sidebar">
-              <!-- Latest News Section -->
-              <h4>أحدث الأخبار</h4>
-              <ul>
-                <li><a href="#">عنوان خبر 1 - نظرة سريعة</a></li>
-                <li><a href="#">عنوان خبر 2 - ملخص قصير</a></li>
-                <li><a href="#">عنوان خبر 3 - معلومات سريعة</a></li>
-                <li><a href="#">عنوان خبر 4 - جديد اليوم</a></li>
-              </ul>
-              <!-- News Categories Section -->
-              <h4>تصنيفات الأخبار</h4>
-              <ul>
-                <li><a href="#">أخبار عاجلة</a></li>
-                <li><a href="#">تقنية</a></li>
-                <li><a href="#">تعليم</a></li>
-                <li><a href="#">اقتصاد</a></li>
-                <li><a href="#">رياضة</a></li>
-              </ul>
-              <!-- Most Read Section -->
-              <h4>الأكثر قراءة</h4>
-              <ul>
-                <li><a href="#">خبر مميز – قراءة 500+</a></li>
-                <li><a href="#">عنوان الخبر الثاني – قراءة 450+</a></li>
-                <li><a href="#">عنوان الخبر الثالث – قراءة 400+</a></li>
-              </ul>
-            </aside>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Email Subscription Section -->
-    <section class="email-subscription">
-      <div class="container">
-        <h2>اشترك في نشرتنا البريدية</h2>
-        <p>احصل على أحدث الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني.</p>
-        <form class="d-flex justify-content-center align-items-center">
-          <input type="email" placeholder="أدخل بريدك الإلكتروني" />
-          <button type="submit">اشترك الآن</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-white">
-      <div class="container">
-        <div class="row mb-4">
-          <!-- Logo and Description -->
-          <div class="col-lg-4 col-md-6 text-md-start text-center mb-4 mb-lg-0">
-            <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
-            <p class="footer-description">
-              نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا وتحقيق تجربة استماع مميزة.
-            </p>
-            <p class="mb-3">تابعنا على</p>
-            <div class="social-icons">
-              <a href="#" class="text-white mx-2" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="text-white mx-2" title="إنستجرام"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-white mx-2" title="يوتيوب"><i class="fab fa-youtube"></i></a>
-              <a href="#" class="text-white mx-2" title="تيك توك"><i class="fab fa-tiktok"></i></a>
-              <a href="#" class="text-white mx-2" title="تويتر"><i class="fab fa-x-twitter"></i></a>
-            </div>
-          </div>
-          <!-- Quick Links -->
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="footer-title mb-3">بودكاست</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="footer-link">الرئيسية</a></li>
-              <li><a href="#" class="footer-link">الحلقات</a></li>
-              <li><a href="#" class="footer-link">من نحن</a></li>
-              <li><a href="#" class="footer-link">الأخبار</a></li>
-              <li><a href="#" class="footer-link">المدونة</a></li>
-              <li><a href="#" class="footer-link">تواصل معنا</a></li>
+        <!-- Sidebar Column (4/12) -->
+        <div class="col-lg-4 col-md-12">
+          <aside class="sidebar">
+            <!-- Latest News Section -->
+            <h4>أحدث الأخبار</h4>
+            <ul>
+              <li><a href="#">عنوان خبر 1 - نظرة سريعة</a></li>
+              <li><a href="#">عنوان خبر 2 - ملخص قصير</a></li>
+              <li><a href="#">عنوان خبر 3 - معلومات سريعة</a></li>
+              <li><a href="#">عنوان خبر 4 - جديد اليوم</a></li>
             </ul>
-          </div>
-          <!-- Explore Section -->
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="footer-title mb-3">استكشف</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="footer-link">الأكثر شهرة</a></li>
-              <li><a href="#" class="footer-link">مقترحاتنا</a></li>
-              <li><a href="#" class="footer-link">أشهر الحلقات</a></li>
-              <li><a href="#" class="footer-link">أشهر المقدمين</a></li>
-              <li><a href="#" class="footer-link">ما يقولوا عنا</a></li>
-              <li><a href="#" class="footer-link">سياسة الخصوصية</a></li>
+            <!-- News Categories Section -->
+            <h4>تصنيفات الأخبار</h4>
+            <ul>
+              <li><a href="#">أخبار عاجلة</a></li>
+              <li><a href="#">تقنية</a></li>
+              <li><a href="#">تعليم</a></li>
+              <li><a href="#">اقتصاد</a></li>
+              <li><a href="#">رياضة</a></li>
             </ul>
-          </div>
-          <!-- Subscription Section -->
-          <div class="col-lg-4 col-md-8 mb-4">
-            <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
-            <p>انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
-            <input type="email" class="footer-email" placeholder="أدخل بريدك الإلكتروني" />
-            <br />
-            <a href="#" class="btn btn-primary mt-4">
-              اشترك الآن <i class="fa-solid fa-paper-plane"></i>
-            </a>
-          </div>
+            <!-- Most Read Section -->
+            <h4>الأكثر قراءة</h4>
+            <ul>
+              <li><a href="#">خبر مميز – قراءة 500+</a></li>
+              <li><a href="#">عنوان الخبر الثاني – قراءة 450+</a></li>
+              <li><a href="#">عنوان الخبر الثالث – قراءة 400+</a></li>
+            </ul>
+          </aside>
         </div>
       </div>
-      <!-- Footer Bottom -->
-      <div class="footer-bottom mt-4 text-center">
-        <p class="mb-0">حنجرة © 2024 | جميع الحقوق محفوظة</p>
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="js/amplitude.min.js" type="text/javascript"></script>
-    <script src="js/amplitude-custom.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
-  </body>
+  <!-- Email Subscription Section -->
+  <section class="email-subscription">
+    <div class="container">
+      <h2>اشترك في نشرتنا البريدية</h2>
+      <p>احصل على أحدث الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني.</p>
+      <form class="d-flex justify-content-center align-items-center">
+        <input type="email" placeholder="أدخل بريدك الإلكتروني" />
+        <button type="submit">اشترك الآن</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-white">
+    <div class="container">
+      <div class="row mb-4">
+        <!-- Logo and Description -->
+        <div class="col-lg-4 col-md-6 text-md-start text-center mb-4 mb-lg-0">
+          <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
+          <p class="footer-description">
+            نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا وتحقيق تجربة استماع مميزة.
+          </p>
+          <p class="mb-3">تابعنا على</p>
+          <div class="social-icons">
+            <a href="#" class="text-white mx-2" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2" title="يوتيوب"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white mx-2" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white mx-2" title="تويتر"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">بودكاست</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">الرئيسية</a></li>
+            <li><a href="#" class="footer-link">الحلقات</a></li>
+            <li><a href="#" class="footer-link">من نحن</a></li>
+            <li><a href="#" class="footer-link">الأخبار</a></li>
+            <li><a href="#" class="footer-link">المدونة</a></li>
+            <li><a href="#" class="footer-link">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <!-- Explore Section -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">استكشف</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">الأكثر شهرة</a></li>
+            <li><a href="#" class="footer-link">مقترحاتنا</a></li>
+            <li><a href="#" class="footer-link">أشهر الحلقات</a></li>
+            <li><a href="#" class="footer-link">أشهر المقدمين</a></li>
+            <li><a href="#" class="footer-link">ما يقولوا عنا</a></li>
+            <li><a href="#" class="footer-link">سياسة الخصوصية</a></li>
+          </ul>
+        </div>
+        <!-- Subscription Section -->
+        <div class="col-lg-4 col-md-8 mb-4">
+          <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
+          <p>انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
+          <input type="email" class="footer-email" placeholder="أدخل بريدك الإلكتروني" />
+          <br />
+          <a href="#" class="btn btn-primary mt-4">
+            اشترك الآن <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom mt-4 text-center">
+      <p class="mb-0">حنجرة © 2024 | جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/amplitude.min.js" type="text/javascript"></script>
+  <script src="js/amplitude-custom.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+
 </html>
