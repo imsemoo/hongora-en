@@ -48,141 +48,7 @@
     <link rel="stylesheet" href="css/amplitude.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Custom CSS for Blog Page -->
-    <style>
-      .info-icons p {
-        margin-bottom: 0 !important;
-      }
-
-      /* Sidebar (Aside Menu) */
-      .aside-menu {
-        background: var(--secondary-background-color);
-        padding: 1.5rem;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-      }
-      .aside-menu h6 {
-        font-size: 1.2rem;
-        color: #ffc107;
-        margin-bottom: 1rem;
-      }
-      .aside-menu hr {
-        border-color: rgba(255, 255, 255, 0.2);
-      }
-      /* Search Box in Sidebar */
-      .aside-menu .search-box {
-        margin-bottom: 1.5rem;
-      }
-      .aside-menu .search-box .input-group-text {
-        background: transparent;
-        border: none;
-        color: #ffc107;
-      }
-      .aside-menu .search-box input {
-        background: var(--background-color, #1c1620);
-        color: #fff;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 0 12px 12px 0;
-      }
-      /* Filter Buttons */
-      .filter-btn {
-        display: block;
-        padding: 0.5rem 1rem;
-        border: 1px solid #ffc107;
-        border-radius: 50px;
-        color: #fff;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        margin-bottom: 0.5rem;
-        text-align: center;
-      }
-      .filter-btn.active,
-      .filter-btn:hover {
-        background: #ffc107;
-        color: #1c1620;
-      }
-      /* Sorting Options */
-      .sort-options {
-        margin-top: 1.5rem;
-      }
-      .sort-options label {
-        font-size: 1rem;
-        color: #fff;
-        margin-left: 1rem;
-      }
-      /* Latest News Block in Sidebar */
-      .latest-news {
-        margin-top: 2rem;
-      }
-      .latest-news ul li a {
-        color: #dcd7e8;
-        text-decoration: none;
-      }
-      .latest-news ul li a:hover {
-        text-decoration: underline;
-      }
-      /* Blog Card Styling */
-      .blog-card {
-        background: var(--secondary-background-color);
-        border-radius: 8px;
-        overflow: hidden;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-      }
-      .blog-card:hover {
-        transform: translateY(-5px);
-      }
-      .blog-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        display: block;
-      }
-      .blog-card .content {
-        padding: 1.5rem;
-      }
-      .blog-card h3 {
-        font-size: 1.8rem;
-        color: #ffc107;
-        margin-bottom: 1rem;
-      }
-      .blog-card p {
-        font-size: 1rem;
-        color: #dcd7e8;
-        margin-bottom: 1rem;
-      }
-      .blog-card a.btn {
-        border: 1px solid #ffc107;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        border-radius: 50px;
-        transition: background 0.3s ease;
-      }
-      .blog-card a.btn:hover {
-        background: #ffc107;
-        color: #1c1620;
-      }
-      .blog-card hr {
-        border-color: rgba(255, 255, 255, 0.2);
-      }
-      /* Icons for Date and Time */
-      .blog-card .info-icons i {
-        color: #ffc107;
-        margin-right: 0.5rem;
-        font-size: 1.2rem;
-      }
-     
-      /* Responsive adjustments for blog cards */
-      @media (max-width: 767px) {
-        .blog-card {
-          flex-direction: column;
-        }
-        .blog-card img {
-          height: auto;
-        }
-      }
-    </style>
+ 
   </head>
   <body>
     <!-- Navbar (Unchanged) -->
@@ -399,7 +265,7 @@
               </div>
             </div>
             <!-- Pagination -->
-            <div class="row mt-5">
+            <div class="row ">
               <div class="col-12">
                 <nav aria-label="Page navigation">
                   <ul class="pagination justify-content-center">
@@ -501,72 +367,7 @@
     <!-- GSAP and ScrollTrigger for Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" defer></script>
-    <!-- Initialize Flatpickr for Booking Date -->
-    <script defer>
-      document.addEventListener("DOMContentLoaded", function () {
-        flatpickr("#bookingDate", {
-          dateFormat: "d/m/Y",
-          locale: "ar"
-        });
-      });
-    </script>
-    <!-- Initialize Tagify for Equipment Input -->
-    <script defer>
-      document.addEventListener("DOMContentLoaded", function () {
-        var input = document.getElementById('requiredEquipment');
-        new Tagify(input, {
-          whitelist: ["كاميرا", "ميكروفون", "سماعات", "فلتر بوب", "ذراع بوم", "مكبرات صوت"],
-          dropdown: {
-            enabled: 0,
-            maxItems: 5
-          }
-        });
-      });
-    </script>
-    <!-- Blog Filter & Search JavaScript -->
-    <script defer>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get all blog card items
-        const blogCards = document.querySelectorAll(".blog-card-item");
-        // Get filter buttons
-        const filterButtons = document.querySelectorAll(".filter-btn");
-        // Get search box
-        const searchBox = document.getElementById("blogSearch");
 
-        // Function to filter cards based on selected category and search keyword
-        function filterCards() {
-          let activeFilter = document.querySelector(".filter-btn.active");
-          let filterValue = activeFilter ? activeFilter.getAttribute("data-filter") : "all";
-          let searchTerm = searchBox.value.trim().toLowerCase();
-
-          blogCards.forEach(card => {
-            // Get the data-category attribute from the card
-            let cardCategory = card.getAttribute("data-category");
-            // Get the blog title text
-            let titleText = card.querySelector("h3").textContent.toLowerCase();
-            // Check if card should be visible
-            if ((filterValue === "all" || cardCategory === filterValue) && titleText.includes(searchTerm)) {
-              card.style.display = "block";
-            } else {
-              card.style.display = "none";
-            }
-          });
-        }
-
-        // Add click event listeners to filter buttons
-        filterButtons.forEach(btn => {
-          btn.addEventListener("click", function () {
-            // Remove active class from all buttons
-            filterButtons.forEach(b => b.classList.remove("active"));
-            // Add active class to clicked button
-            this.classList.add("active");
-            filterCards();
-          });
-        });
-
-        // Add event listener for search input
-        searchBox.addEventListener("input", filterCards);
-      });
-    </script>
+  
   </body>
 </html>
