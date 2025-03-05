@@ -993,12 +993,7 @@ section header {
   text-align: center;
 }
 
-.about .about-img img,
-.target .target-img img {
-  border-radius: 12px;
-  height: 500px;
-  width: fit-content;
-}
+
 
 /* Start Section Target */
 .target-content p:not(:first-of-type) {
@@ -1105,9 +1100,7 @@ section header {
 
 .about-img img {
   width: 100%;
-  max-width: 500px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -1228,9 +1221,7 @@ section header {
 
 .air-img img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
   transition: transform 0.3s ease;
 }
 
@@ -1418,7 +1409,6 @@ section header {
 
 .blog {
   padding: 90px 0;
-  background-color: #17111c;
 }
 
 /* Owl Carousel Slider Container */
