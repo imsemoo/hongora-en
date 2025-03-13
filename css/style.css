@@ -563,6 +563,7 @@ section header {
 @media (max-width: 768px) {
   .header-subtitle {
     font-size: 1.1rem;
+    width: auto;
   }
 }
 
@@ -596,8 +597,10 @@ section header {
 
 @media (max-width: 768px) {
   .audio-player {
-    width: 95%;
-    margin: 0 10px;
+    width: 90%;
+    margin: auto;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 
@@ -611,7 +614,7 @@ section header {
 }
 
 .audio-player-hide {
-  background-color: transparent;
+  background-color: var(--secondary-background-color);
   color: var(--text-color);
 }
 
@@ -1339,8 +1342,6 @@ section header {
 }
 
 .services .services-img img {
-  border-radius: 12px;
-  height: 450px;
   width: 100%;
 }
 
@@ -2150,6 +2151,7 @@ section header {
 .tools .tools-box h4 {
   font-size: 18px;
   margin-bottom: 12px;
+  color: var(--accent-color-2);
 }
 
 .tools .tools-box p {
@@ -3251,22 +3253,10 @@ span.flatpickr-weekday {
   transform: scale(1.05);
 }
 
-/* Responsive Grid */
-@media (max-width: 992px) {
-  .talent-card {
-    flex: 1 1 calc(33.33% - 1.5rem);
-  }
-}
-
-@media (max-width: 768px) {
-  .talent-card {
-    flex: 1 1 calc(50% - 1.5rem);
-  }
-
-  .search-container {
-    width: 100%;
-    margin: 0 auto 1rem;
-  }
+.latest-episodes-section .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 576px) {
@@ -3297,4 +3287,122 @@ span.flatpickr-weekday {
 
 .cta-section .btn {
   margin: auto;
+}
+
+
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+  .talent-card {
+    flex: 1 1 calc(33.33% - 1.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    height: max-content;
+  }
+
+  .talent-card {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+
+  .search-container {
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+
+  .team-header-content p,
+  .services-content ul.services-list li,
+  .services-content p,
+  .air-content p,
+  .onair-list li,
+  .target-content ul li,
+  .about-content ul li {
+    font-size: 14px;
+  }
+
+  .breadcrumb .title {
+    font-size: 36px;
+  }
+
+  .subtitle,
+  .lead {
+    font-size: 16px;
+  }
+
+  .email-subscription h2,
+  .news-header h1 {
+    font-size: 28px;
+  }
+
+  .title,
+  .team-title,
+  .section-title,
+  .air-content .section-title {
+    font-size: 32px !important;
+  }
+
+  .news-content h2 {
+    font-size: 20px;
+  }
+
+  .email-subscription {
+    padding: 16px;
+  }
+
+  .email-subscription button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .email-subscription input[type="email"] {
+    height: 40px;
+    font-size: 14px;
+
+  }
+
+  .sidebar {
+    margin-top: 40px;
+  }
+
+  .section {
+    padding: 60px 0 !important;
+  }
+  .talent-grid,
+  .related-cards {
+    flex-direction: column;
+  }
+
+  .podcast-platforms {
+    gap: 8px !important;
+  }
+
+  .platform-icon {
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .latest-episodes-section .tag-item {
+    padding: 6px 12px;
+  }
+
+  .result-count,
+  .latest-episodes-section .tag-list li a {
+    font-size: 12px;
+  }
+
+  .latest-episodes-section .episode-card {
+    height: auto;
+  }
+
+  .latest-episodes-section .card-img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .studio-form form {
+    padding: 20px;
+  }
+
 }

@@ -47,6 +47,180 @@
   <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
   <link rel="stylesheet" href="css/amplitude.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <!-- Custom CSS for Profile Page (Dark Theme) -->
+  <style>
+ 
+    /* Main Profile Section */
+    .profile-section {
+      padding: 3rem 0;
+    }
+    .profile-container {
+      display: flex;
+      gap: 2rem;
+    }
+    /* Sidebar */
+    .profile-sidebar {
+      flex: 0 0 30%;
+      background: var(--secondary-background-color);
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    .profile-sidebar .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-color-2);
+      display: block;
+      margin: 0 auto;
+    }
+    .profile-sidebar h2 {
+      text-align: center;
+      margin-top: 1rem;
+      color: var(--accent-color-2);
+    }
+    .profile-sidebar p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 1rem 0;
+    }
+    .profile-sidebar hr {
+      border: 0;
+      border-top: 1px solid var(--accent-color-2);
+      margin: 1rem 0;
+    }
+    .profile-sidebar .info-section h4 {
+      font-size: 1.1rem;
+      color: var(--accent-color-2);
+      margin-bottom: 0.5rem;
+    }
+    .profile-sidebar .info-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .profile-sidebar .info-section ul li {
+      margin-bottom: 0.3rem;
+    }
+    .profile-sidebar .social-links {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .profile-sidebar .social-links a {
+      color: var(--text-color);
+      margin: 0 0.3rem;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    .profile-sidebar .social-links a:hover {
+      color: var(--accent-color-2);
+    }
+    .profile-sidebar .btn-listen {
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      background: var(--accent-color-2);
+      color: var(--secondary-background-color);
+      padding: 0.75rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Main Content: Works */
+    .profile-works {
+      flex: 1;
+    }
+    .profile-works h3 {
+      color: var(--accent-color-2);
+      margin-bottom: 1rem;
+    }
+    .works-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .work-card {
+      background: var(--secondary-background-color);
+      border-radius: 8px;
+      overflow: hidden;
+      flex: 1 1 calc(33.33% - 1.5rem);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .work-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .work-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .work-card .card-body {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .work-card .card-body h3 {
+      font-size: 1.1rem;
+      color: var(--accent-color-2);
+      margin-bottom: 0.5rem;
+    }
+    .work-card .card-body p {
+      font-size: 0.9rem;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    .work-card .card-body .meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--accent-color-2);
+      margin-bottom: 1rem;
+    }
+    .work-card .card-body .meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .work-card .card-body .btn-play {
+      margin-top: auto;
+      background: var(--accent-color-2);
+      color: var(--secondary-background-color);
+      padding: 0.5rem;
+      text-align: center;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    /* Responsive */
+    @media (max-width: 992px) {
+      .work-card {
+        flex: 1 1 calc(50% - 1.5rem);
+      }
+    }
+    @media (max-width: 576px) {
+      .profile-container {
+        flex-direction: column;
+      }
+      .work-card {
+        flex: 1 1 100%;
+      }
+    }
+ 
+    .cta-section a {
+      background: var(--accent-color-2);
+      color: var(--secondary-background-color);
+      padding: 0.75rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
@@ -97,320 +271,176 @@
     </div>
   </nav>
 
-  <!-- BreadCrumb -->
-  <div class="breadcrumb">
-    <div class="container">
-      <h3 class="title">صوتيات عمار ابو حسين</h3>
-    </div>
-  </div>
-  <!-- BreadCrumb -->
+ <!-- Breadcrumb -->
+ <div class="breadcrumb">
+  <div class="container">
+       <!-- Hero Track Image (remains unchanged) -->
+       <img src="img/hero-track.png" alt="Track Image" class="mb-4" />
+       <!-- Creative Title for About Us -->
+       <h3 class="title">
+         <span class="text-white">الملف </span>
+         الشخصي
+       </h3>
+       <!-- Creative and Appropriate Description -->
+       <p class="lead text-white mt-2">
+        تعرف على عمار أبو حسين واستمع إلى أفضل أعماله الصوتية.
+       </p>
 
-  <div class="sounds section">
+  </div>
+</div>
+
+  <!-- Profile Section -->
+  <section class="profile-section bg-dark">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Aside Menu -->
-          <div class="container-fluid mt-5">
-            <div class="row">
-              <div class="col-md-3 col-12">
-                <div class="col-md-12 col-6 bg-light p-3 sounds-menu flex-column">
-                  <div class="d-flex justify-content-center">
-                    <img src="./img/team/team-01.jpg" alt="img" />
-                  </div>
-                  <h6>عمار أبو حسين</h6>
-                  <p>
-                    شخص فلسطيني شغوف بالقضية والهوية الفلسطينية، يستخدم صوته
-                    في البودكاست ليحكي قصص وطنه وشعبه. يتميز بأسلوبه المميز
-                    الذي يمزج بين الحكايات التاريخية والموضوعات الحديثة، ليقدم
-                    محتوى يجذب المستمعين ويلهمهم. يعمل على تسليط الضوء على
-                    التراث الفلسطيني والتحديات اليومية، مؤمنًا بأن الكلمة
-                    والصوت يمكن أن يكونا سلاحًا للتغيير ونقل الحقيقة. ببساطة،
-                    هو صوت ينقل نبض الأرض والإنسان الفلسطيني إلى العالم.
-                  </p>
-                  <hr />
-                  <div>
-                    <h6>اللغات المتقنة</h6>
-                    <ul>
-                      <li>• العربية</li>
-                      <li>• الانجليزية</li>
-                    </ul>
-                  </div>
-                  <hr />
-                  <div>
-                    <h6>أنواع المشاريع المفضلة</h6>
-                    <ul>
-                      <li>• اعلانات</li>
-                      <li>• وثائقيات</li>
-                      <li>• دوبلاج</li>
-                    </ul>
-                  </div>
-                  <hr />
-                  <div>
-                    <h6>روابط اجتماعية</h6>
-                    <div class="d-flex">
-                      <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
-                      <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
-                      <a href="#" class="text-white mx-2"><i class="fab fa-tiktok"></i></a>
-                      <a href="#" class="text-white mx-2"><i class="fab fa-x-twitter"></i></a>
-                    </div>
-                  </div>
-                  <hr />
-                  <a href="#" class="btn btn-primary">
-                    استمع الآن
-                    <i class="fa-solid fa-forward-step fa-rotate-180"></i>
-                  </a>
+      <div class="profile-container">
+        <!-- Sidebar: معلومات الموهبة -->
+        <div class="profile-sidebar">
+          <div class="text-center">
+            <img src="img/team/team-01.jpg" alt="عمار أبو حسين" class="profile-image" />
+          </div>
+          <h2>عمار أبو حسين</h2>
+          <p>شخص فلسطيني شغوف بالقضية والهوية الفلسطينية، يتميز بصوته الجذاب وأسلوبه المميز في تقديم المحتوى الصوتي الذي يجمع بين الحكايات التاريخية والموضوعات المعاصرة.</p>
+          <hr>
+          <div class="info-section">
+            <h4>اللغات المتقنة</h4>
+            <ul>
+              <li>العربية</li>
+              <li>الإنجليزية</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="info-section">
+            <h4>أنواع المشاريع</h4>
+            <ul>
+              <li>إعلانات</li>
+              <li>وثائقيات</li>
+              <li>دوبلاج</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="info-section">
+            <h4>روابط اجتماعية</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+          <hr>
+          <a href="#" class="btn-listen">استمع الآن</a>
+        </div>
+        
+        <!-- Main Content: أعمال الموهبة -->
+        <div class="profile-works">
+          <h3>أعماله الصوتية</h3>
+          <div class="works-grid">
+            <!-- Work Card 1 -->
+            <div class="work-card">
+              <img src="img/podcast/1.webp" alt="عمل صوتي 1">
+              <div class="card-body">
+                <h3>هز الرمح</h3>
+                <p>تعليق صوتي لإعلان تلفزيوني قصير.</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-clock"></i> 2:30</span>
+                  <span><i class="fa-solid fa-film"></i> وثائقي</span>
                 </div>
-              </div>
-              <div class="col-9 d-flex flex-wrap">
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-12">
-                  <div class="sound-card">
-                    <h3>هز الرمح</h3>
-                    <p>تعليق صوتي لإعلان تلفزيوني قصير</p>
-                    <div class="d-flex align-content-center gap-4">
-                      <span><img src="./img/time.png" alt="img" class="me-1" />2:30</span>
-                      <p class="gold">وثائقي</p>
-                    </div>
-                    <hr />
-                    <div class="content-activity d-flex justify-content-between mb-4">
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/eye.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">2.5K</p>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <img src="./img/heart.png" style="width: 20px; height: 20px" alt="img" />
-                        <p class="ms-2">1.4K</p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./img/play-btn-dark.png" alt="img " />
-                    </div>
-                  </div>
-                </div>
+                <a href="#" class="btn-play">تشغيل</a>
               </div>
             </div>
-            <!-- Pagination -->
-            <div class="row mt-5">
-              <div class="col-12">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                      <a class="page-link"><img src="./img/right-icon-gold.png" alt="img" /></a>
-                    </li>
-                    <li class="page-item active">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link"><img src="./img/right-icon-gold.png" style="transform: rotate(180deg)"
-                          alt="img" /></a>
-                    </li>
-                  </ul>
-                </nav>
+            <!-- Work Card 2 -->
+            <div class="work-card">
+              <img src="img/podcast/2.webp" alt="عمل صوتي 2">
+              <div class="card-body">
+                <h3>نبض الوطن</h3>
+                <p>تسجيل صوتي لحملة إعلانية حول الهوية الوطنية.</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-clock"></i> 3:15</span>
+                  <span><i class="fa-solid fa-film"></i> إعلاني</span>
+                </div>
+                <a href="#" class="btn-play">تشغيل</a>
+              </div>
+            </div>
+            <!-- Work Card 3 -->
+            <div class="work-card">
+              <img src="img/podcast/3.webp" alt="عمل صوتي 3">
+              <div class="card-body">
+                <h3>صوت الأمل</h3>
+                <p>عمل وثائقي يسلط الضوء على قصص النجاح والتحديات.</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-clock"></i> 4:00</span>
+                  <span><i class="fa-solid fa-film"></i> وثائقي</span>
+                </div>
+                <a href="#" class="btn-play">تشغيل</a>
+              </div>
+            </div>
+            <!-- Work Card 4 -->
+            <div class="work-card">
+              <img src="img/podcast/1.webp" alt="عمل صوتي 4">
+              <div class="card-body">
+                <h3>همسة</h3>
+                <p>تسجيل صوتي قصير لإعلان إذاعي مميز.</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-clock"></i> 1:45</span>
+                  <span><i class="fa-solid fa-film"></i> إذاعي</span>
+                </div>
+                <a href="#" class="btn-play">تشغيل</a>
+              </div>
+            </div>
+            <div class="work-card">
+              <img src="img/podcast/1.webp" alt="عمل صوتي 1">
+              <div class="card-body">
+                <h3>هز الرمح</h3>
+                <p>تعليق صوتي لإعلان تلفزيوني قصير.</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-clock"></i> 2:30</span>
+                  <span><i class="fa-solid fa-film"></i> وثائقي</span>
+                </div>
+                <a href="#" class="btn-play">تشغيل</a>
+              </div>
+            </div>
+            <!-- Work Card 2 -->
+            <div class="work-card">
+              <img src="img/podcast/2.webp" alt="عمل صوتي 2">
+              <div class="card-body">
+                <h3>نبض الوطن</h3>
+                <p>تسجيل صوتي لحملة إعلانية حول الهوية الوطنية.</p>
+                <div class="meta">
+                  <span><i class="fa-solid fa-clock"></i> 3:15</span>
+                  <span><i class="fa-solid fa-film"></i> إعلاني</span>
+                </div>
+                <a href="#" class="btn-play">تشغيل</a>
               </div>
             </div>
           </div>
+          <!-- Pagination -->
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1"><i class="fa-solid fa-angle-right" ></i></a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><i class="fa-solid fa-angle-left"></i></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  
+  <!-- Call to Action Section: دعوة للانضمام -->
+  <section class="cta-section bg-light">
+    <div class="container">
+      <h2>هل تمتلك موهبة صوتية؟</h2>
+      <p>انضم إلى منصة حنجرة وشارك صوتك مع العالم. سجّل الآن لتكون جزءاً من مجتمعنا الإبداعي.</p>
+      <a href="registration.html" class="btn">انضم الآن <i class="fa-solid fa-user-plus"></i></a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer text-white">
