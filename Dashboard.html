@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة التحكم - المواهب الصوتية | حنجرة</title>
+  <meta name="description" content="لوحة تحكم متكاملة للمواهب الصوتية على منصة حنجرة." />
+  <meta name="keywords" content="حنجرة, لوحة تحكم, داشبورد, مواهب صوتية" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+
+  <!-- Root Variables (Provided by you) -->
+  <style>
+ /* 
+  Sample CSS for the reorganized sidebar. 
+  Adjust spacing, colors, and typography as needed.
+*/
+.sidebar {
+  background: var(--background-color);
+  width: 25%;
+  max-width: 280px;
+  padding: 1.2rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.4);
+  border-radius: 0 8px 8px 0;
+}
+
+.logo img {
+  /* Centered logo with optional sizing */
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.nav-group-title {
+  font-size: 1rem;
+  color: var(--accent-color-2);
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.nav.flex-column .sub-links li {
+  margin-bottom: 0.4rem;
+}
+
+.nav.flex-column .sub-links li a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.nav.flex-column .sub-links li a:hover {
+  background: var(--secondary-background-color);
+}
+
+.nav-item a.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.nav-item a.nav-link:hover {
+  background: var(--secondary-background-color);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    <!-- Sidebar (col-3) -->
+    <aside class="sidebar" id="sidebarMenu">
+        <!-- Logo Section -->
+        <div class="logo text-center mb-4">
+          <a href="#">
+            <img src="img/logo.png" alt="شعار حنجرة"  />
+          </a>
+        </div>
+      
+        <!-- Main Navigation -->
+        <ul class="nav flex-column">
+          <!-- Dashboard Group -->
+          <li class="nav-item mb-2">
+            <h5 class="nav-group-title">لوحة التحكم</h5>
+            <ul class="nav flex-column sub-links">
+              <li><a href="#"><i class="fa-solid fa-chart-line"></i> الرئيسية</a></li>
+              <li><a href="#"><i class="fa-solid fa-chart-pie"></i> الإحصائيات</a></li>
+              <li><a href="#"><i class="fa-solid fa-bell"></i> الإشعارات</a></li>
+            </ul>
+          </li>
+      
+          <!-- Account Group -->
+          <li class="nav-item mb-2">
+            <h5 class="nav-group-title">حسابي</h5>
+            <ul class="nav flex-column sub-links">
+              <li><a href="#"><i class="fa-solid fa-user"></i> الملف الشخصي</a></li>
+              <li><a href="#"><i class="fa-solid fa-gear"></i> الإعدادات</a></li>
+              <li><a href="#"><i class="fa-solid fa-lock"></i> تغيير كلمة المرور</a></li>
+            </ul>
+          </li>
+      
+          <!-- Projects Group -->
+          <li class="nav-item mb-2">
+            <h5 class="nav-group-title">مشاريعي</h5>
+            <ul class="nav flex-column sub-links">
+              <li><a href="#"><i class="fa-solid fa-briefcase"></i> مشاريعي الحالية</a></li>
+              <li><a href="#"><i class="fa-solid fa-folder-plus"></i> إضافة مشروع جديد</a></li>
+              <li><a href="#"><i class="fa-solid fa-tasks"></i> أرشيف المشاريع</a></li>
+            </ul>
+          </li>
+      
+          <!-- Audio Works Group -->
+          <li class="nav-item mb-2">
+            <h5 class="nav-group-title">أعمالي الصوتية</h5>
+            <ul class="nav flex-column sub-links">
+              <li><a href="#"><i class="fa-solid fa-microphone"></i> قائمة الأعمال</a></li>
+              <li><a href="#"><i class="fa-solid fa-plus-circle"></i> إضافة عمل جديد</a></li>
+            </ul>
+          </li>
+      
+          <!-- Messages Group -->
+          <li class="nav-item mb-2">
+            <h5 class="nav-group-title">التواصل</h5>
+            <ul class="nav flex-column sub-links">
+              <li><a href="#"><i class="fa-solid fa-comments"></i> رسائلي</a></li>
+              <li><a href="#"><i class="fa-solid fa-comment-dots"></i> الدردشة المباشرة</a></li>
+            </ul>
+          </li>
+      
+    
+        </ul>
+      </aside>
+
+    <!-- Main Content (col-9) -->
+    <div class="main-content">
+      <!-- Top Bar -->
+      <div class="topbar">
+        <h4>لوحة التحكم</h4>
+        <div class="right-menu">
+          <!-- Notifications Icon -->
+          <i class="fa-solid fa-bell"></i>
+          <!-- User Info -->
+          <div class="user-info" onclick="toggleUserDropdown()">
+            <img src="img/team/team-01.jpg" alt="User Image" />
+            <span class="user-name">عمار أبو حسين</span>
+            <i class="fa-solid fa-caret-down"></i>
+            <!-- Dropdown Menu -->
+            <div class="user-dropdown" id="userDropdown">
+              <a href="#">الملف الشخصي</a>
+              <a href="#">الإعدادات</a>
+              <a href="#">تسجيل الخروج</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>مرحباً بك في لوحة التحكم</h2>
+
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <i class="fa-solid fa-play-circle"></i>
+          <h3>مرات التشغيل</h3>
+          <p>3.5K</p>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-heart"></i>
+          <h3>الإعجابات</h3>
+          <p>1.2K</p>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>طلبات جديدة</h3>
+          <p>5</p>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <h3>أرباحك</h3>
+          <p>$1,250.00</p>
+        </div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="charts-row">
+        <!-- Chart Card 1 -->
+        <div class="chart-card">
+          <h4>إحصائيات التشغيل</h4>
+          <!-- Real Chart Canvas -->
+          <canvas id="playsChart" class="chart-canvas"></canvas>
+        </div>
+        <!-- Chart Card 2 -->
+        <div class="chart-card">
+          <h4>معدل إكمال المشاريع</h4>
+          <!-- Real Chart Canvas -->
+          <canvas id="projectsChart" class="chart-canvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Activity Row (Recent Orders / Messages / etc.) -->
+      <div class="activity-row">
+        <!-- Latest Orders -->
+        <div class="activity-card">
+          <h4>آخر الطلبات</h4>
+          <ul>
+            <li>طلب تعليق صوتي لإعلان تلفزيوني - قيد التنفيذ</li>
+            <li>بودكاست عن التراث الفلسطيني - بانتظار موافقتك</li>
+            <li>محتوى تعليمي للأطفال - تم التسليم</li>
+          </ul>
+        </div>
+        <!-- Latest Messages or Notifications -->
+        <div class="activity-card">
+          <h4>آخر الرسائل</h4>
+          <ul>
+            <li>رسالة من أحمد: بخصوص التعديلات على المشروع الأخير</li>
+            <li>رسالة من منى: استفسار عن الأسعار</li>
+            <li>رسالة من إدارة المنصة: تحديثات على سياسة الخصوصية</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <!-- jQuery and Bootstrap -->
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+  <!-- Chart.js for real charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+  <script>
+    // Toggles the user dropdown menu
+    function toggleUserDropdown() {
+      const dropdown = document.getElementById('userDropdown');
+      dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Initialize Chart.js for playsChart
+    const playsCtx = document.getElementById('playsChart').getContext('2d');
+    const playsChart = new Chart(playsCtx, {
+      type: 'line', // We use a line chart for demonstration
+      data: {
+        labels: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو'],
+        datasets: [{
+          label: 'مرات التشغيل',
+          data: [120, 300, 150, 400, 350, 500],
+          backgroundColor: 'rgba(255, 193, 7, 0.2)',
+          borderColor: 'rgba(255, 193, 7, 1)',
+          borderWidth: 2,
+          pointRadius: 4,
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: { color: 'rgba(255,255,255,0.1)' },
+            ticks: { color: '#fff' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { color: '#fff' }
+          }
+        }
+      }
+    });
+
+    // Initialize Chart.js for projectsChart
+    const projectsCtx = document.getElementById('projectsChart').getContext('2d');
+    const projectsChart = new Chart(projectsCtx, {
+      type: 'doughnut', // Example: doughnut chart
+      data: {
+        labels: ['مكتمل', 'قيد التنفيذ', 'ملغي'],
+        datasets: [{
+          label: 'حالة المشاريع',
+          data: [12, 3, 2],
+          backgroundColor: [
+            'rgba(108, 84, 155, 0.7)',   // accent-color-1
+            'rgba(255, 193, 7, 0.7)',   // accent-color-2
+            'rgba(212, 165, 225, 0.7)'  // accent-color-3
+          ],
+          borderColor: [
+            'rgba(108, 84, 155, 1)',
+            'rgba(255, 193, 7, 1)',
+            'rgba(212, 165, 225, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: { color: '#fff' }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
