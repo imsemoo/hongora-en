@@ -1,618 +1,545 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
-  <head>
-    <!-- Meta Data and SEO Optimizations -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>فريق حنجرة - منصة البودكاست والإبداع الصوتي</title>
-    <meta name="description"
-      content="حنجرة: منصة فلسطينية تُقدم محتوى صوتي مبتكر وخدمات احترافية في عالم البودكاست. تعرف على فريقنا المبدع الذي يقود نجاح المنصة." />
-    <meta name="keywords"
-      content="حنجرة, بودكاست, منصة صوتية, فريق, محتوى صوتي, إبداع صوتي, فلسطين" />
-    <meta name="robots" content="index, follow" />
+<head>
+  <!-- Meta Data and SEO Optimizations -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فريق حنجرة - منصة البودكاست والإبداع الصوتي</title>
+  <meta name="description"
+    content="حنجرة: منصة فلسطينية تُقدم محتوى صوتي مبتكر وخدمات احترافية في عالم البودكاست. تعرف على فريقنا المبدع الذي يقود نجاح المنصة." />
+  <meta name="keywords" content="حنجرة, بودكاست, منصة صوتية, فريق, محتوى صوتي, إبداع صوتي, فلسطين" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph & Twitter Meta Tags -->
-    <meta property="og:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي" />
-    <meta property="og:description"
-      content="تعرف على فريق حنجرة، حيث يجتمع الإبداع والاحتراف لصناعة محتوى صوتي يُحدث فرقاً." />
-    <meta property="og:image" content="img/og-image.png" />
-    <meta property="og:url" content="https://hanjara.ps" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي" />
-    <meta name="twitter:description"
-      content="تعرف على فريق حنجرة المبدع والمتميز في صناعة المحتوى الصوتي." />
-    <meta name="twitter:image" content="img/twitter-image.png" />
+  <!-- Open Graph & Twitter Meta Tags -->
+  <meta property="og:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
+  <meta property="og:description"
+    content="تعرف على فريق حنجرة، حيث يجتمع الإبداع والاحتراف لصناعة محتوى صوتي يُحدث فرقاً." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://hanjara.ps" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="حنجرة - منصة البودكاست والإبداع الصوتي" />
+  <meta name="twitter:description" content="تعرف على فريق حنجرة المبدع والمتميز في صناعة المحتوى الصوتي." />
+  <meta name="twitter:image" content="img/twitter-image.png" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-    <!-- External CSS & Libraries -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="css/amplitude.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- External CSS & Libraries -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/amplitude.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Custom Theme Overrides Using Provided Colors and CSS Improvements -->
-    <style>
+  <!-- Custom Theme Overrides Using Provided Colors and CSS Improvements -->
+  <style>
 
   </style>
 
-    <!-- Flatpickr CSS/JS for Date Picker functionality -->
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+  <!-- Flatpickr CSS/JS for Date Picker functionality -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
 
-    <!-- GSAP & ScrollTrigger for Advanced Animations -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-  </head>
+  <!-- GSAP & ScrollTrigger for Advanced Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
 
-  <body>
-    <!-- English Comment: Skip link for accessibility -->
-    <a class="skip-link" href="#main-content"
-      style="position: absolute; top: -40px; left: 0; background: var(--secondary-background-color); color: var(--text-color); padding: 8px; z-index: 9999;">تخطي
-      إلى المحتوى</a>
+<body>
+  <!-- English Comment: Skip link for accessibility -->
+  <a class="skip-link" href="#main-content"
+    style="position: absolute; top: -40px; left: 0; background: var(--secondary-background-color); color: var(--text-color); padding: 8px; z-index: 9999;">تخطي
+    إلى المحتوى</a>
 
-    <!-- English Comment: Navigation Bar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center gap-2"
-          href="index.html" title="الرئيسية">
-          <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo"
-            loading="lazy" />
+  <!-- English Comment: Navigation Bar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" title="الرئيسية">
+        <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" loading="lazy" />
+      </a>
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" title="الرئيسية">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" title="عن حنجرة">عن حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="podcast.html" title="حنجرة بودكاست">حنجرة بودكاست</a></li>
+          <li class="nav-item"><a class="nav-link active" href="team.html" title="فريق حنجرة">فريق حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" title="خدمات حنجرة">خدمات حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="studio.html" title="احجز الاستوديو">احجز الاستوديو</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" title="تواصل معنا">تواصل معنا</a></li>
+        </ul>
+        <a href="signup.html" class="btn btn-primary" title="انضم الآن">
+          <i class="fa-solid fa-user-plus" aria-hidden="true"></i> انضم الآن
         </a>
-        <!-- Mobile Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html"
-                title="الرئيسية">الرئيسية</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html"
-                title="عن حنجرة">عن حنجرة</a></li>
-            <li class="nav-item"><a class="nav-link" href="podcast.html"
-                title="حنجرة بودكاست">حنجرة بودكاست</a></li>
-            <li class="nav-item"><a class="nav-link active" href="team.html"
-                title="فريق حنجرة">فريق حنجرة</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html"
-                title="خدمات حنجرة">خدمات حنجرة</a></li>
-            <li class="nav-item"><a class="nav-link" href="studio.html"
-                title="احجز الاستوديو">احجز الاستوديو</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html"
-                title="تواصل معنا">تواصل معنا</a></li>
-          </ul>
-          <a href="signup.html" class="btn btn-primary" title="انضم الآن">
-            <i class="fa-solid fa-user-plus" aria-hidden="true"></i> انضم الآن
-          </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Section for "Team" Page -->
+  <div class="breadcrumb">
+    <div class="container text-center">
+      <!-- Hero Track Image (remains unchanged) -->
+      <img src="img/hero-track.png" alt="Track Image" class="mb-4" />
+      <!-- Creative Title for Team Page -->
+      <h3 class="title">
+
+        <span class="text-white">فريق</span>
+        حنجرة
+      </h3>
+      <!-- Creative and Inspiring Description -->
+      <p class="lead text-white mt-2">
+        فريقنا هو نبض الإبداع وروح التفرد؛ مجموعة من المواهب الشغوفة التي تكتب
+        قصص النجاح وتُحدث الفارق في عالم الصوت.
+      </p>
+      <!-- Optional: Podcast Platforms Icons (Retained for visual consistency) -->
+      <div class="podcast-platforms d-flex justify-content-center mt-4 gap-3">
+        <!-- SoundCloud -->
+        <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px; background: #FF5500; color: #fff;">
+          <i class="fab fa-soundcloud fa-lg"></i>
+        </a>
+        <!-- Spotify -->
+        <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px; background: #1DB954; color: #fff;">
+          <i class="fab fa-spotify fa-lg"></i>
+        </a>
+        <!-- Google Podcast -->
+        <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px; background: #DB4437; color: #fff;">
+          <i class="fa-solid fa-podcast fa-lg"></i>
+        </a>
+        <!-- Apple Podcast -->
+        <a href="#" class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 50px; height: 50px; background: #000000; color: #fff;">
+          <i class="fab fa-apple fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End of Breadcrumb -->
+
+  <!-- English Comment: Main Content Start -->
+  <main id="main-content">
+    <!-- English Comment: Hero Section with a Creative Introduction -->
+    <section class="hero section bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Hero Text Column -->
+          <div class="col-md-6 col-12">
+            <div class="hero-content">
+              <h1 class="section-title">وراء كل صوت قصة</h1>
+              <p class="lead mb-3">
+                في حنجرة، لا نُقدّم مجرد محتوى صوتي؛ بل نبني عالمًا من الإلهام
+                والابتكار. نستخدم أحدث التقنيات لصياغة
+                تجارب سمعية تأسر القلوب.
+              </p>
+              <p class="lead">
+                انضم إلينا لتكون جزءاً من رحلة فريدة تحكي قصصًا تتجاوز الكلمات
+                وتُحرك المشاعر.
+              </p>
+              <a href="#our-team" class="btn btn-primary mt-4">
+                تعرّف على فريقنا <img src="./img/right-icon.png" alt="أيقونة السهم" loading="lazy" />
+              </a>
+            </div>
+          </div>
+          <!-- Hero Image Column -->
+          <div class="col-md-6 col-12">
+            <div class="hero-image">
+              <img src="./img/illustrations/3.png" alt="فريق حنجرة" loading="lazy" />
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <!-- Breadcrumb Section for "Team" Page -->
-    <div class="breadcrumb">
-      <div class="container text-center">
-        <!-- Hero Track Image (remains unchanged) -->
-        <img src="img/hero-track.png" alt="Track Image" class="mb-4" />
-        <!-- Creative Title for Team Page -->
-        <h3 class="title">
+    <!-- Platform Features Section with Detailed Content -->
+    <section class="features section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Features Image Column -->
+          <div class="col-md-6 col-12">
+            <div class="features-image">
+              <img src="./img/illustrations/7.png" alt="مميزات حنجرة" loading="lazy" />
+            </div>
+          </div>
+          <!-- Features Content Column -->
+          <div class="col-md-6 col-12">
+            <div class="services-content">
+              <!-- Using same class names as services-content for consistency -->
+              <h2 class="section-title">لماذا تختار حنجرة؟</h2>
+              <p>
+                نحن ندمج بين الابتكار والتقنية لنقدم لك تجربة صوتية فريدة
+                تحاكي ذوقك الرفيع وتلبي توقعاتك.
+              </p>
 
-          <span class="text-white">فريق</span>
-          حنجرة
-        </h3>
-        <!-- Creative and Inspiring Description -->
-        <p class="lead text-white mt-2">
-          فريقنا هو نبض الإبداع وروح التفرد؛ مجموعة من المواهب الشغوفة التي تكتب
-          قصص النجاح وتُحدث الفارق في عالم الصوت.
+              <ul class="onair-list">
+                <li>
+                  <img src="./img/icons/correct.svg" alt="correct icon">
+                  <p>محتوى صوتي مبتكر يجمع بين الفن والتكنولوجيا لتجارب استماع
+                    لا مثيل لها.
+                  </p>
+                </li>
+                <li>
+                  <img src="./img/icons/correct.svg" alt="correct icon">
+                  <p>دعم متكامل للمبدعين مع ورش عمل ودورات تدريبية مستمرة.</p>
+                </li>
+                <li>
+                  <img src="./img/icons/correct.svg" alt="correct icon">
+                  <p>بيئة تفاعلية تربط بين المستمعين وصناع المحتوى لبناء مجتمع
+                    نشط.</p>
+                </li>
+                <li>
+                  <img src="./img/icons/correct.svg" alt="correct icon">
+                  <p>شراكات استراتيجية مع أفضل المؤسسات الإعلامية
+                    والثقافية.</p>
+                </li>
+                <li>
+                  <img src="./img/icons/correct.svg" alt="correct icon">
+                  <p>تحديث دوري للميزات والمحتوى لمواكبة أحدث التقنيات.</p>
+
+                </li>
+              </ul>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- English Comment: Section for Voice Commentators using Owl Carousel -->
+    <section id="our-team" class="team-section section bg-dark" aria-label="المعلقين الصوتيين">
+      <div class="container">
+        <header class="header team-header text-center">
+          <h2 class="team-title title">
+            <i class="fas fa-headphones-alt" aria-hidden="true"></i> المعلقين
+            الصوتيين
+          </h2>
+          <p class="team-subtitle subtitle">
+            اكتشف الأصوات التي تُضفي لمسة فنية ساحرة على المحتوى وتروي القصص
+            بأصالة وإبداع.
+          </p>
+        </header>
+        <div class="owl-team owl-carousel owl-theme" role="list">
+          <!-- Team Member 1 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <!-- English Comment: Team member image -->
+              <div class="team-image">
+                <img src="./img/team/team-01.jpg" alt="علي محمد - معلق صوتي" loading="lazy">
+              </div>
+              <!-- English Comment: Team member info with detailed bio -->
+              <div class="team-info">
+                <h3 class="team-name">علي محمد</h3>
+                <p class="team-role">معلق صوتي</p>
+                <p class="team-bio">
+                  بخبرة تزيد عن 10 سنوات، يقدم علي أداءً صوتياً يجمع بين
+                  الحماس والإبداع، مع تركيز خاص على تقديم قصص
+                  تتناسب مع روح كل مشروع.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابع علي على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابع علي على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابع علي على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابع علي على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="./img/team/team-02.jpg" alt="ليلى حسن - معلقه صوتية" loading="lazy">
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">ليلى حسن</h3>
+                <p class="team-role">معلقة صوتية</p>
+                <p class="team-bio">
+                  تتميز ليلى بأسلوبها الفريد الذي يمزج بين الدفء والاحتراف،
+                  حيث تُضيف بعداً عاطفياً لكل مشروع صوتي تعمل
+                  عليه.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابعي ليلى على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابعي ليلى على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابعي ليلى على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابعي ليلى على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="./img/team/team-03.jpg" alt="فارس عيسى - معلق صوتي" loading="lazy">
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">فارس عيسى</h3>
+                <p class="team-role">معلق صوتي</p>
+                <p class="team-bio">
+                  يقدم فارس أداءً احترافياً ينبض بالحيوية، مما يضفي على
+                  المحتوى لمسة فنية مميزة تتناسب مع كل نص سردي.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابع فارس على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابع فارس على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابع فارس على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابع فارس على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="./img/team/team-04.jpg" alt="منى فوزي - معلقه صوتية" loading="lazy">
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">منى فوزي</h3>
+                <p class="team-role">معلقة صوتية</p>
+                <p class="team-bio">
+                  تُعد منى من أبرز الأسماء في التعليق الصوتي، إذ تتميز بحضورها
+                  اللافت وصوتها الذي يروي القصص بكل دقة.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابع منى على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابع منى على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابع منى على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابع منى على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- English Comment: Section showcasing content creators using Owl Carousel -->
+    <section class="team-section section bg-light" aria-label="صناع المحتوى">
+      <div class="container">
+        <header class="header team-header text-center">
+          <h2 class="team-title title">
+            <i class="fas fa-edit" aria-hidden="true"></i> صناع المحتوى
+          </h2>
+          <p class="team-subtitle subtitle">
+            يصنع فريقنا الإبداعي قصصاً صوتية تجمع بين الإلهام والابتكار،
+            مقدمين محتوى يرتقي بتجربة كل مستمع.
+          </p>
+        </header>
+        <div class="owl-team owl-carousel owl-theme" role="list">
+          <!-- Team Member 1 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="./img/team/team-02.jpg" alt="أحمد الشامي - محرر محتوى" loading="lazy">
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">أحمد الشامي</h3>
+                <p class="team-role">محرر محتوى</p>
+                <p class="team-bio">
+                  بخبرة واسعة في تطوير المحتوى الصوتي، يقوم أحمد بتحويل
+                  الأفكار إلى نصوص إبداعية تُلهم الجمهور وتحقق
+                  تفاعلًا مثمرًا.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابع أحمد على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابع أحمد على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابع أحمد على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابع أحمد على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="./img/team/team-03.jpg" alt="فاطمة الزهراء - كاتبة بودكاست" loading="lazy">
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">فاطمة الزهراء</h3>
+                <p class="team-role">كاتبة بودكاست</p>
+                <p class="team-bio">
+                  تمتلك فاطمة القدرة على تحويل الأفكار إلى نصوص صوتية ملهمة
+                  تُثير الإبداع وتخلق تجربة سمعية لا تُنسى.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابع فاطمة على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابع فاطمة على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابع فاطمة على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابع فاطمة على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="./img/team/team-01.jpg" alt="خالد النمر - منتج محتوى" loading="lazy">
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">خالد النمر</h3>
+                <p class="team-role">منتج محتوى</p>
+                <p class="team-bio">
+                  بخبرة في تنسيق وإنتاج المحتوى الصوتي، يعمل خالد على تحويل
+                  الأفكار إلى مشاريع إبداعية تلامس المشاعر
+                  وتلهم المستمعين.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابع خالد على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابع خالد على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابع خالد على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابع خالد على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="team-item" role="listitem">
+            <div class="team-card">
+              <div class="team-image">
+                <img src="./img/team/team-04.jpg" alt="سلمى عبيد - محررة وإعلامية" loading="lazy">
+              </div>
+              <div class="team-info">
+                <h3 class="team-name">سلمى عبيد</h3>
+                <p class="team-role">محررة وإعلامية</p>
+                <p class="team-bio">
+                  تسهم سلمى في صياغة المحتوى وتطوير استراتيجيات الاتصال، مما
+                  يضمن تواصلاً فعالاً وجذاباً مع جمهور متنوع.
+                </p>
+                <div class="team-social">
+                  <a href="#" title="تابع سلمى على فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="تابع سلمى على تويتر" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="تابع سلمى على إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="تابع سلمى على لينكدإن" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- English Comment: Call-to-Action Section -->
+    <section class="cta section bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="section-title">انضم إلى ثورة حنجرة</h2>
+        <p class="lead">
+          كن جزءاً من رحلتنا في تحويل المشهد الصوتي العربي. شارك قصتك ودع صوتك
+          يُحدث الفرق في عالم الإبداع.
         </p>
-        <!-- Optional: Podcast Platforms Icons (Retained for visual consistency) -->
-        <div class="podcast-platforms d-flex justify-content-center mt-4 gap-3">
-          <!-- SoundCloud -->
-          <a href="#"
-            class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
-            style="width: 50px; height: 50px; background: #FF5500; color: #fff;">
-            <i class="fab fa-soundcloud fa-lg"></i>
-          </a>
-          <!-- Spotify -->
-          <a href="#"
-            class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
-            style="width: 50px; height: 50px; background: #1DB954; color: #fff;">
-            <i class="fab fa-spotify fa-lg"></i>
-          </a>
-          <!-- Google Podcast -->
-          <a href="#"
-            class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
-            style="width: 50px; height: 50px; background: #DB4437; color: #fff;">
-            <i class="fa-solid fa-podcast fa-lg"></i>
-          </a>
-          <!-- Apple Podcast -->
-          <a href="#"
-            class="platform-icon rounded-circle d-flex align-items-center justify-content-center"
-            style="width: 50px; height: 50px; background: #000000; color: #fff;">
-            <i class="fab fa-apple fa-lg"></i>
-          </a>
+        <a href="signup.html" class="btn btn-primary mt-3 m-auto">
+          سجل الآن <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- English Comment: Footer Section with Navigation, Social Media, and Contact Information -->
+  <footer class="footer text-white" role="contentinfo" aria-label="Footer">
+    <div class="container">
+      <div class="row mb-4">
+        <!-- Footer Logo & Description -->
+        <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
+          <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
+          <p class="footer-description">
+            نقدم محتوى صوتياً متنوعاً يجمع بين الإبداع والاحتراف لإلهام
+            جمهورنا وبناء مجتمع متواصل.
+          </p>
+          <p class="mb-3">تابعنا على</p>
+          <div class="social-icons">
+            <a href="#" class="text-white mx-2" title="فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2" title="إنستجرام" aria-label="إنستجرام"><i
+                class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2" title="يوتيوب" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white mx-2" title="تيك توك" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white mx-2" title="تويتر" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">بودكاست</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link" title="الرئيسية">الرئيسية</a></li>
+            <li><a href="#" class="footer-link" title="الحلقات">الحلقات</a></li>
+            <li><a href="#" class="footer-link" title="من نحن">من نحن</a></li>
+            <li><a href="#" class="footer-link" title="الأخبار">الأخبار</a></li>
+            <li><a href="#" class="footer-link" title="المدونة">المدونة</a></li>
+            <li><a href="#" class="footer-link" title="تواصل معنا">تواصل
+                معنا</a></li>
+          </ul>
+        </div>
+        <!-- Explore Section -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">استكشف</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link" title="الأكثر شهرة">الأكثر
+                شهرة</a></li>
+            <li><a href="#" class="footer-link" title="مقترحاتنا">مقترحاتنا</a></li>
+            <li><a href="#" class="footer-link" title="أشهر الحلقات">أشهر
+                الحلقات</a></li>
+            <li><a href="#" class="footer-link" title="أشهر المقدمين">أشهر
+                المقدمين</a></li>
+            <li><a href="#" class="footer-link" title="ما يقولوا عنا">ما
+                يقولوا عنا</a></li>
+            <li><a href="#" class="footer-link" title="سياسة الخصوصية">سياسة
+                الخصوصية</a></li>
+          </ul>
+        </div>
+        <!-- Subscription and Contact Section -->
+        <div class="col-lg-5 col-md-6">
+          <h5 class="footer-title mb-3">ابقَ على تواصل</h5>
+          <p class="mb-3">انضم إلى نشرتنا البريدية لتصلك آخر التحديثات
+            والأخبار.</p>
+          <form action="#" method="post" class="subscription-form" novalidate>
+            <div class="input-group mb-3">
+              <label for="footer-email" class="visually-hidden">البريد
+                الإلكتروني</label>
+              <input type="email" id="footer-email" class="footer-email form-control"
+                placeholder="أدخل بريدك الإلكتروني" required />
+              <button class="btn btn-primary" type="submit" title="اشترك الآن">
+                اشترك <img src="./img/right-icon.png" alt="أيقونة" class="ms-1" loading="lazy" />
+              </button>
+            </div>
+          </form>
+          <div class="contact-info mt-4">
+            <p><i class="fas fa-phone-alt me-2"></i> هاتف: 123456789</p>
+            <p><i class="fas fa-envelope me-2"></i> بريد إلكتروني:
+              info@hanjara.ps</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> العنوان: فلسطين</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- End of Breadcrumb -->
+    <div class="footer-bottom mt-4 text-center">
+      <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق
+        محفوظة.</p>
+    </div>
+  </footer>
 
-    <!-- English Comment: Main Content Start -->
-    <main id="main-content">
-      <!-- English Comment: Hero Section with a Creative Introduction -->
-      <section class="hero section bg-dark text-white">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Hero Text Column -->
-            <div class="col-md-6 col-12">
-              <div class="hero-content">
-                <h1 class="section-title">وراء كل صوت قصة</h1>
-                <p class="lead mb-3">
-                  في حنجرة، لا نُقدّم مجرد محتوى صوتي؛ بل نبني عالمًا من الإلهام
-                  والابتكار. نستخدم أحدث التقنيات لصياغة
-                  تجارب سمعية تأسر القلوب.
-                </p>
-                <p class="lead">
-                  انضم إلينا لتكون جزءاً من رحلة فريدة تحكي قصصًا تتجاوز الكلمات
-                  وتُحرك المشاعر.
-                </p>
-                <a href="#our-team" class="btn btn-primary mt-4">
-                  تعرّف على فريقنا <img src="./img/right-icon.png"
-                    alt="أيقونة السهم" loading="lazy" />
-                </a>
-              </div>
-            </div>
-            <!-- Hero Image Column -->
-            <div class="col-md-6 col-12">
-              <div class="hero-image">
-                <img src="./img/illustrations/3.png" alt="فريق حنجرة"
-                  loading="lazy" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- English Comment: Including necessary JS libraries and custom scripts -->
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/amplitude.min.js" type="text/javascript"></script>
+  <script src="js/amplitude-custom.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
 
-      <!-- Platform Features Section with Detailed Content -->
-      <section class="features section bg-light">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Features Image Column -->
-            <div class="col-md-6 col-12">
-              <div class="features-image">
-                <img src="./img/illustrations/7.png" alt="مميزات حنجرة"
-                  loading="lazy" />
-              </div>
-            </div>
-            <!-- Features Content Column -->
-            <div class="col-md-6 col-12">
-              <div class="services-content">
-                <!-- Using same class names as services-content for consistency -->
-                <h2 class="section-title">لماذا تختار حنجرة؟</h2>
-                <p>
-                  نحن ندمج بين الابتكار والتقنية لنقدم لك تجربة صوتية فريدة
-                  تحاكي ذوقك الرفيع وتلبي توقعاتك.
-                </p>
-                <ul class="services-list">
-                  <li>محتوى صوتي مبتكر يجمع بين الفن والتكنولوجيا لتجارب استماع
-                    لا مثيل لها.</li>
-                  <li>دعم متكامل للمبدعين مع ورش عمل ودورات تدريبية مستمرة.</li>
-                  <li>بيئة تفاعلية تربط بين المستمعين وصناع المحتوى لبناء مجتمع
-                    نشط.</li>
-                  <li>شراكات استراتيجية مع أفضل المؤسسات الإعلامية
-                    والثقافية.</li>
-                  <li>تحديث دوري للميزات والمحتوى لمواكبة أحدث التقنيات.</li>
-                </ul>
-                <a href="about.html" class="btn btn-secondary mt-3">
-                  اكتشف المزيد
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- English Comment: Section for Voice Commentators using Owl Carousel -->
-      <section id="our-team" class="team-section section bg-dark"
-        aria-label="المعلقين الصوتيين">
-        <div class="container">
-          <header class="header team-header text-center">
-            <h2 class="team-title title">
-              <i class="fas fa-headphones-alt" aria-hidden="true"></i> المعلقين
-              الصوتيين
-            </h2>
-            <p class="team-subtitle subtitle">
-              اكتشف الأصوات التي تُضفي لمسة فنية ساحرة على المحتوى وتروي القصص
-              بأصالة وإبداع.
-            </p>
-          </header>
-          <div class="owl-team owl-carousel owl-theme" role="list">
-            <!-- Team Member 1 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <!-- English Comment: Team member image -->
-                <div class="team-image">
-                  <img src="./img/team/team-01.jpg" alt="علي محمد - معلق صوتي"
-                    loading="lazy">
-                </div>
-                <!-- English Comment: Team member info with detailed bio -->
-                <div class="team-info">
-                  <h3 class="team-name">علي محمد</h3>
-                  <p class="team-role">معلق صوتي</p>
-                  <p class="team-bio">
-                    بخبرة تزيد عن 10 سنوات، يقدم علي أداءً صوتياً يجمع بين
-                    الحماس والإبداع، مع تركيز خاص على تقديم قصص
-                    تتناسب مع روح كل مشروع.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابع علي على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابع علي على تويتر" aria-label="تويتر"><i
-                        class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابع علي على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابع علي على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 2 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="./img/team/team-02.jpg" alt="ليلى حسن - معلقه صوتية"
-                    loading="lazy">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name">ليلى حسن</h3>
-                  <p class="team-role">معلقة صوتية</p>
-                  <p class="team-bio">
-                    تتميز ليلى بأسلوبها الفريد الذي يمزج بين الدفء والاحتراف،
-                    حيث تُضيف بعداً عاطفياً لكل مشروع صوتي تعمل
-                    عليه.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابعي ليلى على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابعي ليلى على تويتر"
-                      aria-label="تويتر"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابعي ليلى على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابعي ليلى على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 3 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="./img/team/team-03.jpg" alt="فارس عيسى - معلق صوتي"
-                    loading="lazy">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name">فارس عيسى</h3>
-                  <p class="team-role">معلق صوتي</p>
-                  <p class="team-bio">
-                    يقدم فارس أداءً احترافياً ينبض بالحيوية، مما يضفي على
-                    المحتوى لمسة فنية مميزة تتناسب مع كل نص سردي.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابع فارس على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابع فارس على تويتر"
-                      aria-label="تويتر"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابع فارس على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابع فارس على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 4 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="./img/team/team-04.jpg" alt="منى فوزي - معلقه صوتية"
-                    loading="lazy">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name">منى فوزي</h3>
-                  <p class="team-role">معلقة صوتية</p>
-                  <p class="team-bio">
-                    تُعد منى من أبرز الأسماء في التعليق الصوتي، إذ تتميز بحضورها
-                    اللافت وصوتها الذي يروي القصص بكل دقة.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابع منى على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابع منى على تويتر" aria-label="تويتر"><i
-                        class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابع منى على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابع منى على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- English Comment: Section showcasing content creators using Owl Carousel -->
-      <section class="team-section section bg-light" aria-label="صناع المحتوى">
-        <div class="container">
-          <header class="header team-header text-center">
-            <h2 class="team-title title">
-              <i class="fas fa-edit" aria-hidden="true"></i> صناع المحتوى
-            </h2>
-            <p class="team-subtitle subtitle">
-              يصنع فريقنا الإبداعي قصصاً صوتية تجمع بين الإلهام والابتكار،
-              مقدمين محتوى يرتقي بتجربة كل مستمع.
-            </p>
-          </header>
-          <div class="owl-team owl-carousel owl-theme" role="list">
-            <!-- Team Member 1 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="./img/team/team-02.jpg"
-                    alt="أحمد الشامي - محرر محتوى" loading="lazy">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name">أحمد الشامي</h3>
-                  <p class="team-role">محرر محتوى</p>
-                  <p class="team-bio">
-                    بخبرة واسعة في تطوير المحتوى الصوتي، يقوم أحمد بتحويل
-                    الأفكار إلى نصوص إبداعية تُلهم الجمهور وتحقق
-                    تفاعلًا مثمرًا.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابع أحمد على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابع أحمد على تويتر"
-                      aria-label="تويتر"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابع أحمد على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابع أحمد على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 2 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="./img/team/team-03.jpg"
-                    alt="فاطمة الزهراء - كاتبة بودكاست" loading="lazy">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name">فاطمة الزهراء</h3>
-                  <p class="team-role">كاتبة بودكاست</p>
-                  <p class="team-bio">
-                    تمتلك فاطمة القدرة على تحويل الأفكار إلى نصوص صوتية ملهمة
-                    تُثير الإبداع وتخلق تجربة سمعية لا تُنسى.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابع فاطمة على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابع فاطمة على تويتر"
-                      aria-label="تويتر"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابع فاطمة على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابع فاطمة على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 3 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="./img/team/team-01.jpg"
-                    alt="خالد النمر - منتج محتوى" loading="lazy">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name">خالد النمر</h3>
-                  <p class="team-role">منتج محتوى</p>
-                  <p class="team-bio">
-                    بخبرة في تنسيق وإنتاج المحتوى الصوتي، يعمل خالد على تحويل
-                    الأفكار إلى مشاريع إبداعية تلامس المشاعر
-                    وتلهم المستمعين.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابع خالد على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابع خالد على تويتر"
-                      aria-label="تويتر"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابع خالد على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابع خالد على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Team Member 4 -->
-            <div class="team-item" role="listitem">
-              <div class="team-card">
-                <div class="team-image">
-                  <img src="./img/team/team-04.jpg"
-                    alt="سلمى عبيد - محررة وإعلامية" loading="lazy">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name">سلمى عبيد</h3>
-                  <p class="team-role">محررة وإعلامية</p>
-                  <p class="team-bio">
-                    تسهم سلمى في صياغة المحتوى وتطوير استراتيجيات الاتصال، مما
-                    يضمن تواصلاً فعالاً وجذاباً مع جمهور متنوع.
-                  </p>
-                  <div class="team-social">
-                    <a href="#" title="تابع سلمى على فيسبوك"
-                      aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="تابع سلمى على تويتر"
-                      aria-label="تويتر"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="تابع سلمى على إنستجرام"
-                      aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="تابع سلمى على لينكدإن"
-                      aria-label="لينكدإن"><i
-                        class="fab fa-linkedin-in"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- English Comment: Call-to-Action Section -->
-      <section class="cta section bg-dark text-white text-center">
-        <div class="container">
-          <h2 class="section-title">انضم إلى ثورة حنجرة</h2>
-          <p class="lead">
-            كن جزءاً من رحلتنا في تحويل المشهد الصوتي العربي. شارك قصتك ودع صوتك
-            يُحدث الفرق في عالم الإبداع.
-          </p>
-          <a href="signup.html" class="btn btn-primary mt-3 m-auto">
-            سجل الآن <i class="fa-solid fa-right-to-bracket"></i>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <!-- English Comment: Footer Section with Navigation, Social Media, and Contact Information -->
-    <footer class="footer text-white" role="contentinfo" aria-label="Footer">
-      <div class="container">
-        <div class="row mb-4">
-          <!-- Footer Logo & Description -->
-          <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
-            <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3"
-              loading="lazy" />
-            <p class="footer-description">
-              نقدم محتوى صوتياً متنوعاً يجمع بين الإبداع والاحتراف لإلهام
-              جمهورنا وبناء مجتمع متواصل.
-            </p>
-            <p class="mb-3">تابعنا على</p>
-            <div class="social-icons">
-              <a href="#" class="text-white mx-2" title="فيسبوك"
-                aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="text-white mx-2" title="إنستجرام"
-                aria-label="إنستجرام"><i
-                  class="fab fa-instagram"></i></a>
-              <a href="#" class="text-white mx-2" title="يوتيوب"
-                aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
-              <a href="#" class="text-white mx-2" title="تيك توك"
-                aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
-              <a href="#" class="text-white mx-2" title="تويتر"
-                aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
-            </div>
-          </div>
-          <!-- Quick Links Section -->
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="footer-title mb-3">بودكاست</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="footer-link"
-                  title="الرئيسية">الرئيسية</a></li>
-              <li><a href="#" class="footer-link"
-                  title="الحلقات">الحلقات</a></li>
-              <li><a href="#" class="footer-link" title="من نحن">من نحن</a></li>
-              <li><a href="#" class="footer-link"
-                  title="الأخبار">الأخبار</a></li>
-              <li><a href="#" class="footer-link"
-                  title="المدونة">المدونة</a></li>
-              <li><a href="#" class="footer-link" title="تواصل معنا">تواصل
-                  معنا</a></li>
-            </ul>
-          </div>
-          <!-- Explore Section -->
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="footer-title mb-3">استكشف</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="footer-link" title="الأكثر شهرة">الأكثر
-                  شهرة</a></li>
-              <li><a href="#" class="footer-link"
-                  title="مقترحاتنا">مقترحاتنا</a></li>
-              <li><a href="#" class="footer-link" title="أشهر الحلقات">أشهر
-                  الحلقات</a></li>
-              <li><a href="#" class="footer-link" title="أشهر المقدمين">أشهر
-                  المقدمين</a></li>
-              <li><a href="#" class="footer-link" title="ما يقولوا عنا">ما
-                  يقولوا عنا</a></li>
-              <li><a href="#" class="footer-link" title="سياسة الخصوصية">سياسة
-                  الخصوصية</a></li>
-            </ul>
-          </div>
-          <!-- Subscription and Contact Section -->
-          <div class="col-lg-5 col-md-6">
-            <h5 class="footer-title mb-3">ابقَ على تواصل</h5>
-            <p class="mb-3">انضم إلى نشرتنا البريدية لتصلك آخر التحديثات
-              والأخبار.</p>
-            <form action="#" method="post" class="subscription-form" novalidate>
-              <div class="input-group mb-3">
-                <label for="footer-email" class="visually-hidden">البريد
-                  الإلكتروني</label>
-                <input type="email" id="footer-email"
-                  class="footer-email form-control"
-                  placeholder="أدخل بريدك الإلكتروني" required />
-                <button class="btn btn-primary" type="submit"
-                  title="اشترك الآن">
-                  اشترك <img src="./img/right-icon.png" alt="أيقونة"
-                    class="ms-1" loading="lazy" />
-                </button>
-              </div>
-            </form>
-            <div class="contact-info mt-4">
-              <p><i class="fas fa-phone-alt me-2"></i> هاتف: 123456789</p>
-              <p><i class="fas fa-envelope me-2"></i> بريد إلكتروني:
-                info@hanjara.ps</p>
-              <p><i class="fas fa-map-marker-alt me-2"></i> العنوان: فلسطين</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom mt-4 text-center">
-        <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق
-          محفوظة.</p>
-      </div>
-    </footer>
-
-    <!-- English Comment: Including necessary JS libraries and custom scripts -->
-    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="js/amplitude.min.js" type="text/javascript"></script>
-    <script src="js/amplitude-custom.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
-
-    <!-- English Comment: GSAP Animations for Scroll-Triggered Effects -->
-    <script>
+  <!-- English Comment: GSAP Animations for Scroll-Triggered Effects -->
+  <script>
     // Register the GSAP ScrollTrigger plugin
     gsap.registerPlugin(ScrollTrigger);
     // Animate Hero Section content
@@ -663,6 +590,6 @@
       }
     });
   </script>
-  </body>
+</body>
 
 </html>

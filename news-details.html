@@ -39,8 +39,8 @@
   <!-- Custom Styles -->
   <style>
     .news-header h1 {
-      font-size: 2.5rem;
-      color: #ffc107;
+      font-size: 2rem;
+      color: var(--accent-color-2);
       margin-bottom: 1rem;
     }
 
@@ -61,7 +61,7 @@
 
     .news-meta i {
       margin-left: 0.5rem;
-      color: #ffc107;
+      color: var(--accent-color-2);
     }
 
     .news-banner img {
@@ -73,8 +73,8 @@
     }
 
     .news-content h2 {
-      font-size: 1.8rem;
-      color: #ffc107;
+      font-size: 1.4rem;
+      color: var(--accent-color-2);
       margin-bottom: 1rem;
     }
 
@@ -105,16 +105,16 @@
       justify-content: center;
       width: 40px;
       height: 40px;
-      background: #1c1620;
-      border: 1px solid #ffc107;
+      background: var(--background-color);
+      border: 1px solid var(--accent-color-2);
       border-radius: 50%;
-      color: #ffc107;
+      color: var(--accent-color-2);
       transition: all 0.3s ease;
     }
 
     .social-share a:hover {
-      background: #ffc107;
-      color: #1c1620;
+      background: var(--accent-color-2);
+      color: var(--background-color);
     }
 
     .related-news {
@@ -122,7 +122,7 @@
     }
 
     .related-news h3 {
-      color: #ffc107;
+      color: var(--accent-color-2);
       margin-bottom: 1.5rem;
       text-align: center;
     }
@@ -134,7 +134,7 @@
     }
 
     .related-card {
-      background: #1c1620;
+      background: var(--background-color);
       border-radius: 8px;
       overflow: hidden;
       flex: 1 1 calc(33.33% - 1rem);
@@ -158,7 +158,7 @@
 
     .related-card .card-content h4 {
       font-size: 1.2rem;
-      color: #ffc107;
+      color: var(--accent-color-2);
       margin-bottom: 0.5rem;
     }
 
@@ -172,19 +172,19 @@
     }
 
     .comments-section h3 {
-      color: #ffc107;
+      color: var(--accent-color-2);
       margin-bottom: 1.5rem;
     }
 
     .comment {
-      background: #1c1620;
+      background: var(--background-color);
       border-radius: 8px;
       padding: 1rem;
       margin-bottom: 1rem;
     }
 
     .comment h6 {
-      color: #ffc107;
+      color: var(--accent-color-2);
       margin-bottom: 0.5rem;
     }
 
@@ -204,23 +204,11 @@
       margin-bottom: 1rem;
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 4px;
-      background: #1c1620;
+      background: var(--background-color);
       color: #fff;
     }
 
-    .comment-form button {
-      background: #ffc107;
-      color: #1c1620;
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .comment-form button:hover {
-      background: #e0b800;
-    }
+  
 
     .background-light {
       background: var(--secondary-background-color);
@@ -237,10 +225,10 @@
     }
 
     .sidebar h4 {
-      color: #ffc107;
+      color: var(--accent-color-2);
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      border-bottom: 1px solid #ffc107;
+      border-bottom: 1px solid var(--accent-color-2);
       padding-bottom: 0.5rem;
     }
 
@@ -260,7 +248,7 @@
     }
 
     .sidebar li a:hover {
-      color: #ffc107;
+      color: var(--accent-color-2);
     }
 
     /* Email Subscription Section */
@@ -273,7 +261,7 @@
     }
 
     .email-subscription h2 {
-      color: #ffc107;
+      color: var(--accent-color-2);
       margin-bottom: 0.5rem;
     }
 
@@ -288,7 +276,7 @@
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 4px;
       margin-right: 0.5rem;
-      background: #1c1620;
+      background: var(--background-color);
       color: #fff;
     }
 
@@ -296,15 +284,12 @@
       padding: 0.8rem 2rem;
       border: none;
       border-radius: 4px;
-      background: #ffc107;
-      color: #1c1620;
+      background: var(--accent-color-2);
       cursor: pointer;
       transition: background 0.3s ease;
     }
 
-    .email-subscription button:hover {
-      background: #e0b800;
-    }
+ 
   </style>
 </head>
 
@@ -446,7 +431,7 @@
                 <input type="text" placeholder="اسمك" />
                 <input type="email" placeholder="بريدك الإلكتروني" />
                 <textarea rows="4" placeholder="اكتب تعليقك هنا..."></textarea>
-                <button type="submit">إرسال التعليق</button>
+                <button type="submit" class="btn btn-secondary">إرسال التعليق</button>
               </div>
             </section>
           </div>
@@ -491,7 +476,7 @@
       <p>احصل على أحدث الأخبار والتحديثات مباشرة إلى بريدك الإلكتروني.</p>
       <form class="d-flex justify-content-center align-items-center">
         <input type="email" placeholder="أدخل بريدك الإلكتروني" />
-        <button type="submit">اشترك الآن</button>
+        <button type="submit" class="btn btn-secondary">اشترك الآن</button>
       </form>
     </div>
   </section>
