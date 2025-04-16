@@ -3297,7 +3297,7 @@ span.flatpickr-weekday {
   flex: 0 0 30%;
   background: var(--secondary-background-color);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .profile-sidebar .profile-image {

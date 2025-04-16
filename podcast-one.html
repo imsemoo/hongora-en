@@ -1,375 +1,1019 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>اللويح - منصة البودكاست والإبداع الصوتي</title>
 
-    <meta
-      name="description"
-      content="حنجرة: منصة فلسطينية تهدف لإثراء المحتوى الصوتي العربي، تقدم برامج بودكاست متنوعة وخدمات التعليق الصوتي وتأجير الاستوديو. انضم إلينا واكتشف صوتك."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تفاصيل الحلقة - حنجرة بودكاست</title>
 
-    <meta
-      name="keywords"
-      content="حنجرة, بودكاست, منصة صوتية, تعليقات صوتية, الإنتاج الصوتي, استوديو, فلسطين, المحتوى العربي, المعلقون الصوتيون, خدمات صوتية"
-    />
+  <!-- Meta Tags for SEO and Social Sharing -->
+  <meta name="description"
+    content="استمع إلى حلقة حنجرة بودكاست وتعرّف على كافة تفاصيلها. اكتشف قصة الحلقة، معلومات المضيف، والخيارات التفاعلية." />
+  <meta name="keywords" content="حنجرة, بودكاست, حلقة, تفاصيل, محتوى صوتي, إبداع صوتي, منصة بودكاست" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Robots Meta -->
-    <meta name="robots" content="index, follow" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="تفاصيل الحلقة - حنجرة بودكاست" />
+  <meta property="og:description" content="اكتشف كل تفاصيل الحلقة: الغلاف، المعلومات الفنية، وصف الحلقة، والمزيد." />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://hanjara.ps/single-podcast.html" />
+  <meta property="og:type" content="article" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي"
-    />
-    <meta
-      property="og:description"
-      content="منصة فلسطينية تُقدم برامج بودكاست متنوعة وتعليقات صوتية بمشاركة نخبة من المعلقين والمبدعين."
-    />
-    <meta property="og:image" content="img/og-image.png" />
-    <meta property="og:url" content="https://hanjara.ps" />
-    <meta property="og:type" content="website" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="تفاصيل الحلقة - حنجرة بودكاست" />
+  <meta name="twitter:description" content="استمع وتفاعل مع حلقة بودكاست مميزة من حنجرة." />
+  <meta name="twitter:image" content="img/twitter-image.png" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="حنجرة - منصة البودكاست والإبداع الصوتي"
-    />
-    <meta
-      name="twitter:description"
-      content="شاركنا الاستماع والتجربة الصوتية الفريدة من خلال برامج بودكاست حنجرة وخدماتنا المتنوعة."
-    />
-    <meta name="twitter:image" content="img/twitter-image.png" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "حنجرة",
+    "url": "https://hanjara.ps",
+    "logo": "https://hanjara.ps/img/logo.png",
+    "sameAs": [
+      "https://facebook.com/hanjara",
+      "https://instagram.com/hanjara",
+      "https://twitter.com/hanjara"
+    ]
+  }
+  </script>
 
-    <!-- Flatpickr CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
-    <!-- Flatpickr Script -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <!-- Flatpickr Arabic Localization -->
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+  <!-- Flatpickr CSS/JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <link rel="stylesheet" href="css/amplitude.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/amplitude.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar">
-      <div class="container">
-        <!-- Logo -->
-        <a
-          class="navbar-brand d-flex align-items-center gap-2"
-          href="index.html"
-        >
-          <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
+  <!-- Custom Inline CSS -->
+  <style>
+    /* Preloader */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1A1527;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+    }
+
+    #preloader .spinner {
+      border: 4px solid rgba(255, 255, 255, 0.1);
+      border-top: 4px solid var(--accent-color-2);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .sidebar {
+      flex: 0 0 30%;
+      background: var(--secondary-background-color);
+      padding: 1.5rem;
+      border-radius: 16px;
+    }
+
+    /* Back to Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: var(--accent-color-2);
+      color: var(--background-color);
+      padding: 0.8rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: none;
+      z-index: 1000;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    #back-to-top:hover {
+      background: #e0b200;
+      transform: scale(1.05);
+    }
+
+    /* قواعد عامة للنصوص */
+    body {
+      font-size: 16px;
+      line-height: 1.6;
+      font-family: "Aljazeera-Regular", sans-serif;
+    }
+
+    h1.visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* أحجام العناوين */
+    .podcast-title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .podcast-subtitle {
+      font-size: 1.2rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .podcast-description p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Podcast Meta */
+    .podcast-meta ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .podcast-meta ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+      color: #ccc;
+    }
+
+    .podcast-meta ul li i {
+      color: var(--accent-color-2);
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    /* Host Information Inline */
+    /* قسم المقدمين داخل الـ Sidebar */
+    .hosts-section {
+      margin-top: 2rem;
+    }
+
+    .hosts-section .section-title {
+      font-size: 1.6rem;
+      color: var(--accent-color-2);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .hosts-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .host-card {
+      position: relative;
+      width: calc(33.33% - 0.66rem);
+      /* يتيح عرض 3 بطاقات في صف واحد */
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .host-card img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .host-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .host-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .host-card:hover .host-overlay {
+      opacity: 1;
+    }
+
+    .host-overlay h4 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .host-overlay p {
+      font-size: 0.9rem;
+      margin: 0.3rem 0;
+    }
+
+    .host-social a {
+      color: #fff;
+      margin: 0 0.3rem;
+      transition: color 0.3s ease;
+    }
+
+    .host-social a:hover {
+      color: var(--accent-color-2);
+    }
+
+    /* استجابة البطاقات على الشاشات الصغيرة */
+    @media (max-width: 768px) {
+      .host-card {
+        width: calc(50% - 0.5rem);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .host-card {
+        width: 100%;
+      }
+    }
+
+    /* Episode Categories */
+    .episode-categories {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+    }
+
+    .episode-categories h3 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .categories-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .categories-list .badge {
+      background: var(--accent-color-2);
+      color: var(--background-color);
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Related Episodes */
+    .related-episodes .row>[class^="col-"] {
+      margin-bottom: 1.5rem;
+    }
+
+    .episode-card {
+      background: var(--secondary-background-color);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .episode-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .episode-card .card-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .card-title a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .card-title a:hover {
+      color: var(--accent-color-2);
+    }
+
+    /* تحسين الأيقونات والأزرار */
+    .platform-icon,
+    .heart-icon,
+    .btn .icon {
+      border-radius: 50%;
+      padding: 0.5rem;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .platform-icon:hover,
+    .heart-icon:hover,
+    .btn .icon:hover {
+      transform: scale(1.1);
+    }
+
+    .btn i {
+      margin-right: 0.3rem;
+    }
+
+    .social-icons a {
+      font-size: 1.2rem;
+      color: var(--accent-color-2);
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: var(--text-color);
+    }
+
+    /* تحسين مشغل الصوت */
+    .audio-player .song-meta-data p {
+      font-size: 1.1rem;
+    }
+
+    .player-controls i {
+      font-size: 1.5rem;
+    }
+
+    /* Rating Section */
+    .rating-section {
+      margin-top: 2rem;
+    }
+
+    .rating-section h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .rating-stars {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #ccc;
+      transition: color 0.2s;
+    }
+
+    .rating-stars i:hover,
+    .rating-stars i:hover~i,
+    .rating-stars .rated {
+      color: var(--accent-color-2);
+    }
+
+    /* Comment Section */
+    .comment-section {
+      margin-top: 2rem;
+    }
+
+    .comment-section h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .comment-section textarea {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    .comment-section button {
+      margin-top: 1rem;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--accent-color-2);
+      color: var(--background-color);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .comment-section button:hover {
+      background-color: #e0b200;
+    }
+
+    /* Transcript Section */
+    .transcript-section {
+      margin-top: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .transcript-section h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .transcript-line {
+      padding: 0.5rem 0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .transcript-line:hover,
+    .transcript-line.active {
+      background: var(--accent-color-2);
+      color: var(--background-color);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Back To Top Button -->
+  <a href="#" id="back-to-top" aria-label="العودة للأعلى">↑</a>
+
+  <!-- Floating "استمع الآن" Button -->
+  <a href="#play-pause" class="floating-listen-btn" aria-label="استمع الآن">استمع الآن</a>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html" title="الصفحة الرئيسية">
+        <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" loading="lazy" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">عن حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link active" href="podcast.html">حنجرة بودكاست</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">فريق حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">خدمات حنجرة</a></li>
+          <li class="nav-item"><a class="nav-link" href="studio.html">احجز الاستوديو</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <a href="signup.html" class="btn btn-primary">
+          <i class="fa-solid fa-user-plus"></i> انضم الآن
         </a>
-
-        <!-- Toggler Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
-                >الرئيسية</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">عن حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="podcast.html">حنجرة بودكاست</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">فريق حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">خدمات حنجرة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="studio.html">احجز الاستوديو</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">تواصل معنا</a>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary">
-            <i class="fa-solid fa-user-plus"></i>
-            انضم الآن
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- BreadCrumb -->
-    <div class="breadcrumb">
-      <div class="container">
-        <h3 class="title">اللويح</h3>
       </div>
     </div>
-    <!-- BreadCrumb -->
+  </nav>
 
-    <!-- Podcast Description -->
-    <section
-      class="our-suggestions section bg-dark"
-      aria-labelledby="suggestions-title"
-    >
+  <!-- Audio Player Section -->
+  <div class="audio-player">
+    <button type="button" class="audio-player-hide">
+      <i class="fa-solid fa-angle-down"></i>
+    </button>
+    <div class="player">
+      <div class="player-cover-img">
+        <img data-amplitude-song-info="cover_art_url" src="img/audio/01.jpg" alt="غلاف الحلقة" loading="lazy" />
+      </div>
+      <div class="player-content">
+        <div class="song-meta-data">
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-music"></i>
+              <p data-amplitude-song-info="name" class="song-name">حلقة يا حب البرغل</p>
+            </div>
+            <p>
+              <span data-amplitude-song-info="album" class="album-name">بودكاست اللويح</span> -
+              <span data-amplitude-song-info="artist" class="song-artist">عمار أبو حسين</span>
+            </p>
+          </div>
+        </div>
+        <div class="player-time-progress">
+          <div id="progress-container">
+            <input type="range" class="amplitude-song-slider" />
+            <progress id="song-played-progress" class="amplitude-song-played-progress" value="0"></progress>
+            <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0.6088"></progress>
+          </div>
+          <div class="time-container">
+            <span class="current-time"><span class="amplitude-current-minutes">00</span>:<span
+                class="amplitude-current-seconds">00</span></span>
+            <div id="player-volume" class="player-volume" style="--volume-before-width: 50%">
+              <span id="amplitude-mute" class="amplitude-mute amplitude-not-muted"><i
+                  class="fa-solid fa-volume-high"></i></span>
+              <input type="range" id="volume-slider" max="100" class="amplitude-volume-slider" />
+            </div>
+            <span class="duration"><span class="amplitude-duration-minutes">02</span>:<span
+                class="amplitude-duration-seconds">41</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="player-controls">
+        <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </div>
+        <div class="amplitude-prev" id="previous">
+          <i class="fa-solid fa-backward-step"></i>
+        </div>
+        <div class="amplitude-play-pause amplitude-paused" id="play-pause">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="amplitude-next" id="next">
+          <i class="fa-solid fa-forward-step"></i>
+        </div>
+        <div class="amplitude-repeat amplitude-repeat-off" id="repeat">
+          <i class="fa-solid fa-repeat"></i>
+        </div>
+        <div class="player-playlist show-playlist">
+          <i class="fa-solid fa-music"></i>
+        </div>
+      </div>
+      <div id="playlist-container">
+        <div class="playlist-top">
+          <h6 class="up-next">القادم</h6>
+          <button type="button" class="close-playlist" aria-label="إغلاق قائمة التشغيل">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="playlist-content">
+          <div class="playlist-item">
+            <div
+              class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused amplitude-active-song-container"
+              data-amplitude-song-index="0">
+              <img src="img/audio/01.jpg" alt="غلاف الحلقة 01" />
+              <div class="playlist-song-meta">
+                <span class="playlist-song-name">بودكاست الأعمال الحلقة 01</span>
+                <span class="playlist-artist-album">تيموثي ك. أغيلار</span>
+              </div>
+            </div>
+            <button type="button" class="playlist-remove" data-remove-id="d1" aria-label="إزالة الحلقة">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused"
+              data-amplitude-song-index="1">
+              <img src="img/audio/02.jpg" alt="غلاف الحلقة 02" />
+              <div class="playlist-song-meta">
+                <span class="playlist-song-name">بودكاست التعليم الحلقة 02</span>
+                <span class="playlist-artist-album">دونا سي. نيكولز</span>
+              </div>
+            </div>
+            <button type="button" class="playlist-remove" data-remove-id="d2" aria-label="إزالة الحلقة">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="playlist-item">
+            <div class="playlist-song amplitude-song-container amplitude-play-pause amplitude-paused"
+              data-amplitude-song-index="2">
+              <img src="img/audio/03.jpg" alt="غلاف الحلقة 03" />
+              <div class="playlist-song-meta">
+                <span class="playlist-song-name">بودكاست الأعمال الحلقة 03</span>
+                <span class="playlist-artist-album">ألفين ك. بيفريدج</span>
+              </div>
+            </div>
+            <button type="button" class="playlist-remove" data-remove-id="d3" aria-label="إزالة الحلقة">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumb Section -->
+  <div class="breadcrumb bg-dark">
+    <div class="container text-center">
+      <img src="img/hero-track.png" alt="صورة توضيحية" class="mb-4" loading="lazy" />
+      <h3 class="title"><span class="text-white">بودكاست</span> تفاصيل الحلقة</h3>
+      <p class="lead text-white mt-2">
+        اكتشف كل ما يخص هذه الحلقة من معلومات، استمع وتفاعل مع محتوى مبتكر.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content: Single Podcast -->
+  <main id="main-content">
+    <!-- H1 مخفي لتحسين SEO -->
+    <h1 class="visually-hidden">تفاصيل الحلقة - حنجرة بودكاست</h1>
+    <section class="single-podcast section bg-dark py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-12 mb-4">
-            <div class="content bg-dark">
-              <img src="img/podcast-one.png" loading="lazy" width="100%" />
-              <div class="title-card">
-                <h5>حكاية حلقة ياسر</h5>
+        <div class="row g-5">
+          <!-- Podcast Cover & Basic Info -->
+          <div class="col-md-4">
+            <!-- ضمن الـ Sidebar -->
+            <div class="sidebar">
+              <!-- محتوى سابق مثل Podcast Cover وPodcast Meta -->
+              <div class="podcast-cover">
+                <picture>
+                  <source srcset="img/podcast/1.webp" type="image/webp" />
+                  <img src="img/podcast/1.jpg" alt="غلاف الحلقة - رحلة الإبداع الصوتي" class="img-fluid rounded"
+                    loading="lazy" />
+                </picture>
               </div>
-              <div class="content-info d-flex gap-5">
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/content-creator-icon.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">ياسر الحزيمي</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <img
-                    src="./img/data-date.png"
-                    style="width: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">21 ديسمبر 2024</p>
+              <div class="podcast-meta mt-4">
+                <ul class="list-unstyled text-white">
+                  <li><i class="fa-solid fa-calendar-alt me-2"></i> 05 يناير 2025</li>
+                  <li><i class="fa-solid fa-clock me-2"></i> 45 دقيقة</li>
+                  <li>
+                    <i class="fa-solid fa-microphone me-2"></i>
+                    تقديم: <span style="color: var(--accent-color-2); font-weight: bold;">فاطمة الزهراء</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- قسم المقدمين المبتكر -->
+              <div class="hosts-section">
+                <h3 class="section-title">المقدمين</h3>
+                <div class="hosts-list">
+                  <!-- بطاقة مقدم 1 -->
+                  <div class="host-card">
+                    <img src="img/team/team-01.jpg" alt="فاطمة الزهراء" loading="lazy" />
+                    <div class="host-overlay">
+                      <h4>فاطمة الزهراء</h4>
+                      <p>خبيرة إعلام وإبداع صوتي بخبرة تزيد عن 10 سنوات.</p>
+                      <div class="host-social">
+                        <a href="#" title="تابعي على فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="تابعي على تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="تابعي على إنستجرام"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- بطاقة مقدم 2 -->
+                  <div class="host-card">
+                    <img src="img/team/team-02.jpg" alt="محمد الأمين" loading="lazy" />
+                    <div class="host-overlay">
+                      <h4>محمد الأمين</h4>
+                      <p>متخصص في الإنتاج الصوتي وتقديم الحلقات.</p>
+                      <div class="host-social">
+                        <a href="#" title="تابع على فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="تابع على تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="تابع على إنستجرام"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- بطاقة مقدم 3 -->
+                  <div class="host-card">
+                    <img src="img/team/team-03.jpg" alt="علي خالد" loading="lazy" />
+                    <div class="host-overlay">
+                      <h4>علي خالد</h4>
+                      <p>مبدع الصوت والتقنيات الحديثة في صناعة البودكاست.</p>
+                      <div class="host-social">
+                        <a href="#" title="تابع على فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="تابع على تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="تابع على إنستجرام"><i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <hr />
-              <div class="content-activity d-flex justify-content-between">
-                <div class="d-flex justify-content-between align-items-center">
-                  <img
-                    src="./img/eye.png"
-                    style="width: 15px; height: 15px"
-                    alt="img"
-                  />
-                  <p class="ms-2">2.5K</p>
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <img
-                    src="./img/heart.png"
-                    style="width: 20px; height: 20px"
-                    alt="img"
-                  />
-                  <p class="ms-2">1.4K</p>
+
+              <!-- بقية المحتوى (مثال: تصنيفات الحلقة) -->
+              <div class="episode-categories">
+                <h3 class="section-title">تصنيفات الحلقة</h3>
+                <div class="categories-list">
+                  <span class="badge badge-category">تقنية</span>
+                  <span class="badge badge-category">تعليمي</span>
+                  <span class="badge badge-category">كوميدي</span>
                 </div>
               </div>
-              <div class="p-3">
-                <p class="my-2">
-                  حلقة "كيف تنجح العلاقات" مع ياسر الحزيمي، التي نُشرت في نوفمبر
-                  2022 عبر بودكاست فنجان من إنتاج شركة ثمانية، تُعد من أكثر
-                  الحلقات استماعًا في تاريخ البودكاست العربي. تناقش الحلقة
-                  ديناميكيات العلاقات الاجتماعية وكيفية بنائها بنجاح في ظل
-                  تحديات الحياة المعاصرة. حظيت الحلقة بانتشار واسع، حيث تجاوزت
-                  100 مليون مشاهدة على منصة يوتيوب، مع نسبة كبيرة من المشاهدين
-                  من خارج المملكة العربية السعودية، وفئة عمرية تتراوح بين 25 و34
-                  عامًا.
-                </p>
-                <p class="mb-2">
-                  يُعزى هذا النجاح إلى القبول الذي يحظى به الضيف، بالإضافة إلى
-                  حاجة المجتمع الماسّة لفهم ديناميكيات العلاقات الاجتماعية.حلقة
-                  "كيف تنجح العلاقات" مع ياسر الحزيمي، التي نُشرت في نوفمبر 2022
-                  عبر بودكاست فنجان من إنتاج شركة ثمانية، تُعد من أكثر الحلقات
-                  استماعًا في تاريخ البودكاست العربي. تناقش الحلقة ديناميكيات
-                  العلاقات الاجتماعية وكيفية بنائها بنجاح في ظل تحديات الحياة
-                  المعاصرة. حظيت الحلقة بانتشار واسع، حيث تجاوزت 100 مليون
-                  مشاهدة على منصة يوتيوب، مع نسبة كبيرة من المشاهدين من خارج
-                  المملكة العربية السعودية، وفئة عمرية تتراوح بين 25 و34 عامًا.
+            </div>
+
+          </div>
+          <!-- Podcast Details & Description -->
+          <div class="col-md-8">
+            <div class="podcast-content text-white">
+              <h1 class="podcast-title mb-3">رحلة إلى عمق الإبداع الصوتي</h1>
+              <p class="podcast-subtitle mb-4 fw-normal">
+                حلقة مميزة تنقلك إلى عالم الابتكار والتجديد، حيث نكشف أسرار صناعة البودكاست والفنون الصوتية.
+              </p>
+              <!-- Podcast Description -->
+              <div class="podcast-description">
+                <h2 class="section-title mb-3">حول هذه الحلقة</h2>
+                <p>
+                  في هذه الحلقة نستعرض رحلة ملهمة عبر عالم الإبداع الصوتي؛ نتعمق في التحديات والفرص التي تواجه صناع
+                  المحتوى الصوتي، كما نشارك قصص نجاح واستراتيجيات لتحقيق التميز.
                 </p>
                 <p>
-                  يُعزى هذا النجاح إلى القبول الذي يحظى به الضيف، بالإضافة إلى
-                  حاجة المجتمع الماسّة لفهم ديناميكيات العلاقات الاجتماعية.
+                  انضم إلينا في هذه الرحلة الصوتية المثيرة، حيث نناقش أحدث التقنيات والأساليب الإبداعية التي تُسهم في
+                  تحقيق محتوى متميز يجمع بين الجودة والروح الإبداعية.
                 </p>
               </div>
-              <div class="mt-4 p-3">
-                <h3>خيارات التشغيل</h3>
-                <div class="d-flex gap-5 mt-4">
-                  <img src="./img/soundcloud.png" alt="img" />
-                  <img src="./img/spotify.png" alt="img" />
-                  <img src="./img/applepodcasts.png" alt="img" />
+
+              <!-- Rating Section -->
+              <div class="rating-section">
+                <h2>قيم هذه الحلقة</h2>
+                <div class="rating-stars">
+                  <i class="fa-regular fa-star" data-value="1"></i>
+                  <i class="fa-regular fa-star" data-value="2"></i>
+                  <i class="fa-regular fa-star" data-value="3"></i>
+                  <i class="fa-regular fa-star" data-value="4"></i>
+                  <i class="fa-regular fa-star" data-value="5"></i>
+                </div>
+              </div>
+
+              <!-- Transcript Section -->
+              <div class="transcript-section">
+                <h2>النص التفاعلي للحلقة</h2>
+                <div class="transcript-line" data-time="10">[00:10] بداية الحلقة: مقدمة عن الإبداع الصوتي</div>
+                <div class="transcript-line" data-time="45">[00:45] قصة نجاح ملهمة</div>
+                <div class="transcript-line" data-time="120">[02:00] نصائح تقنية وتحليل تفاعلي</div>
+                <div class="transcript-line" data-time="180">[03:00] خاتمة وتوديع المستمعين</div>
+              </div>
+
+              <!-- Podcast Share Section -->
+              <div class="podcast-share mt-4">
+                <h3 class="mb-3">شارك هذه الحلقة</h3>
+                <div class="social-icons d-flex gap-3">
+                  <a href="#" title="شارك على فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" title="شارك على تويتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" title="شارك على إنستجرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" title="شارك على لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+
+            </div> <!-- End podcast-content -->
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Related Episodes -->
+          <div class="related-episodes mt-5">
+            <h2 class="section-title mb-3">حلقات مشابهة</h2>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="episode-card bgc-2 p-3 rounded">
+                  <div class="card-img">
+                    <img src="img/podcast/2.webp" alt="همسات مخيفة" class="img-fluid rounded">
+                  </div>
+                  <h4 class="card-title mt-2">
+                    <a href="episodes-details.html" class="link-text">همسات مخيفة: حكايات من الظلال</a>
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="episode-card bgc-2 p-3 rounded">
+                  <div class="card-img">
+                    <img src="img/podcast/3.webp" alt="عمالقة التقنية" class="img-fluid rounded">
+                  </div>
+                  <h4 class="card-title mt-2">
+                    <a href="episodes-details.html" class="link-text">عمالقة التقنية: رسم ملامح المستقبل</a>
+                  </h4>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="episode-card bgc-2 p-3 rounded">
+                  <div class="card-img">
+                    <img src="img/podcast/1.webp" alt="قصص تُلهِم" class="img-fluid rounded">
+                  </div>
+                  <h4 class="card-title mt-2">
+                    <a href="episodes-details.html" class="link-text">قصص تُلهِم: فن السرد القصصي</a>
+                  </h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer text-white">
-      <div class="container">
-        <div class="row mb-4">
-          <!-- Logo and Description -->
-          <div class="col-lg-4 col-md-6 text-md-start text-center mb-4 mb-lg-0">
-            <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" />
-            <p class="footer-description">
-              نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا
-              وتحقيق تجربة استماع مميزة.
-            </p>
-            <p class="mb-3">تابعنا على</p>
-            <div class="social-icons">
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-tiktok"></i
-              ></a>
-              <a href="#" class="text-white mx-2"
-                ><i class="fab fa-x-twitter"></i
-              ></a>
+  <!-- Footer -->
+  <footer class="footer text-white" role="contentinfo" aria-label="Footer">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
+          <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
+          <p class="footer-description">
+            نوفر محتوى متنوعًا يركز على الإبداع والدقة لتلبية توقعات جمهورنا.
+          </p>
+          <p class="mb-3">تابعنا على</p>
+          <div class="social-icons">
+            <a href="#" class="text-white mx-2" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2" title="يوتيوب"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white mx-2" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white mx-2" title="تويتر"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">بودكاست</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="footer-link" title="الرئيسية">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الرئيسية
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="الحلقات">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الحلقات
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="من نحن">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> من نحن
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="الأخبار">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الأخبار
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="المدونة">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> المدونة
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="تواصل معنا">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> تواصل معنا
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h5 class="footer-title mb-3">استكشف</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="footer-link" title="الأكثر شهرة">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> الأكثر شهرة
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="مقترحاتنا">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> مقترحاتنا
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="أشهر الحلقات">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> أشهر الحلقات
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="أشهر المقدمين">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> أشهر المقدمين
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="ما يقولوا عنا">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> ما يقولوا عنا
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" title="سياسة الخصوصية">
+                <img src="./img/footer-arrow.png" class="me-1" alt="سهم" loading="lazy" /> سياسة الخصوصية
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
+          <p class="mb-3">انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
+          <form action="#" method="post" class="subscription-form" novalidate>
+            <div class="input-group mb-3">
+              <label for="footer-email" class="visually-hidden">البريد الإلكتروني</label>
+              <input type="email" id="footer-email" class="footer-email form-control"
+                placeholder="أدخل بريدك الإلكتروني" required />
+              <button class="btn btn-primary" type="submit" title="اشترك الآن">
+                اشترك <img src="./img/right-icon.png" alt="أيقونة" class="ms-1" loading="lazy" />
+              </button>
             </div>
-          </div>
-          <!-- Links -->
-          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="footer-title mb-3">بودكاست</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الرئيسية
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الحلقات
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  من نحن
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الأخبار
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  المدونة
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  تواصل معنا
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6">
-            <h5 class="footer-title mb-3">استكشف</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  الأكثر شهرة
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  مقترحاتنا
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  أشهر الحلقات
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  أشهر المقدمين
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  ما يقولوا عنا
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer-link">
-                  <img src="./img/footer-arrow.png" class="me-1" alt="" />
-                  سياسة الخصوصية
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- Subscription Section -->
-          <div class="col-lg-4 col-md-8 mb-4">
-            <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
-            <p>انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
-
-            <input
-              type="email"
-              class="footer-email"
-              placeholder="أدخل بريدك الإلكتروني"
-            />
-            <br />
-
-            <a href="#" class="btn btn-primary mt-4">
-              اشترك الآن
-              <img src="./img/right-icon.png" alt="img" />
-            </a>
+          </form>
+          <div class="contact-info mt-4">
+            <p><i class="fas fa-phone-alt me-2"></i> هاتف: 123456789</p>
+            <p><i class="fas fa-envelope me-2"></i> بريد إلكتروني: info@hanjara.ps</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> العنوان: فلسطين</p>
           </div>
         </div>
       </div>
+    </div>
+    <div class="footer-bottom mt-4 text-center">
+      <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom mt-4 text-center">
-        <p class="mb-0">جميع الحقوق محفوظة © 2024</p>
-      </div>
-    </footer>
+  <!-- Scripts -->
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/amplitude.min.js" type="text/javascript"></script>
+  <script src="js/amplitude-custom.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
-    <!-- Scripts -->
-    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="js/amplitude.min.js" type="text/javascript"></script>
-    <script src="js/amplitude-custom.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
-  </body>
+  <!-- GSAP Animation for Card Flip -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.episode-card').forEach(function (card) {
+      gsap.fromTo(card, {
+        rotationY: 180,
+        opacity: 0
+      }, {
+        rotationY: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 80%",
+          toggleActions: "play none none reverse"
+        }
+      });
+    });
+  </script>
+
+  <!-- Back To Top Script -->
+  <script>
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+    backToTop.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+  <!-- Preloader Hide -->
+  <script>
+    window.addEventListener('load', function () {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    });
+  </script>
+
+  <!-- Rating Stars Interaction -->
+  <script>
+    const stars = document.querySelectorAll('.rating-stars i');
+    stars.forEach(star => {
+      star.addEventListener('click', function () {
+        const rating = this.getAttribute('data-value');
+        stars.forEach(s => s.classList.remove('rated'));
+        stars.forEach(s => {
+          if (s.getAttribute('data-value') <= rating) {
+            s.classList.add('rated');
+          }
+        });
+        console.log('User rating:', rating);
+      });
+    });
+  </script>
+
+  <!-- Transcript Interaction -->
+  <script>
+    const transcriptLines = document.querySelectorAll('.transcript-line');
+    transcriptLines.forEach(line => {
+      line.addEventListener('click', function () {
+        const time = this.getAttribute('data-time');
+        console.log('Jump to time:', time);
+        // يمكن هنا ربط هذه القيمة مع مشغل الصوت لضبط التشغيل عند اللحظة المحددة
+      });
+    });
+  </script>
+</body>
+
 </html>
