@@ -1,0 +1,200 @@
+<!--
+  اسم الصفحة: الإشعارات
+  معلومات عنها: صفحة تنبيهات مخصصة للوحة التحكم، تعرض أحدث الإشعارات مع شريط جانبي مطابق للوحة التحكم الرئيسية.
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الإشعارات - لوحة التحكم | حنجرة</title>
+    <meta name="description"
+        content="Hanjarah notifications page – keep track of all your voice‑over and podcast updates." />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div id="sidebarBackdrop" class="sidebar-backdrop d-lg-none"></div>
+
+        <aside id="sidebarMenu" class="sidebar">
+            <div class="logo text-center mb-4"><a href="dashboard.html"><img src="img/logo.png" alt="حنجرة" /></a></div>
+            <ul class="nav flex-column">
+                <!-- Dashboard -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">لوحة التحكم</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> الرئيسية</a></li>
+                        <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> الإشعارات</a></li>
+                    </ul>
+                </li>
+                <!-- Account -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">حسابي</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="profile.html"><i class="fa-solid fa-user"></i> الملف الشخصي</a></li>
+                        <li><a href="settings.html"><i class="fa-solid fa-gear"></i> الإعدادات</a></li>
+                        <li><a href="password.html"><i class="fa-solid fa-lock"></i> تغيير كلمة المرور</a></li>
+                    </ul>
+                </li>
+                <!-- Works -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">أعمالي الصوتية</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="works-list.html" class="active"><i class="fa-solid fa-microphone"></i> قائمة
+                                الأعمال</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addModal"><i
+                                    class="fa-solid fa-plus-circle"></i>
+                                إضافة عمل جديد</a></li>
+                    </ul>
+                </li>
+                <!-- Messages -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">التواصل</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="messages.html"><i class="fa-solid fa-comments"></i> رسائلي</a></li>
+                        <li><a href="chat.html"><i class="fa-solid fa-comment-dots"></i> الدردشة المباشرة</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Top Bar -->
+            <div class="topbar">
+                <!-- ===== Mobile-only sidebar toggle button (place inside .topbar) ===== -->
+                <button id="sidebarToggle" class="btn-toggle-sidebar d-lg-none" aria-label="القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h4><i class="fa-solid fa-bell"></i> الإشعارات</h4>
+
+                <div class="right-menu">
+                    <!-- Notifications Icon -->
+                    <i class="fa-solid fa-bell"></i>
+                    <!-- User Info -->
+                    <div class="user-info" onclick="toggleUserDropdown()">
+                        <img src="img/team/team-01.jpg" alt="User Image" />
+                        <span class="user-name">عمار أبو حسين</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <!-- Dropdown Menu -->
+
+                        <div class="user-dropdown" id="userDropdown">
+                            <a href="#">الملف الشخصي</a>
+                            <a href="#">الإعدادات</a>
+                            <a href="#">تسجيل الخروج</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" d-flex justify-content-between align-items-center mb-4">
+                <button class="btn btn-secondary" onclick="markAllRead()"><i class="fa-solid fa-check-double"></i> وضع
+                    علامة مقروء للجميع</button>
+            </div>
+
+            <ul class="notification-list">
+                <!-- notification 1 -->
+                <li class="notification-item unread">
+                    <div class="notification-content">
+                        <img src="img/podcast/1.webp" alt="Podcast cover" />
+                        <div class="notification-info">
+                            <p class="message">تمت إضافة حلقة جديدة "يا حب البرغل" إلى قائمة تشغيلك.</p>
+                            <span class="time">26 أبريل 2025، 09:10</span>
+                        </div>
+                    </div>
+                    <div class="notification-actions d-flex align-items-center">
+                        <span class="notification-badge">جديد</span>
+                        <button class="btn btn-outline-light ms-2" onclick="markRead(this)">وضع علامة كمقروءة</button>
+                    </div>
+                </li>
+
+                <!-- notification 2 -->
+                <li class="notification-item unread">
+                    <div class="notification-content">
+                        <img src="img/team/team-02.jpg" alt="User avatar" />
+                        <div class="notification-info">
+                            <p class="message">سارة أحمد أرسلت لك رسالة حول مشروع بودكاست التراث.</p>
+                            <span class="time">25 أبريل 2025، 17:30</span>
+                        </div>
+                    </div>
+                    <div class="notification-actions d-flex align-items-center">
+                        <span class="notification-badge">جديد</span>
+                        <button class="btn btn-outline-light ms-2" onclick="markRead(this)">وضع علامة كمقروءة</button>
+                    </div>
+                </li>
+
+                <!-- notification 3 -->
+                <li class="notification-item">
+                    <div class="notification-content">
+                        <img src="img/events/event-01.webp" alt="Event image" />
+                        <div class="notification-info">
+                            <p class="message">ورشة عمل بودكاست متقدمة ستبدأ خلال 3 أيام، لا تنسَ تأكيد حضورك!</p>
+                            <span class="time">22 أبريل 2025، 11:05</span>
+                        </div>
+                    </div>
+                    <div class="notification-actions d-flex align-content-center">
+                        <button class="btn btn-outline-light" onclick="markUnread(this)">وضع علامة كغير مقروءة</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // mark a single item as read
+        function markRead(btn) {
+            const item = btn.closest('.notification-item');
+            item.classList.remove('unread');
+            btn.remove();
+            item.querySelector('.notification-badge')?.remove();
+        }
+
+        // mark a single item as unread
+        function markUnread(btn) {
+            const item = btn.closest('.notification-item');
+            item.classList.add('unread');
+            if (!item.querySelector('.notification-badge')) {
+                const badge = document.createElement('span');
+                badge.className = 'notification-badge';
+                badge.textContent = 'جديد';
+                item.querySelector('.notification-actions').prepend(badge);
+            }
+            if (!item.querySelector('.notification-actions .btn')) {
+                const actionBtn = document.createElement('button');
+                actionBtn.className = 'btn btn-outline-light ms-2';
+                actionBtn.textContent = 'وضع علامة كمقروءة';
+                actionBtn.onclick = function () { markRead(actionBtn); };
+                item.querySelector('.notification-actions').append(actionBtn);
+            }
+        }
+
+        // mark all items as read
+        function markAllRead() {
+            document.querySelectorAll('.notification-item.unread').forEach(item => {
+                item.classList.remove('unread');
+                item.querySelector('.notification-badge')?.remove();
+                item.querySelector('.btn-outline-light')?.remove();
+            });
+        }
+    </script>
+</body>
+
+</html>

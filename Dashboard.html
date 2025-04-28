@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,130 +19,63 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/admin.css" />
 
-  <!-- Root Variables (Provided by you) -->
-  <style>
- /* 
-  Sample CSS for the reorganized sidebar. 
-  Adjust spacing, colors, and typography as needed.
-*/
-.sidebar {
-  background: var(--background-color);
-  width: 25%;
-  max-width: 280px;
-  padding: 1.2rem;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.4);
-  border-radius: 0 8px 8px 0;
-}
-
-.logo img {
-  /* Centered logo with optional sizing */
-  max-width: 100%;
-  border-radius: 4px;
-}
-
-.nav-group-title {
-  font-size: 1rem;
-  color: var(--accent-color-2);
-  margin-bottom: 0.5rem;
-  padding: 0.3rem 0.5rem;
-}
-
-.nav.flex-column .sub-links li {
-  margin-bottom: 0.4rem;
-}
-
-.nav.flex-column .sub-links li a {
-  color: var(--text-color);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.75rem;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-  font-size: 0.9rem;
-}
-
-.nav.flex-column .sub-links li a:hover {
-  background: var(--secondary-background-color);
-}
-
-.nav-item a.nav-link {
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.nav-item a.nav-link:hover {
-  background: var(--secondary-background-color);
-}
-
-  </style>
 </head>
+
 <body>
 
   <!-- Dashboard Container -->
   <div class="dashboard-container">
-    <!-- Sidebar (col-3) -->
-    <aside class="sidebar" id="sidebarMenu">
-        <!-- Logo Section -->
-        <div class="logo text-center mb-4">
-          <a href="#">
-            <img src="img/logo.png" alt="شعار حنجرة"  />
-          </a>
-        </div>
-      
-        <!-- Main Navigation -->
-        <ul class="nav flex-column">
-          <!-- Dashboard Group -->
-          <li class="nav-item mb-2">
-            <h5 class="nav-group-title">لوحة التحكم</h5>
-            <ul class="nav flex-column sub-links">
-              <li><a href="#"><i class="fa-solid fa-chart-line"></i> الرئيسية</a></li>
-              <li><a href="#"><i class="fa-solid fa-bell"></i> الإشعارات</a></li>
-            </ul>
-          </li>
-      
-          <!-- Account Group -->
-          <li class="nav-item mb-2">
-            <h5 class="nav-group-title">حسابي</h5>
-            <ul class="nav flex-column sub-links">
-              <li><a href="#"><i class="fa-solid fa-user"></i> الملف الشخصي</a></li>
-              <li><a href="#"><i class="fa-solid fa-gear"></i> الإعدادات</a></li>
-              <li><a href="#"><i class="fa-solid fa-lock"></i> تغيير كلمة المرور</a></li>
-            </ul>
-          </li>
-      
-         
-      
-          <!-- Audio Works Group -->
-          <li class="nav-item mb-2">
-            <h5 class="nav-group-title">أعمالي الصوتية</h5>
-            <ul class="nav flex-column sub-links">
-              <li><a href="#"><i class="fa-solid fa-microphone"></i> قائمة الأعمال</a></li>
-              <li><a href="#"><i class="fa-solid fa-plus-circle"></i> إضافة عمل جديد</a></li>
-            </ul>
-          </li>
-      
-          <!-- Messages Group -->
-          <li class="nav-item mb-2">
-            <h5 class="nav-group-title">التواصل</h5>
-            <ul class="nav flex-column sub-links">
-              <li><a href="#"><i class="fa-solid fa-comments"></i> رسائلي</a></li>
-              <li><a href="#"><i class="fa-solid fa-comment-dots"></i> الدردشة المباشرة</a></li>
-            </ul>
-          </li>
-      
-    
-        </ul>
-      </aside>
+    <!-- Sidebar -->
+    <div id="sidebarBackdrop" class="sidebar-backdrop d-lg-none"></div>
+
+    <aside id="sidebarMenu" class="sidebar">
+      <div class="logo text-center mb-4"><a href="dashboard.html"><img src="img/logo.png" alt="حنجرة" /></a></div>
+      <ul class="nav flex-column">
+        <!-- Dashboard -->
+        <li class="nav-item mb-2">
+          <h5 class="nav-group-title">لوحة التحكم</h5>
+          <ul class="nav flex-column sub-links">
+            <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> الرئيسية</a></li>
+            <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> الإشعارات</a></li>
+          </ul>
+        </li>
+        <!-- Account -->
+        <li class="nav-item mb-2">
+          <h5 class="nav-group-title">حسابي</h5>
+          <ul class="nav flex-column sub-links">
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> الملف الشخصي</a></li>
+            <li><a href="settings.html"><i class="fa-solid fa-gear"></i> الإعدادات</a></li>
+            <li><a href="password.html"><i class="fa-solid fa-lock"></i> تغيير كلمة المرور</a></li>
+          </ul>
+        </li>
+        <!-- Works -->
+        <li class="nav-item mb-2">
+          <h5 class="nav-group-title">أعمالي الصوتية</h5>
+          <ul class="nav flex-column sub-links">
+            <li><a href="works-list.html" class="active"><i class="fa-solid fa-microphone"></i> قائمة الأعمال</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fa-solid fa-plus-circle"></i>
+                إضافة عمل جديد</a></li>
+          </ul>
+        </li>
+        <!-- Messages -->
+        <li class="nav-item mb-2">
+          <h5 class="nav-group-title">التواصل</h5>
+          <ul class="nav flex-column sub-links">
+            <li><a href="messages.html"><i class="fa-solid fa-comments"></i> رسائلي</a></li>
+            <li><a href="chat.html"><i class="fa-solid fa-comment-dots"></i> الدردشة المباشرة</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
 
     <!-- Main Content (col-9) -->
     <div class="main-content">
       <!-- Top Bar -->
       <div class="topbar">
+        <!-- ===== Mobile-only sidebar toggle button (place inside .topbar) ===== -->
+        <button id="sidebarToggle" class="btn-toggle-sidebar d-lg-none" aria-label="القائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <h4>لوحة التحكم</h4>
         <div class="right-menu">
           <!-- Notifications Icon -->
@@ -231,11 +165,20 @@
   <!-- jQuery and Bootstrap -->
   <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
   <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-
+  
   <!-- Chart.js for real charts -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 
   <script>
+       const sidebar   = document.getElementById('sidebarMenu');
+    const backdrop  = document.getElementById('sidebarBackdrop');
+    const toggleBtn = document.getElementById('sidebarToggle');
+  
+    const openSidebar  = ()=>{ sidebar.classList.add('open'); backdrop.classList.add('show'); };
+    const closeSidebar = ()=>{ sidebar.classList.remove('open'); backdrop.classList.remove('show'); };
+  
+    toggleBtn.addEventListener('click', () => sidebar.classList.contains('open') ? closeSidebar() : openSidebar());
+    backdrop.addEventListener('click', closeSidebar);
     // Toggles the user dropdown menu
     function toggleUserDropdown() {
       const dropdown = document.getElementById('userDropdown');
@@ -309,5 +252,8 @@
       }
     });
   </script>
+
+
 </body>
+
 </html>

@@ -312,7 +312,7 @@ p {
 /* Set default color and transition for nav links */
 .nav-link {
   color: var(--text-color);
-  margin-right: 15px;
+  margin-left: 15px;
   transition: color 0.3s ease;
 }
 
@@ -3713,9 +3713,6 @@ span.flatpickr-weekday {
 
   }
 
-  .sidebar {
-    margin-top: 40px;
-  }
 
   .section {
     padding: 60px 0 !important;

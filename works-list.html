@@ -1,0 +1,422 @@
+<!--
+  Page Name: Works List
+  Description: Shows all voice works for the talent with options to add, edit, or delete items.
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قائمة الأعمال - لوحة التحكم | حنجرة</title>
+    <meta name="description"
+        content="Manage and showcase all voice works – add, edit, or delete episodes from your portfolio." />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <style>
+        /* Works grid */
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.5rem
+        }
+
+        .work-card {
+            background: var(--background-color);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            transition: transform .25s, box-shadow .25s
+        }
+
+        .work-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, .35)
+        }
+
+        .work-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover
+        }
+
+        .work-card-body {
+            padding: 1rem
+        }
+
+        .work-card-body h6 {
+            font-family: "Aljazeera-Bold";
+            font-size: 1.05rem;
+            color: var(--accent-color-2);
+            margin-bottom: .3rem
+        }
+
+        .work-meta {
+            font-size: .9rem;
+            color: var(--text-muted-color);
+            display: flex;
+            align-items: center;
+            gap: .35rem
+        }
+
+        .card-actions {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            display: flex;
+            gap: .4rem
+        }
+
+        .card-actions button {
+            background: rgba(0, 0, 0, .45);
+            border: none;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            transition: background .2s
+        }
+
+        .card-actions button:hover {
+            background: var(--accent-color-1)
+        }
+
+        /* Add button */
+        .add-btn {
+            background: var(--accent-color-1);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 54px;
+            height: 54px;
+            position: fixed;
+            bottom: 32px;
+            left: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, .35);
+            z-index: 1060
+        }
+
+        .add-btn:hover {
+            background: var(--accent-color-2)
+        }
+
+        /* Modal dark backdrop fix */
+        .modal-content {
+            background: var(--background-color);
+            border-radius: 12px;
+            color: var(--text-color)
+        }
+
+        .form-control,
+        .form-select {
+            background: var(--secondary-background-color);
+            border: 1px solid var(--accent-color-1);
+            color: var(--text-color)
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 2px var(--accent-color-2)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div id="sidebarBackdrop" class="sidebar-backdrop d-lg-none"></div>
+
+        <aside id="sidebarMenu" class="sidebar">
+            <div class="logo text-center mb-4"><a href="dashboard.html"><img src="img/logo.png" alt="حنجرة" /></a></div>
+            <ul class="nav flex-column">
+                <!-- Dashboard -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">لوحة التحكم</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> الرئيسية</a></li>
+                        <li><a href="notifications.html"><i class="fa-solid fa-bell"></i> الإشعارات</a></li>
+                    </ul>
+                </li>
+                <!-- Account -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">حسابي</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="profile.html"><i class="fa-solid fa-user"></i> الملف الشخصي</a></li>
+                        <li><a href="settings.html"><i class="fa-solid fa-gear"></i> الإعدادات</a></li>
+                        <li><a href="password.html"><i class="fa-solid fa-lock"></i> تغيير كلمة المرور</a></li>
+                    </ul>
+                </li>
+                <!-- Works -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">أعمالي الصوتية</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="works-list.html" class="active"><i class="fa-solid fa-microphone"></i> قائمة
+                                الأعمال</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#addModal"><i
+                                    class="fa-solid fa-plus-circle"></i>
+                                إضافة عمل جديد</a></li>
+                    </ul>
+                </li>
+                <!-- Messages -->
+                <li class="nav-item mb-2">
+                    <h5 class="nav-group-title">التواصل</h5>
+                    <ul class="nav flex-column sub-links">
+                        <li><a href="messages.html"><i class="fa-solid fa-comments"></i> رسائلي</a></li>
+                        <li><a href="chat.html"><i class="fa-solid fa-comment-dots"></i> الدردشة المباشرة</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="topbar">
+                <!-- ===== Mobile-only sidebar toggle button (place inside .topbar) ===== -->
+                <button id="sidebarToggle" class="btn-toggle-sidebar d-lg-none" aria-label="القائمة">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h4>قائمة أعمالي</h4>
+
+                <div class="right-menu">
+                    <!-- Notifications Icon -->
+                    <i class="fa-solid fa-bell"></i>
+                    <!-- User Info -->
+                    <div class="user-info" onclick="toggleUserDropdown()">
+                        <img src="img/team/team-01.jpg" alt="User Image" />
+                        <span class="user-name">عمار أبو حسين</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                        <!-- Dropdown Menu -->
+
+                        <div class="user-dropdown" id="userDropdown">
+                            <a href="#">الملف الشخصي</a>
+                            <a href="#">الإعدادات</a>
+                            <a href="#">تسجيل الخروج</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Works grid -->
+            <div class="works-grid" id="worksGrid">
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Work item sample -->
+                <div class="work-card">
+                    <img src="img/podcast/1.webp" alt="work-cover" />
+                    <div class="card-actions">
+                        <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#editModal"><i
+                                class="fa-solid fa-pen"></i></button>
+                        <button class="btn-delete" onclick="removeWork(this)"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="work-card-body">
+                        <h6>يا حب البرغل</h6>
+                        <div class="work-meta"><i class="fa-solid fa-play"></i><span>750 تشغيل</span></div>
+                    </div>
+                </div>
+                <!-- Duplicate more items or render dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add New Work Button -->
+    <button class="add-btn" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fa-solid fa-plus"></i></button>
+
+    <!-- Add Modal -->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true" aria-labelledby="addModalLabel">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 id="addModalLabel" class="modal-title">إضافة عمل جديد</h5><button type="button"
+                        class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addForm" class="row g-3">
+                        <div class="col-md-6"><label class="form-label">عنوان العمل</label><input class="form-control"
+                                required /></div>
+                        <div class="col-md-6"><label class="form-label">عدد التشغيلات</label><input type="number"
+                                class="form-control" min="0" value="0" /></div>
+                        <div class="col-md-12"><label class="form-label">صورة الغلاف</label><input type="file"
+                                accept="image/*" class="form-control" /></div>
+                        <div class="col-12 d-flex justify-content-end gap-2 mt-3"><button type="submit"
+                                class="btn btn-primary">حفظ</button><button type="button" class="btn btn-outline-light"
+                                data-bs-dismiss="modal">إلغاء</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal (reuse same form) -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true" aria-labelledby="editModalLabel">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 id="editModalLabel" class="modal-title">تعديل العمل</h5><button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm" class="row g-3">
+                        <div class="col-md-6"><label class="form-label">عنوان العمل</label><input class="form-control"
+                                required /></div>
+                        <div class="col-md-6"><label class="form-label">عدد التشغيلات</label><input type="number"
+                                class="form-control" min="0" /></div>
+                        <div class="col-md-12"><label class="form-label">تحديث صورة الغلاف</label><input type="file"
+                                accept="image/*" class="form-control" /></div>
+                        <div class="col-12 d-flex justify-content-end gap-2 mt-3"><button type="submit"
+                                class="btn btn-primary">تحديث</button><button type="button"
+                                class="btn btn-outline-light" data-bs-dismiss="modal">إلغاء</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
