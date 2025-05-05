@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تسجيل دخول المواهب - منصة حنجرة</title>
-  <meta name="description" content="تسجيل دخول المواهب على منصة حنجرة للوصول إلى لوحة تحكم المعلقين الصوتيين وإدارة أعمالهم بكل سهولة." />
-  <meta name="keywords" content="حنجرة, تسجيل دخول, مواهب صوتية, لوحة تحكم, معلقين صوتيين" />
+  <title>إنشاء حساب - منصة حنجرة</title>
+  <meta name="description" content="إنشاء حساب جديد على منصة حنجرة للاستماع والمشاركة في المحتوى الصوتي." />
+  <meta name="keywords" content="حنجرة, إنشاء حساب, منصة صوتية, بودكاست, تسجيل جديد" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph / Twitter Meta Tags -->
@@ -17,12 +18,16 @@
   <link rel="stylesheet" href="css/amplitude.css" />
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Custom CSS (Dark Theme) -->
+  <!-- Custom CSS for Registration Page -->
   <style>
-   
-    
+    /* Quick customization for the card */
+    .login-card {
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg custom-navbar">
@@ -30,8 +35,8 @@
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
         <img src="img/logo.png" alt="شعار حنجرة" class="navbar-logo" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,67 +49,71 @@
           <li class="nav-item"><a class="nav-link" href="studio.html">احجز الاستوديو</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
         </ul>
-        <a href="#" class="btn btn-primary">
-          <i class="fa-solid fa-user-plus"></i> انضم الآن
+        <a href="login.html" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-right-to-bracket me-1"></i> تسجيل الدخول
         </a>
       </div>
     </div>
   </nav>
 
-  <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <div class="container">
-      <img src="img/hero-track.png" alt="Track Image" class="mb-4" />
-      <h3 class="title">تسجيل دخول المواهب</h3>
-      <p class="desc">
-        سجّل دخولك للوصول إلى لوحة التحكم الخاصة بالمواهب الصوتية وإدارة أعمالك وإبداعاتك.
-      </p>
-    </div>
-  </div>
-
-  <!-- Login Form Section for Talents -->
-  <section class="login-container">
+  <!-- Registration Form Section -->
+  <section class="login-container bg-light">
     <div class="container">
       <div class="login-card p-4 mx-auto" style="max-width: 400px;">
         <h2 class="text-center mb-4">
-          <i class="fa-solid fa-lock ms-2"></i>تسجيل دخول المواهب
+          <i class="fa-solid fa-user-plus me-2"></i>إنشاء حساب
         </h2>
-        <form action="#" method="post">
+        <form action="#" method="post" novalidate>
+          <div class="form-group mb-3">
+            <label for="name" class="d-block mb-1">
+              <i class="fa-solid fa-user me-1"></i> الاسم الكامل
+            </label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required
+              class="form-control text-end" />
+          </div>
           <div class="form-group mb-3">
             <label for="email" class="d-block mb-1">
-              <i class="fa-solid fa-envelope ms-1"></i>البريد الإلكتروني
+              <i class="fa-solid fa-envelope me-1"></i> البريد الإلكتروني
             </label>
-            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required class="form-control text-end" />
+            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required
+              class="form-control text-end" />
           </div>
           <div class="form-group mb-3">
             <label for="password" class="d-block mb-1">
-              <i class="fa-solid fa-key ms-1"></i>كلمة المرور
+              <i class="fa-solid fa-key me-1"></i> كلمة المرور
             </label>
-            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required class="form-control text-end" />
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required
+              class="form-control text-end" />
+          </div>
+          <div class="form-group mb-3">
+            <label for="password_confirmation" class="d-block mb-1">
+              <i class="fa-solid fa-key me-1"></i> تأكيد كلمة المرور
+            </label>
+            <input type="password" id="password_confirmation" name="password_confirmation"
+              placeholder="أعد إدخال كلمة المرور" required class="form-control text-end" />
           </div>
           <div class="form-check mb-3">
-            <input type="checkbox" id="remember" name="remember" class="form-check-input" />
-            <label for="remember" class="form-check-label">تذكرني</label>
+            <input type="checkbox" id="terms" name="terms" class="form-check-input" required />
+            <label for="terms" class="form-check-label">
+              أوافق على <a href="#">شروط الخدمة</a> و <a href="#">سياسة الخصوصية</a>
+            </label>
           </div>
           <button type="submit" class="btn btn-primary w-100">
-            <i class="fa-solid fa-arrow-right-to-bracket ms-1"></i>تسجيل الدخول
+            <i class="fa-solid fa-user-plus me-1"></i> إنشاء الحساب
           </button>
         </form>
         <div class="links text-center mt-3">
-          <a href="#">نسيت كلمة المرور؟</a>
-          <span class="mx-2">|</span>
-          <a href="registration.html">إنشاء حساب جديد</a>
+          لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a>
         </div>
       </div>
     </div>
   </section>
 
- 
   <!-- Footer -->
   <footer class="footer text-white" role="contentinfo" aria-label="Footer">
     <div class="container">
       <div class="row mb-4">
-        <!-- Logo and Description -->
+        <!-- Logo & Description -->
         <div class="col-lg-3 col-md-6 text-md-start text-center mb-4 mb-lg-0">
           <img src="img/logo.png" alt="شعار حنجرة" class="footer-logo mb-3" loading="lazy" />
           <p class="footer-description">
@@ -112,93 +121,45 @@
           </p>
           <p class="mb-3">تابعنا على</p>
           <div class="social-icons">
-            <a href="#" class="text-white mx-2" title="فيسبوك" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="text-white mx-2" title="إنستجرام" aria-label="إنستجرام"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white mx-2" title="يوتيوب" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="text-white mx-2" title="تيك توك" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
-            <a href="#" class="text-white mx-2" title="تويتر" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="text-white mx-2" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2" title="يوتيوب"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white mx-2" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white mx-2" title="تويتر"><i class="fab fa-x-twitter"></i></a>
           </div>
         </div>
-        <!-- Quick Links Section -->
+        <!-- Quick Links -->
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h5 class="footer-title mb-3">بودكاست</h5>
           <ul class="list-unstyled">
-            <li>
-              <a href="#" class="footer-link" title="الرئيسية">
-                <i class="fa-solid fa-angles-left"></i> الرئيسية
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="الحلقات">
-                <i class="fa-solid fa-angles-left"></i> الحلقات
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="من نحن">
-                <i class="fa-solid fa-angles-left"></i> من نحن
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="الأخبار">
-                <i class="fa-solid fa-angles-left"></i> الأخبار
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="المدونة">
-                <i class="fa-solid fa-angles-left"></i> المدونة
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="تواصل معنا">
-                <i class="fa-solid fa-angles-left"></i> تواصل معنا
-              </a>
-            </li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> الرئيسية</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> الحلقات</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> من نحن</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> الأخبار</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> المدونة</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> تواصل معنا</a></li>
           </ul>
         </div>
         <!-- Explore Section -->
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h5 class="footer-title mb-3">استكشف</h5>
           <ul class="list-unstyled">
-            <li>
-              <a href="#" class="footer-link" title="الأكثر شهرة">
-                <i class="fa-solid fa-angles-left"></i> الأكثر شهرة
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="مقترحاتنا">
-                <i class="fa-solid fa-angles-left"></i> مقترحاتنا
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="أشهر الحلقات">
-                <i class="fa-solid fa-angles-left"></i> أشهر الحلقات
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="أشهر المقدمين">
-                <i class="fa-solid fa-angles-left"></i> أشهر المقدمين
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="ما يقولوا عنا">
-                <i class="fa-solid fa-angles-left"></i> ما يقولوا عنا
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer-link" title="سياسة الخصوصية">
-                <i class="fa-solid fa-angles-left"></i> سياسة الخصوصية
-              </a>
-            </li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> الأكثر شهرة</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> مقترحاتنا</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> أشهر الحلقات</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> أشهر المقدمين</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> ما يقولوا عنا</a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-angles-left"></i> سياسة الخصوصية</a></li>
           </ul>
         </div>
-        <!-- Subscription and Contact Section -->
-        <div class="col-lg-4 col-md-8 mb-4">
+        <!-- Newsletter & Contact -->
+        <div class="col-lg-5 col-md-6">
           <h5 class="footer-title mb-3">كن على تواصل معنا</h5>
-          <p>انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
+          <p class="mb-3">انضم إلى نشرتنا لتبقى على اطلاع بأحدث الأخبار والتحديثات.</p>
           <form action="#" method="post" class="subscription-form" novalidate>
             <div class="input-group mb-3">
               <label for="footer-email" class="visually-hidden">البريد الإلكتروني</label>
-              <input type="email" id="footer-email" class="footer-email form-control" placeholder="أدخل بريدك الإلكتروني" required />
+              <input type="email" id="footer-email" class="form-control" placeholder="أدخل بريدك الإلكتروني" required />
               <button class="btn btn-primary" type="submit" title="اشترك الآن">
                 اشترك <i class="fa-solid fa-envelope-open-text"></i>
               </button>
@@ -212,7 +173,6 @@
         </div>
       </div>
     </div>
-    <!-- Footer Bottom -->
     <div class="footer-bottom mt-4 text-center">
       <p class="mb-0">حنجرة © 2024 | حيث تلتقي الأصوات بالإبداع، وجميع الحقوق محفوظة.</p>
     </div>
@@ -226,4 +186,5 @@
   <script src="js/amplitude-custom.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>
 </body>
+
 </html>
